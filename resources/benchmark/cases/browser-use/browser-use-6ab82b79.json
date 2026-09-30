@@ -1,0 +1,54 @@
+{
+  "case_id": "browser-use-6ab82b79",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "383daae930121256c63eea0a65f10f78bc6d0873",
+    "fixed": "6ab82b7921130ed8443f7f2de1faa340be960014"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/agent/service.py",
+        "qualname": "Agent._handle_step_error",
+        "kind": "function",
+        "start_line": 151,
+        "end_line": 167
+      },
+      {
+        "filepath": "browser_use/agent/service.py",
+        "qualname": "Agent.get_next_action",
+        "kind": "function",
+        "start_line": 242,
+        "end_line": 259
+      },
+      {
+        "filepath": "browser_use/agent/service.py",
+        "qualname": "Agent._update_message_history",
+        "kind": "function",
+        "start_line": 386,
+        "end_line": 388
+      },
+      {
+        "filepath": "browser_use/agent/views.py",
+        "qualname": "AgentError.format_error",
+        "kind": "function",
+        "start_line": 101,
+        "end_line": 108
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_014.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_014.zip"
+  }
+}

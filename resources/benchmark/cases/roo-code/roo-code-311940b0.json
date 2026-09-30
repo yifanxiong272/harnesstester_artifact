@@ -1,0 +1,67 @@
+{
+  "case_id": "roo-code-311940b0",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "774b492eff3d5ace560b59c899ecab6d81ffb932",
+    "fixed": "311940b0852dfe74388179ee14d41ce45541aee1"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/condense/index.ts",
+        "qualname": "summarizeConversation",
+        "kind": "function",
+        "start_line": 85,
+        "end_line": 212
+      },
+      {
+        "filepath": "src/core/context-management/index.ts",
+        "qualname": "manageContext",
+        "kind": "function",
+        "start_line": 99,
+        "end_line": 183
+      },
+      {
+        "filepath": "src/core/task/Task.ts",
+        "qualname": "Task.condenseContext",
+        "kind": "function",
+        "start_line": 1247,
+        "end_line": 1319
+      },
+      {
+        "filepath": "src/core/task/Task.ts",
+        "qualname": "Task.handleContextWindowExceededError",
+        "kind": "function",
+        "start_line": 3213,
+        "end_line": 3271
+      },
+      {
+        "filepath": "src/core/task/Task.ts",
+        "qualname": "Task.attemptApiRequest",
+        "kind": "function",
+        "start_line": 3273,
+        "end_line": 3552
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_003.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_003.zip"
+  }
+}

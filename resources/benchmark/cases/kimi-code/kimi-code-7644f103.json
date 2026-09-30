@@ -1,0 +1,45 @@
+{
+  "case_id": "kimi-code-7644f103",
+  "project": "kimi-code",
+  "repository": "https://github.com/MoonshotAI/kimi-code",
+  "revisions": {
+    "buggy": "710277a34b29b02139817165dccc7f81ee505041",
+    "fixed": "7644f1036ca1079e4527c0b1c825ec5384d6d8da"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "packages/agent-core/src/agent/context/projector.ts",
+        "qualname": "mergeAdjacentUserMessages",
+        "kind": "function",
+        "start_line": 18,
+        "end_line": 33
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/context/projector.ts",
+        "qualname": "project",
+        "kind": "function",
+        "start_line": 5,
+        "end_line": 16
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "packages/agent-core/vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "packages/agent-core/test/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/kimi-code/snapshot_002.zip",
+    "fixed": "../../dependencies/kimi-code/snapshot_002.zip"
+  }
+}

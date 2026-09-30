@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-7bf3dc35",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "1b11a8f80b8bb1158612755a5828a23d1bed207a",
+    "fixed": "7bf3dc35c5b3331eddd852daa59ff3cf01b24c46"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/discord/send.outbound.ts",
+        "qualname": "sendMessageDiscord",
+        "kind": "function",
+        "start_line": 53,
+        "end_line": 164
+      },
+      {
+        "filepath": "src/discord/send.outbound.ts",
+        "qualname": "<callback@88>",
+        "kind": "function",
+        "start_line": 88,
+        "end_line": 94
+      },
+      {
+        "filepath": "src/discord/send.shared.ts",
+        "qualname": "sendDiscordText",
+        "kind": "function",
+        "start_line": 281,
+        "end_line": 337
+      },
+      {
+        "filepath": "src/discord/send.shared.ts",
+        "qualname": "sendDiscordMedia",
+        "kind": "function",
+        "start_line": 339,
+        "end_line": 396
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_045.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_045.zip"
+  }
+}

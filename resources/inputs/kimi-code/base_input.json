@@ -1,0 +1,10 @@
+{
+  "project": "kimi-code",
+  "project_root": "../../subjects/kimi-code",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  }
+}

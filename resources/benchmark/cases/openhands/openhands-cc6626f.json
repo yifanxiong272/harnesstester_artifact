@@ -1,0 +1,40 @@
+{
+  "case_id": "openhands-cc6626f",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "fab2259d3a834d9e8a3e3a402fb311c44bc6697f",
+    "fixed": "cc6626ff0da9f3c146e88c179f1e1432b9d60550"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "agenthub/monologue_agent/utils/json.py",
+        "qualname": "loads",
+        "kind": "function",
+        "start_line": 24,
+        "end_line": 29
+      },
+      {
+        "filepath": "agenthub/monologue_agent/utils/prompts.py",
+        "qualname": "parse_action_response",
+        "kind": "function",
+        "start_line": 144,
+        "end_line": 161
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_036.zip",
+    "fixed": "../../dependencies/openhands/snapshot_036.zip"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-bf3e4d8f",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "af7470908daef76fc446d72010dbb29359d1ad6a",
+    "fixed": "bf3e4d8f1faf806a84ff01e1e49c752eb22ea9b7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/condense/index.ts",
+        "qualname": "summarizeConversation",
+        "kind": "function",
+        "start_line": 146,
+        "end_line": 292
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_010.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_010.zip"
+  }
+}

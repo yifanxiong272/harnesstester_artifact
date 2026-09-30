@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-464e2c10",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "883239a560ecc7e83860439a4adacba5c7b0ec78",
+    "fixed": "464e2c10a5edceb380d815adb6ff56e1a4c50f60"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/acp/client.ts",
+        "qualname": "resolvePermissionRequest",
+        "kind": "function",
+        "start_line": 289,
+        "end_line": 337
+      },
+      {
+        "filepath": "src/acp/event-mapper.ts",
+        "qualname": "formatToolTitle",
+        "kind": "function",
+        "start_line": 296,
+        "end_line": 310
+      },
+      {
+        "filepath": "src/terminal/ansi.ts",
+        "qualname": "<file>",
+        "kind": "file",
+        "start_line": 1,
+        "end_line": 114
+      },
+      {
+        "filepath": "src/terminal/ansi.ts",
+        "qualname": "stripAnsi",
+        "kind": "function",
+        "start_line": 12,
+        "end_line": 14
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_030.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_030.zip"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "case_id": "browser-use-45872c1e",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "09a8ee52b55e28fa2d2870f02130ce1f955f5da2",
+    "fixed": "45872c1e4544f442b056358e92493ccbeda67dfa"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/controller/service.py",
+        "qualname": "Controller.__init__.search_google",
+        "kind": "function",
+        "start_line": 81,
+        "end_line": 97
+      },
+      {
+        "filepath": "browser_use/controller/service.py",
+        "qualname": "Controller.__init__.go_to_url",
+        "kind": "function",
+        "start_line": 99,
+        "end_line": 129
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_008.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_008.zip"
+  }
+}

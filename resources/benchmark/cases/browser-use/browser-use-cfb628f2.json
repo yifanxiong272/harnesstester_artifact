@@ -1,0 +1,33 @@
+{
+  "case_id": "browser-use-cfb628f2",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "88fb9a1ff5f90d4c1354ec62c7e03f46ed402989",
+    "fixed": "cfb628f2ee8cdceab0779b456207f4bde0b59de9"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/controller/registry/service.py",
+        "qualname": "Registry._replace_sensitive_data",
+        "kind": "function",
+        "start_line": 152,
+        "end_line": 175
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_028.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_028.zip"
+  }
+}

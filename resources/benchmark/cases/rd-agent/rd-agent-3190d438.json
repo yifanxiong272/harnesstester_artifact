@@ -1,0 +1,40 @@
+{
+  "case_id": "rd-agent-3190d438",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "095cb99d9ac6e96b28fa57da7892c721501eeb55",
+    "fixed": "3190d43812abf478ce1443af8098bc5fbf7e205e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/components/proposal/model_proposal.py",
+        "qualname": "ModelHypothesisGen.gen",
+        "kind": "function",
+        "start_line": 32,
+        "end_line": 58
+      },
+      {
+        "filepath": "rdagent/components/proposal/model_proposal.py",
+        "qualname": "ModelHypothesis2Experiment.convert",
+        "kind": "function",
+        "start_line": 71,
+        "end_line": 96
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_002.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_002.zip"
+  }
+}

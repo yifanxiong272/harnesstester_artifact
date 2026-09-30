@@ -1,0 +1,33 @@
+{
+  "case_id": "openhands-9fd95cc",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "9cd4ad32987b25be8949f6193e43d576d2c5084b",
+    "fixed": "9fd95cc35fb1cb05ee72412b6188debda44d25d5"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "opendevin/action/browse.py",
+        "qualname": "BrowseURLAction.run",
+        "kind": "function",
+        "start_line": 19,
+        "end_line": 40
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_025.zip",
+    "fixed": "../../dependencies/openhands/snapshot_025.zip"
+  }
+}

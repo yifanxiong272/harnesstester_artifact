@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-2a18cbb1",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "78b9384aa7045b3ba513f05ca60b93412ea28872",
+    "fixed": "2a18cbb1101f77d64be3a57e520e9bdea33e48f0"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-runner/run/payloads.ts",
+        "qualname": "buildEmbeddedRunPayloads",
+        "kind": "function",
+        "start_line": 90,
+        "end_line": 346
+      },
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "extractAssistantText",
+        "kind": "function",
+        "start_line": 236,
+        "end_line": 250
+      },
+      {
+        "filepath": "src/agents/tools/sessions-helpers.ts",
+        "qualname": "extractAssistantText",
+        "kind": "function",
+        "start_line": 151,
+        "end_line": 174
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_018.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_018.zip"
+  }
+}

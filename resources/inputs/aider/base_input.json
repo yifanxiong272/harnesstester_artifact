@@ -1,0 +1,14 @@
+{
+  "project": "aider",
+  "project_root": "../../subjects/aider",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "aider",
+    "python": "../../../.venvs/aider/bin/python"
+  }
+}

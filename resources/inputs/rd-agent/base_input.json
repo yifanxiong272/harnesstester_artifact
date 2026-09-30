@@ -1,0 +1,14 @@
+{
+  "project": "rd-agent",
+  "project_root": "../../subjects/rd-agent",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "rdagent",
+    "python": "../../../.venvs/rd-agent/bin/python"
+  }
+}

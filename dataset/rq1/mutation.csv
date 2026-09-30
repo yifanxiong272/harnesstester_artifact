@@ -1,0 +1,11 @@
+project,denominator,killed,survived,no_coverage,timeout_crash
+openhands,14967,6235,3773,4900,59
+aider,13978,4906,5555,3498,19
+swe-agent,1630,393,356,626,255
+pr-agent,16448,2781,4289,9375,3
+gpt-researcher,8114,363,883,6864,4
+browser-use,5542,1398,1664,2475,5
+rd-agent,14689,526,411,13750,2
+openclaw,46967,24975,18610,1601,1781
+roo-code,7262,4420,2653,171,18
+kimi-code,10269,7285,2722,183,79

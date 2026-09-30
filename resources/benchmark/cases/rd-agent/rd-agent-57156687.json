@@ -1,0 +1,40 @@
+{
+  "case_id": "rd-agent-57156687",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "2879ecff816d97688b60909a79c7e568d42608a1",
+    "fixed": "57156687b641f44bd7daefe67dc67f1e98da3349"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/components/coder/factor_coder/CoSTEER/evaluators.py",
+        "qualname": "FactorOutputFormatEvaluator.evaluate",
+        "kind": "function",
+        "start_line": 158,
+        "end_line": 221
+      },
+      {
+        "filepath": "rdagent/components/coder/factor_coder/CoSTEER/evaluators.py",
+        "qualname": "FactorFinalDecisionEvaluator.evaluate",
+        "kind": "function",
+        "start_line": 482,
+        "end_line": 565
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_005.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_005.zip"
+  }
+}

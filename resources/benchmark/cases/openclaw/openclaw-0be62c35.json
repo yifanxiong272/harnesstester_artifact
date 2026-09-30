@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-0be62c35",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "523f91758ddca3f16edf9146018f867f8fd9e847",
+    "fixed": "0be62c354267564c48333d18d294e6248e2e778e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/tools/image-tool.ts",
+        "qualname": "runImagePrompt",
+        "kind": "function",
+        "start_line": 254,
+        "end_line": 319
+      },
+      {
+        "filepath": "src/agents/tools/image-tool.ts",
+        "qualname": "run",
+        "kind": "function",
+        "start_line": 283,
+        "end_line": 310
+      },
+      {
+        "filepath": "src/agents/tools/image-tool.ts",
+        "qualname": "execute",
+        "kind": "function",
+        "start_line": 350,
+        "end_line": 426
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_006.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_006.zip"
+  }
+}

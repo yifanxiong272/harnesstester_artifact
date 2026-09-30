@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-55168535",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "3fbbac07fed7948f048615cab2781b92fd16a108",
+    "fixed": "551685351fe3590b0a2a5035047b291df381dca2"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/tools/sessions-helpers.ts",
+        "qualname": "sanitizeTextContent",
+        "kind": "function",
+        "start_line": 113,
+        "end_line": 117
+      },
+      {
+        "filepath": "src/agents/tools/sessions-helpers.ts",
+        "qualname": "extractAssistantText",
+        "kind": "function",
+        "start_line": 119,
+        "end_line": 138
+      },
+      {
+        "filepath": "src/auto-reply/reply/commands-subagents.ts",
+        "qualname": "extractMessageText",
+        "kind": "function",
+        "start_line": 110,
+        "end_line": 133
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_003.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_003.zip"
+  }
+}

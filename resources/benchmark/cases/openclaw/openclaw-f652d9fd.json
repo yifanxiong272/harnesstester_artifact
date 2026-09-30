@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-f652d9fd",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "0d0d46f5e95f6f003861be33b4b9c6e3b493ea15",
+    "fixed": "f652d9fd81a626e1aac1f33382a5c078bfe284ab"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/utils/directive-tags.ts",
+        "qualname": "<callback@130>",
+        "kind": "function",
+        "start_line": 130,
+        "end_line": 134
+      },
+      {
+        "filepath": "src/utils/directive-tags.ts",
+        "qualname": "<callback@136>",
+        "kind": "function",
+        "start_line": 136,
+        "end_line": 147
+      },
+      {
+        "filepath": "src/utils/directive-tags.ts",
+        "qualname": "normalizeDirectiveWhitespace",
+        "kind": "function",
+        "start_line": 22,
+        "end_line": 27
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_070.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_070.zip"
+  }
+}

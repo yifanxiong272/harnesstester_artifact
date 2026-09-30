@@ -1,0 +1,73 @@
+{
+  "case_id": "openclaw-5c5c64b6",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "9d3e653ec9d262fa34d6c63ab0ed2239d19895b1",
+    "fixed": "5c5c64b6129a5ab199488d1e0255a25292ed3c66"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-runner/run/attempt.ts",
+        "qualname": "normalizeToolCallIdsInMessage",
+        "kind": "function",
+        "start_line": 644,
+        "end_line": 696
+      },
+      {
+        "filepath": "src/agents/tool-call-id.ts",
+        "qualname": "<callback@157>",
+        "kind": "function",
+        "start_line": 157,
+        "end_line": 177
+      },
+      {
+        "filepath": "src/agents/tool-call-id.ts",
+        "qualname": "rewriteToolResultIds",
+        "kind": "function",
+        "start_line": 185,
+        "end_line": 208
+      },
+      {
+        "filepath": "src/agents/tool-call-id.ts",
+        "qualname": "sanitizeToolCallIdsForCloudCodeAssist",
+        "kind": "function",
+        "start_line": 216,
+        "end_line": 268
+      },
+      {
+        "filepath": "src/agents/tool-call-id.ts",
+        "qualname": "<callback@239>",
+        "kind": "function",
+        "start_line": 239,
+        "end_line": 265
+      },
+      {
+        "filepath": "src/agents/transcript-policy.ts",
+        "qualname": "resolveTranscriptPolicy",
+        "kind": "function",
+        "start_line": 60,
+        "end_line": 124
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_037.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_037.zip"
+  }
+}

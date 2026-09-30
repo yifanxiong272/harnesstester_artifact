@@ -1,0 +1,40 @@
+{
+  "case_id": "browser-use-799e714c",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "38fb5b12df3730d70b192023334b8bae0cfd0ec0",
+    "fixed": "799e714c2b06fe188df1fac82e88c2c0a67bf5dc"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/filesystem/file_system.py",
+        "qualname": "FileSystem.read_file_structured",
+        "kind": "function",
+        "start_line": 448,
+        "end_line": 655
+      },
+      {
+        "filepath": "browser_use/tools/service.py",
+        "qualname": "Tools.__init__.read_long_content",
+        "kind": "function",
+        "start_line": 1543,
+        "end_line": 1802
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_018.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_018.zip"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-befa421a",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "e6fdac7bfb6d15d8b9b1f347f1039dded9fa35a1",
+    "fixed": "befa421a57cf4f83cb220e3032e1847a6d12f365"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/session-tool-result-guard.ts",
+        "qualname": "guardedAppend",
+        "kind": "function",
+        "start_line": 98,
+        "end_line": 157
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_059.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_059.zip"
+  }
+}

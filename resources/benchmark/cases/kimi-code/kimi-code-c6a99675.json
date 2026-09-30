@@ -1,0 +1,66 @@
+{
+  "case_id": "kimi-code-c6a99675",
+  "project": "kimi-code",
+  "repository": "https://github.com/MoonshotAI/kimi-code",
+  "revisions": {
+    "buggy": "4516f62f6a7e4dd7675a3aec16b2a26c5e310d83",
+    "fixed": "c6a996756cd8f1fb317b6eee6f4e668eebc7dc14"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "packages/agent-core/src/agent/compaction/strategy.ts",
+        "qualname": "canSplitAfter",
+        "kind": "function",
+        "start_line": 163,
+        "end_line": 170
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/context/index.ts",
+        "qualname": "ContextMemory",
+        "kind": "class",
+        "start_line": 24,
+        "end_line": 324
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/index.ts",
+        "qualname": "Agent.resume",
+        "kind": "function",
+        "start_line": 297,
+        "end_line": 305
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/replay/index.ts",
+        "qualname": "ReplayBuilder.push",
+        "kind": "function",
+        "start_line": 11,
+        "end_line": 18
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/replay/index.ts",
+        "qualname": "ReplayBuilder",
+        "kind": "class",
+        "start_line": 5,
+        "end_line": 45
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "packages/agent-core/vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "packages/agent-core/test/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/kimi-code/snapshot_006.zip",
+    "fixed": "../../dependencies/kimi-code/snapshot_006.zip"
+  }
+}

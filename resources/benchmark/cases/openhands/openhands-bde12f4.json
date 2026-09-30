@@ -1,0 +1,33 @@
+{
+  "case_id": "openhands-bde12f4",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "1787a7304e560243741f343713b020e08debb454",
+    "fixed": "bde12f4a09ce59b751fe706915597e3da4f68e90"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "agenthub/codeact_agent/codeact_agent.py",
+        "qualname": "swe_agent_edit_hack",
+        "kind": "function",
+        "start_line": 51,
+        "end_line": 79
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_035.zip",
+    "fixed": "../../dependencies/openhands/snapshot_035.zip"
+  }
+}

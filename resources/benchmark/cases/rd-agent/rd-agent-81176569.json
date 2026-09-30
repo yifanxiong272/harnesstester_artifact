@@ -1,0 +1,33 @@
+{
+  "case_id": "rd-agent-81176569",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "c47240ebb1e52829d2ef2ba3e7b330c3ef9b9fc8",
+    "fixed": "81176569070f4667c0db14ab96fc160a3dca4754"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/scenarios/qlib/factor_experiment_loader/pdf_loader.py",
+        "qualname": "__extract_factor_and_formulation_from_one_report",
+        "kind": "function",
+        "start_line": 188,
+        "end_line": 218
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_008.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_008.zip"
+  }
+}

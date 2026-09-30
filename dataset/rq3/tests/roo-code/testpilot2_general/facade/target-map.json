@@ -1,0 +1,646 @@
+[
+  {
+    "key": "file_0001",
+    "filepath": "src/integrations/openai-codex/oauth.ts"
+  },
+  {
+    "key": "file_0002",
+    "filepath": "apps/cli/src/agent/output-manager.ts"
+  },
+  {
+    "key": "file_0003",
+    "filepath": "src/api/transform/zai-format.ts"
+  },
+  {
+    "key": "file_0004",
+    "filepath": "apps/cli/src/agent/prompt-manager.ts"
+  },
+  {
+    "key": "file_0005",
+    "filepath": "webview-ui/src/utils/sourceMapInitializer.ts"
+  },
+  {
+    "key": "file_0006",
+    "filepath": "packages/core/src/worktree/worktree-service.ts"
+  },
+  {
+    "key": "file_0007",
+    "filepath": "apps/cli/src/agent/message-processor.ts"
+  },
+  {
+    "key": "file_0008",
+    "filepath": "src/services/tree-sitter/languageParser.ts"
+  },
+  {
+    "key": "file_0009",
+    "filepath": "packages/vscode-shim/src/api/WorkspaceAPI.ts"
+  },
+  {
+    "key": "file_0010",
+    "filepath": "src/services/tree-sitter/index.ts"
+  },
+  {
+    "key": "file_0011",
+    "filepath": "webview-ui/src/hooks/useScrollLifecycle.ts"
+  },
+  {
+    "key": "file_0012",
+    "filepath": "src/integrations/misc/extract-text.ts"
+  },
+  {
+    "key": "file_0013",
+    "filepath": "src/core/auto-approval/commands.ts"
+  },
+  {
+    "key": "file_0014",
+    "filepath": "src/core/condense/index.ts"
+  },
+  {
+    "key": "file_0015",
+    "filepath": "apps/cli/src/ui/store.ts"
+  },
+  {
+    "key": "file_0016",
+    "filepath": "src/core/diff/strategies/multi-search-replace.ts"
+  },
+  {
+    "key": "file_0017",
+    "filepath": "apps/cli/src/ui/components/tools/utils.ts"
+  },
+  {
+    "key": "file_0018",
+    "filepath": "webview-ui/src/utils/highlighter.ts"
+  },
+  {
+    "key": "file_0019",
+    "filepath": "packages/vscode-shim/src/api/CommandsAPI.ts"
+  },
+  {
+    "key": "file_0020",
+    "filepath": "src/api/transform/bedrock-converse-format.ts"
+  },
+  {
+    "key": "file_0021",
+    "filepath": "packages/vscode-shim/src/api/WindowAPI.ts"
+  },
+  {
+    "key": "file_0022",
+    "filepath": "webview-ui/src/utils/path-mentions.ts"
+  },
+  {
+    "key": "file_0023",
+    "filepath": "webview-ui/src/utils/textMateToHljs.ts"
+  },
+  {
+    "key": "file_0024",
+    "filepath": "src/api/transform/cache-strategy/multi-point-strategy.ts"
+  },
+  {
+    "key": "file_0025",
+    "filepath": "src/api/transform/r1-format.ts"
+  },
+  {
+    "key": "file_0026",
+    "filepath": "src/integrations/misc/indentation-reader.ts"
+  },
+  {
+    "key": "file_0027",
+    "filepath": "src/integrations/terminal/BaseTerminal.ts"
+  },
+  {
+    "key": "file_0028",
+    "filepath": "apps/cli/src/ui/hooks/useToast.ts"
+  },
+  {
+    "key": "file_0029",
+    "filepath": "src/api/providers/openai-compatible.ts"
+  },
+  {
+    "key": "file_0030",
+    "filepath": "packages/types/src/mode.ts"
+  },
+  {
+    "key": "file_0031",
+    "filepath": "apps/cli/src/lib/utils/provider.ts"
+  },
+  {
+    "key": "file_0032",
+    "filepath": "src/utils/tts.ts"
+  },
+  {
+    "key": "file_0033",
+    "filepath": "webview-ui/src/utils/sourceMapUtils.ts"
+  },
+  {
+    "key": "file_0034",
+    "filepath": "src/core/tools/helpers/imageHelpers.ts"
+  },
+  {
+    "key": "file_0035",
+    "filepath": "src/integrations/misc/line-counter.ts"
+  },
+  {
+    "key": "file_0036",
+    "filepath": "src/i18n/setup.ts"
+  },
+  {
+    "key": "file_0037",
+    "filepath": "webview-ui/src/utils/highlightDiff.ts"
+  },
+  {
+    "key": "file_0038",
+    "filepath": "packages/core/src/worktree/worktree-include.ts"
+  },
+  {
+    "key": "file_0039",
+    "filepath": "src/services/code-index/search-service.ts"
+  },
+  {
+    "key": "file_0040",
+    "filepath": "webview-ui/src/utils/highlight.ts"
+  },
+  {
+    "key": "file_0041",
+    "filepath": "src/api/transform/cache-strategy/base-strategy.ts"
+  },
+  {
+    "key": "file_0042",
+    "filepath": "src/integrations/openai-codex/rate-limits.ts"
+  },
+  {
+    "key": "file_0043",
+    "filepath": "src/api/providers/utils/image-generation.ts"
+  },
+  {
+    "key": "file_0044",
+    "filepath": "src/core/message-queue/MessageQueueService.ts"
+  },
+  {
+    "key": "file_0045",
+    "filepath": "src/shared/parse-command.ts"
+  },
+  {
+    "key": "file_0046",
+    "filepath": "webview-ui/src/utils/clipboard.ts"
+  },
+  {
+    "key": "file_0047",
+    "filepath": "src/core/tools/apply-patch/parser.ts"
+  },
+  {
+    "key": "file_0048",
+    "filepath": "src/api/transform/openai-format.ts"
+  },
+  {
+    "key": "file_0049",
+    "filepath": "packages/core/src/message-utils/consolidateCommands.ts"
+  },
+  {
+    "key": "file_0050",
+    "filepath": "src/core/tools/apply-patch/apply.ts"
+  },
+  {
+    "key": "file_0051",
+    "filepath": "packages/vscode-shim/src/api/WorkspaceConfiguration.ts"
+  },
+  {
+    "key": "file_0052",
+    "filepath": "src/utils/tag-matcher.ts"
+  },
+  {
+    "key": "file_0053",
+    "filepath": "webview-ui/src/components/chat/hooks/usePromptHistory.ts"
+  },
+  {
+    "key": "file_0054",
+    "filepath": "src/api/transform/ai-sdk.ts"
+  },
+  {
+    "key": "file_0055",
+    "filepath": "webview-ui/src/components/ui/hooks/useOpenRouterKeyInfo.ts"
+  },
+  {
+    "key": "file_0056",
+    "filepath": "webview-ui/src/components/settings/useSettingsSearch.ts"
+  },
+  {
+    "key": "file_0057",
+    "filepath": "src/shared/embeddingModels.ts"
+  },
+  {
+    "key": "file_0058",
+    "filepath": "webview-ui/src/components/mcp/McpResourceRow.tsx"
+  },
+  {
+    "key": "file_0059",
+    "filepath": "packages/types/src/mcp.ts"
+  },
+  {
+    "key": "file_0060",
+    "filepath": "src/api/providers/fake-ai.ts"
+  },
+  {
+    "key": "file_0061",
+    "filepath": "webview-ui/src/utils/vscode.ts"
+  },
+  {
+    "key": "file_0062",
+    "filepath": "apps/cli/src/agent/events.ts"
+  },
+  {
+    "key": "file_0063",
+    "filepath": "src/api/transform/mistral-format.ts"
+  },
+  {
+    "key": "file_0064",
+    "filepath": "packages/types/src/skills.ts"
+  },
+  {
+    "key": "file_0065",
+    "filepath": "src/services/command/commands.ts"
+  },
+  {
+    "key": "file_0066",
+    "filepath": "packages/vscode-shim/src/classes/Additional.ts"
+  },
+  {
+    "key": "file_0067",
+    "filepath": "src/api/transform/gemini-format.ts"
+  },
+  {
+    "key": "file_0068",
+    "filepath": "src/api/transform/responses-api-stream.ts"
+  },
+  {
+    "key": "file_0069",
+    "filepath": "src/utils/fs.ts"
+  },
+  {
+    "key": "file_0070",
+    "filepath": "src/api/transform/minimax-format.ts"
+  },
+  {
+    "key": "file_0071",
+    "filepath": "src/api/transform/responses-api-input.ts"
+  },
+  {
+    "key": "file_0072",
+    "filepath": "packages/vscode-shim/src/context/ExtensionContext.ts"
+  },
+  {
+    "key": "file_0073",
+    "filepath": "webview-ui/src/components/ui/hooks/useClipboard.ts"
+  },
+  {
+    "key": "file_0074",
+    "filepath": "src/core/diff/stats.ts"
+  },
+  {
+    "key": "file_0075",
+    "filepath": "src/services/code-index/shared/validation-helpers.ts"
+  },
+  {
+    "key": "file_0076",
+    "filepath": "webview-ui/src/components/mcp/McpErrorRow.tsx"
+  },
+  {
+    "key": "file_0077",
+    "filepath": "webview-ui/src/components/settings/utils/headers.ts"
+  },
+  {
+    "key": "file_0078",
+    "filepath": "webview-ui/src/utils/command-parser.ts"
+  },
+  {
+    "key": "file_0079",
+    "filepath": "packages/vscode-shim/src/classes/Position.ts"
+  },
+  {
+    "key": "file_0080",
+    "filepath": "src/utils/tiktoken.ts"
+  },
+  {
+    "key": "file_0081",
+    "filepath": "src/utils/countTokens.ts"
+  },
+  {
+    "key": "file_0082",
+    "filepath": "src/shared/ProfileValidator.ts"
+  },
+  {
+    "key": "file_0083",
+    "filepath": "src/core/mentions/resolveImageMentions.ts"
+  },
+  {
+    "key": "file_0084",
+    "filepath": "packages/vscode-shim/src/api/TabGroupsAPI.ts"
+  },
+  {
+    "key": "file_0085",
+    "filepath": "apps/cli/src/ui/components/tools/types.ts"
+  },
+  {
+    "key": "file_0086",
+    "filepath": "src/utils/outputChannelLogger.ts"
+  },
+  {
+    "key": "file_0087",
+    "filepath": "src/core/tools/BaseTool.ts"
+  },
+  {
+    "key": "file_0088",
+    "filepath": "apps/cli/src/lib/utils/extension.ts"
+  },
+  {
+    "key": "file_0089",
+    "filepath": "src/core/task/mergeConsecutiveApiMessages.ts"
+  },
+  {
+    "key": "file_0090",
+    "filepath": "webview-ui/src/components/settings/utils/organizationFilters.ts"
+  },
+  {
+    "key": "file_0091",
+    "filepath": "packages/vscode-shim/src/classes/Range.ts"
+  },
+  {
+    "key": "file_0092",
+    "filepath": "src/api/providers/fetchers/litellm.ts"
+  },
+  {
+    "key": "file_0093",
+    "filepath": "src/utils/safeWriteJson.ts"
+  },
+  {
+    "key": "file_0094",
+    "filepath": "src/services/tree-sitter/markdownParser.ts"
+  },
+  {
+    "key": "file_0095",
+    "filepath": "packages/core/src/message-utils/consolidateTokenUsage.ts"
+  },
+  {
+    "key": "file_0096",
+    "filepath": "src/services/glob/ignore-utils.ts"
+  },
+  {
+    "key": "file_0097",
+    "filepath": "src/utils/logging/CompactLogger.ts"
+  },
+  {
+    "key": "file_0098",
+    "filepath": "packages/core/src/message-utils/consolidateApiRequests.ts"
+  },
+  {
+    "key": "file_0099",
+    "filepath": "src/integrations/misc/extract-text-from-xlsx.ts"
+  },
+  {
+    "key": "file_0100",
+    "filepath": "src/utils/json-schema.ts"
+  },
+  {
+    "key": "file_0101",
+    "filepath": "webview-ui/src/utils/getLanguageFromPath.ts"
+  },
+  {
+    "key": "file_0102",
+    "filepath": "packages/core/src/message-utils/safeJsonParse.ts"
+  },
+  {
+    "key": "file_0103",
+    "filepath": "packages/vscode-shim/src/api/FileSystemAPI.ts"
+  },
+  {
+    "key": "file_0104",
+    "filepath": "packages/vscode-shim/src/storage/SecretStorage.ts"
+  },
+  {
+    "key": "file_0105",
+    "filepath": "src/core/prompts/tools/native-tools/mcp_server.ts"
+  },
+  {
+    "key": "file_0106",
+    "filepath": "apps/cli/src/lib/utils/input.ts"
+  },
+  {
+    "key": "file_0107",
+    "filepath": "src/shared/utils/requesty.ts"
+  },
+  {
+    "key": "file_0108",
+    "filepath": "src/api/providers/base-provider.ts"
+  },
+  {
+    "key": "file_0109",
+    "filepath": "src/integrations/misc/read-lines.ts"
+  },
+  {
+    "key": "file_0110",
+    "filepath": "src/i18n/index.ts"
+  },
+  {
+    "key": "file_0111",
+    "filepath": "packages/types/src/image-generation.ts"
+  },
+  {
+    "key": "file_0112",
+    "filepath": "webview-ui/src/components/common/Modal.tsx"
+  },
+  {
+    "key": "file_0113",
+    "filepath": "webview-ui/src/utils/imageUtils.ts"
+  },
+  {
+    "key": "file_0114",
+    "filepath": "webview-ui/src/components/welcome/RooHero.tsx"
+  },
+  {
+    "key": "file_0115",
+    "filepath": "src/utils/text-normalization.ts"
+  },
+  {
+    "key": "file_0116",
+    "filepath": "packages/vscode-shim/src/classes/Uri.ts"
+  },
+  {
+    "key": "file_0117",
+    "filepath": "src/api/providers/fetchers/versionedSettings.ts"
+  },
+  {
+    "key": "file_0118",
+    "filepath": "packages/vscode-shim/src/storage/Memento.ts"
+  },
+  {
+    "key": "file_0119",
+    "filepath": "src/core/condense/foldedFileContext.ts"
+  },
+  {
+    "key": "file_0120",
+    "filepath": "src/shared/cost.ts"
+  },
+  {
+    "key": "file_0121",
+    "filepath": "src/core/context/context-management/context-error-handling.ts"
+  },
+  {
+    "key": "file_0122",
+    "filepath": "apps/cli/src/commands/cli/cancellation.ts"
+  },
+  {
+    "key": "file_0123",
+    "filepath": "src/core/task/validateToolResultIds.ts"
+  },
+  {
+    "key": "file_0124",
+    "filepath": "src/utils/logging/index.ts"
+  },
+  {
+    "key": "file_0125",
+    "filepath": "apps/cli/src/lib/storage/config-dir.ts"
+  },
+  {
+    "key": "file_0126",
+    "filepath": "apps/cli/src/lib/storage/settings.ts"
+  },
+  {
+    "key": "file_0127",
+    "filepath": "apps/cli/src/lib/utils/path.ts"
+  },
+  {
+    "key": "file_0128",
+    "filepath": "apps/cli/src/lib/utils/shell.ts"
+  },
+  {
+    "key": "file_0129",
+    "filepath": "src/api/transform/caching/gemini.ts"
+  },
+  {
+    "key": "file_0130",
+    "filepath": "src/core/protect/RooProtectedController.ts"
+  },
+  {
+    "key": "file_0131",
+    "filepath": "packages/vscode-shim/src/utils/paths.ts"
+  },
+  {
+    "key": "file_0132",
+    "filepath": "src/utils/config.ts"
+  },
+  {
+    "key": "file_0133",
+    "filepath": "src/shared/support-prompt.ts"
+  },
+  {
+    "key": "file_0134",
+    "filepath": "apps/cli/src/lib/storage/history.ts"
+  },
+  {
+    "key": "file_0135",
+    "filepath": "src/core/auto-approval/AutoApprovalHandler.ts"
+  },
+  {
+    "key": "file_0136",
+    "filepath": "src/utils/mcp-name.ts"
+  },
+  {
+    "key": "file_0137",
+    "filepath": "src/core/tools/apply-patch/seek-sequence.ts"
+  },
+  {
+    "key": "file_0138",
+    "filepath": "webview-ui/src/utils/formatPrice.ts"
+  },
+  {
+    "key": "file_0139",
+    "filepath": "src/shared/context-mentions.ts"
+  },
+  {
+    "key": "file_0140",
+    "filepath": "webview-ui/src/components/chat/ShareButton.tsx"
+  },
+  {
+    "key": "file_0141",
+    "filepath": "apps/cli/src/types/types.ts"
+  },
+  {
+    "key": "file_0142",
+    "filepath": "src/core/tools/helpers/toolResultFormatting.ts"
+  },
+  {
+    "key": "file_0143",
+    "filepath": "webview-ui/src/components/chat/TerminalOutput.tsx"
+  },
+  {
+    "key": "file_0144",
+    "filepath": "src/shared/experiments.ts"
+  },
+  {
+    "key": "file_0145",
+    "filepath": "webview-ui/src/utils/formatPathTooltip.ts"
+  },
+  {
+    "key": "file_0146",
+    "filepath": "src/integrations/terminal/mergePromise.ts"
+  },
+  {
+    "key": "file_0147",
+    "filepath": "apps/cli/src/lib/utils/version.ts"
+  },
+  {
+    "key": "file_0148",
+    "filepath": "packages/types/src/model.ts"
+  },
+  {
+    "key": "file_0149",
+    "filepath": "src/core/prompts/sections/skills.ts"
+  },
+  {
+    "key": "file_0150",
+    "filepath": "webview-ui/src/components/ui/hooks/useNonInteractiveClick.ts"
+  },
+  {
+    "key": "file_0151",
+    "filepath": "webview-ui/src/utils/useDebounceEffect.ts"
+  },
+  {
+    "key": "file_0152",
+    "filepath": "packages/vscode-shim/src/utils/machine-id.ts"
+  },
+  {
+    "key": "file_0153",
+    "filepath": "src/core/environment/reminder.ts"
+  },
+  {
+    "key": "file_0154",
+    "filepath": "src/api/transform/caching/anthropic.ts"
+  },
+  {
+    "key": "file_0155",
+    "filepath": "webview-ui/src/components/ui/toggle-switch.tsx"
+  },
+  {
+    "key": "file_0156",
+    "filepath": "packages/vscode-shim/src/classes/TextEdit.ts"
+  },
+  {
+    "key": "file_0157",
+    "filepath": "src/api/providers/utils/error-handler.ts"
+  },
+  {
+    "key": "file_0158",
+    "filepath": "src/utils/logging/CompactTransport.ts"
+  },
+  {
+    "key": "file_0159",
+    "filepath": "src/integrations/terminal/BaseTerminalProcess.ts"
+  },
+  {
+    "key": "file_0160",
+    "filepath": "webview-ui/src/utils/format.ts"
+  },
+  {
+    "key": "file_0161",
+    "filepath": "src/services/roo-config/index.ts"
+  }
+]

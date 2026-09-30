@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-f9379ece",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "6daa4911e7671941ff8a14f7c64faa51ac5f7d82",
+    "fixed": "f9379ecee2865f5172ea7f678b99f4c92df822e0"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/auto-reply/heartbeat.ts",
+        "qualname": "stripTokenAtEdges",
+        "kind": "function",
+        "start_line": 61,
+        "end_line": 94
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_012.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_012.zip"
+  }
+}

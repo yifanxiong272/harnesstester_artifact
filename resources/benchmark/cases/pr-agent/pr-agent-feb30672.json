@@ -1,0 +1,33 @@
+{
+  "case_id": "pr-agent-feb30672",
+  "project": "pr-agent",
+  "repository": "https://github.com/The-PR-Agent/pr-agent",
+  "revisions": {
+    "buggy": "237a6ffb5f4c9abc469a44f1f609786283c0a35b",
+    "fixed": "feb306727e9e9bd3947171cd0da09f0737a8d654"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "pr_agent/algo/utils.py",
+        "qualname": "try_fix_yaml",
+        "kind": "function",
+        "start_line": 718,
+        "end_line": 801
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/pr-agent/snapshot_008.zip",
+    "fixed": "../../dependencies/pr-agent/snapshot_008.zip"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-201fb3b5",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "0ef52c8cd7c2267c7a8ad6834ce756ab33382717",
+    "fixed": "201fb3b5a21554bb51b03df2f7889bbcd93f257a"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/tools/writeToFileTool.ts",
+        "qualname": "writeToFileTool",
+        "kind": "function",
+        "start_line": 17,
+        "end_line": 255
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_002.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_002.zip"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "aider-f47f611",
+  "project": "aider",
+  "repository": "https://github.com/Aider-AI/aider",
+  "revisions": {
+    "buggy": "fe1271114f6b73eaaf406a2f4276654c8afc36e6",
+    "fixed": "f47f611e655c6d3f701e3e5397edb9eafb4b6985"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "aider/utils.py",
+        "qualname": "replace_most_similar_chunk",
+        "kind": "function",
+        "start_line": 62,
+        "end_line": 113
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/aider/snapshot_011.zip",
+    "fixed": "../../dependencies/aider/snapshot_011.zip"
+  }
+}

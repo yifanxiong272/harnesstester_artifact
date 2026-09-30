@@ -1,0 +1,47 @@
+{
+  "case_id": "rd-agent-05fca1ac",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "bc3fa170b029f50c8f7b1828cdf4ffd024e64b8b",
+    "fixed": "05fca1acced3d3cfddbab3871d3dcee597b675bd"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/components/coder/CoSTEER/__init__.py",
+        "qualname": "CoSTEER.compare_and_pick_fb",
+        "kind": "function",
+        "start_line": 80,
+        "end_line": 89
+      },
+      {
+        "filepath": "rdagent/components/coder/CoSTEER/__init__.py",
+        "qualname": "CoSTEER.develop",
+        "kind": "function",
+        "start_line": 91,
+        "end_line": 149
+      },
+      {
+        "filepath": "rdagent/scenarios/data_science/dev/runner/__init__.py",
+        "qualname": "DSCoSTEERRunner.compare_and_pick_fb",
+        "kind": "function",
+        "start_line": 174,
+        "end_line": 190
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_001.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_001.zip"
+  }
+}

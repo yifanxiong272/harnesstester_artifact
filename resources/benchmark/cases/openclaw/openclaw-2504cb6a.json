@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-2504cb6a",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "1dcef7b644524c3932e2bc269f969cfada8cfdcf",
+    "fixed": "2504cb6a1e0dc8db9a52428945b9294174b69232"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/gateway/server-methods/exec-approval.ts",
+        "qualname": "exec.approval.request",
+        "kind": "function",
+        "start_line": 23,
+        "end_line": 235
+      },
+      {
+        "filepath": "src/infra/exec-approval-command-display.ts",
+        "qualname": "resolveExecApprovalCommandDisplay",
+        "kind": "function",
+        "start_line": 11,
+        "end_line": 28
+      },
+      {
+        "filepath": "src/infra/exec-approval-command-display.ts",
+        "qualname": "normalizePreview",
+        "kind": "function",
+        "start_line": 3,
+        "end_line": 9
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_017.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_017.zip"
+  }
+}

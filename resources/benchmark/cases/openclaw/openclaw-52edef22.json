@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-52edef22",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "609aa4a7c5f01c5770de20e4a883f0fac04b269a",
+    "fixed": "52edef225b7feccaf54cc9f06fb20b193102e93e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/browser/pw-tools-core.ts",
+        "qualname": "evaluateViaPlaywright",
+        "kind": "function",
+        "start_line": 202,
+        "end_line": 246
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_034.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_034.zip"
+  }
+}

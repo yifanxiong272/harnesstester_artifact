@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-106d6055",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "604dc700a63dd0328ead3c0ffadae994a07d40da",
+    "fixed": "106d60551932af3db2ad08c4de822951b4c26017"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "extensions/msteams/src/mentions.ts",
+        "qualname": "<file>",
+        "kind": "file",
+        "start_line": 1,
+        "end_line": 114
+      },
+      {
+        "filepath": "extensions/msteams/src/mentions.ts",
+        "qualname": "isValidTeamsId",
+        "kind": "function",
+        "start_line": 37,
+        "end_line": 39
+      },
+      {
+        "filepath": "extensions/msteams/src/messenger.ts",
+        "qualname": "buildActivity",
+        "kind": "function",
+        "start_line": 263,
+        "end_line": 380
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_009.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_009.zip"
+  }
+}

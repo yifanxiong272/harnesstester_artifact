@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-2467a103",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "68569afb4b3a7cac9adc92a64e7d4cf7283c71c1",
+    "fixed": "2467a103b243dac687273edfb7cb56970e187633"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/tui/components/chat-log.ts",
+        "qualname": "ChatLog",
+        "kind": "class",
+        "start_line": 7,
+        "end_line": 108
+      },
+      {
+        "filepath": "src/tui/tui.ts",
+        "qualname": "handleChatEvent",
+        "kind": "function",
+        "start_line": 625,
+        "end_line": 661
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_016.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_016.zip"
+  }
+}

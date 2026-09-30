@@ -1,0 +1,82 @@
+{
+  "case_id": "openhands-d08886f",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "68e52a9c62f4cc6d48d33c5f1179aa4c1008b5a8",
+    "fixed": "d08886f30e41121c3c36bd6b4aee2ca32e61aa33"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "openhands/core/message.py",
+        "qualname": "Message",
+        "kind": "class",
+        "start_line": 51,
+        "end_line": 125
+      },
+      {
+        "filepath": "openhands/core/message.py",
+        "qualname": "Message.serialize_model",
+        "kind": "function",
+        "start_line": 69,
+        "end_line": 82
+      },
+      {
+        "filepath": "openhands/core/message.py",
+        "qualname": "Message._string_serializer",
+        "kind": "function",
+        "start_line": 84,
+        "end_line": 88
+      },
+      {
+        "filepath": "openhands/core/message.py",
+        "qualname": "Message._list_serializer",
+        "kind": "function",
+        "start_line": 90,
+        "end_line": 125
+      },
+      {
+        "filepath": "openhands/llm/fn_call_converter.py",
+        "qualname": "convert_fncall_messages_to_non_fncall_messages",
+        "kind": "function",
+        "start_line": 307,
+        "end_line": 471
+      },
+      {
+        "filepath": "openhands/llm/llm.py",
+        "qualname": "LLM.__init__",
+        "kind": "function",
+        "start_line": 81,
+        "end_line": 281
+      },
+      {
+        "filepath": "openhands/llm/llm.py",
+        "qualname": "LLM.init_model_info",
+        "kind": "function",
+        "start_line": 291,
+        "end_line": 370
+      },
+      {
+        "filepath": "openhands/llm/llm.py",
+        "qualname": "LLM.format_messages_for_llm",
+        "kind": "function",
+        "start_line": 561,
+        "end_line": 571
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_037.zip",
+    "fixed": "../../dependencies/openhands/snapshot_037.zip"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-c984e6d8",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "71b4be879919874cf5b604ba983c4fba47aee57d",
+    "fixed": "c984e6d8df9694eef92171ddd7d0d97384c851fe"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-helpers/errors.ts",
+        "qualname": "isContextOverflowError",
+        "kind": "function",
+        "start_line": 9,
+        "end_line": 30
+      },
+      {
+        "filepath": "src/agents/tools/web-search.ts",
+        "qualname": "resolveGrokConfig",
+        "kind": "function",
+        "start_line": 280,
+        "end_line": 285
+      },
+      {
+        "filepath": "src/agents/tools/web-search.ts",
+        "qualname": "resolveGrokApiKey",
+        "kind": "function",
+        "start_line": 287,
+        "end_line": 292
+      },
+      {
+        "filepath": "src/agents/tools/web-search.ts",
+        "qualname": "runWebSearch",
+        "kind": "function",
+        "start_line": 456,
+        "end_line": 590
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_039.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_039.zip"
+  }
+}

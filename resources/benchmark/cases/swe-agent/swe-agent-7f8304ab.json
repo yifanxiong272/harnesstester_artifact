@@ -1,0 +1,33 @@
+{
+  "case_id": "swe-agent-7f8304ab",
+  "project": "swe-agent",
+  "repository": "https://github.com/SWE-agent/SWE-agent",
+  "revisions": {
+    "buggy": "8e481be6542d7b07e1f6495372066d681efb2e00",
+    "fixed": "7f8304ab0af1dd0450fa2f38a22552dc3f5924ec"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "sweagent/tools/parsing.py",
+        "qualname": "FunctionCallingParser._parse_tool_call",
+        "kind": "function",
+        "start_line": 393,
+        "end_line": 426
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/swe-agent/snapshot_002.zip",
+    "fixed": "../../dependencies/swe-agent/snapshot_002.zip"
+  }
+}

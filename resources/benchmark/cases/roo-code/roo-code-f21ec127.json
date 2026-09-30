@@ -1,0 +1,46 @@
+{
+  "case_id": "roo-code-f21ec127",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "e7c1851a8b142af58ef12bd5791f401b8b707326",
+    "fixed": "f21ec127b1f0b55c5c60ddec50ef11074199993b"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/tools/SearchAndReplaceTool.ts",
+        "qualname": "SearchAndReplaceTool.execute",
+        "kind": "function",
+        "start_line": 47,
+        "end_line": 265
+      },
+      {
+        "filepath": "src/core/tools/SearchReplaceTool.ts",
+        "qualname": "SearchReplaceTool.execute",
+        "kind": "function",
+        "start_line": 34,
+        "end_line": 244
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_014.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_014.zip"
+  }
+}

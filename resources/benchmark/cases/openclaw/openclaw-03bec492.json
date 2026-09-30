@@ -1,0 +1,66 @@
+{
+  "case_id": "openclaw-03bec492",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "6779ba23679653fb6e8cdc160fce348fe8fcfd7b",
+    "fixed": "03bec49299446162015a531a125c6c0cf7901513"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "stripMinimaxToolCallXml",
+        "kind": "function",
+        "start_line": 12,
+        "end_line": 23
+      },
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "stripThinkingTagsFromText",
+        "kind": "function",
+        "start_line": 168,
+        "end_line": 199
+      },
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "stripDowngradedToolCallText",
+        "kind": "function",
+        "start_line": 31,
+        "end_line": 161
+      },
+      {
+        "filepath": "src/agents/tools/sessions-helpers.ts",
+        "qualname": "extractAssistantText",
+        "kind": "function",
+        "start_line": 103,
+        "end_line": 119
+      },
+      {
+        "filepath": "src/auto-reply/reply/commands-subagents.ts",
+        "qualname": "extractMessageText",
+        "kind": "function",
+        "start_line": 109,
+        "end_line": 128
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_003.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_003.zip"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "testpilot_subject",
+  "private": true,
+  "main": "index.cjs"
+}

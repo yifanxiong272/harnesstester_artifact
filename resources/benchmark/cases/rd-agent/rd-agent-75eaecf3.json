@@ -1,0 +1,33 @@
+{
+  "case_id": "rd-agent-75eaecf3",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "419186ffb985fe5a0aa0f7fe59c7a223e355492e",
+    "fixed": "75eaecf36b9f70dfc2d7fedd35836acdb05f89d6"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/oai/backend/deprec.py",
+        "qualname": "DeprecBackend._create_chat_completion_auto_continue",
+        "kind": "function",
+        "start_line": 536,
+        "end_line": 589
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_007.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_007.zip"
+  }
+}

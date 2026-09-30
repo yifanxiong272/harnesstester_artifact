@@ -1,0 +1,274 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import "./test-helpers/fast-coding-tools.js";
+import { afterAll, beforeAll, beforeEach, describe, expect, it, vi } from "vitest";
+import {
+  buildEmbeddedRunnerAssistant,
+  cleanupEmbeddedPiRunnerTestWorkspace,
+  createMockUsage,
+  createEmbeddedPiRunnerOpenAiConfig,
+  createResolvedEmbeddedRunnerModel,
+  createEmbeddedPiRunnerTestWorkspace,
+  type EmbeddedPiRunnerTestWorkspace,
+  immediateEnqueue,
+  makeEmbeddedRunnerAttempt,
+} from "./test-helpers/pi-embedded-runner-e2e-fixtures.js";
+
+const runEmbeddedAttemptMock = vi.fn();
+
+vi.mock("@mariozechner/pi-ai", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("@mariozechner/pi-ai")>();
+
+  const buildAssistantMessage = (model: { api: string; provider: string; id: string }) => ({
+    role: "assistant" as const,
+    content: [{ type: "text" as const, text: "ok" }],
+    stopReason: "stop" as const,
+    api: model.api,
+    provider: model.provider,
+    model: model.id,
+    usage: createMockUsage(1, 1),
+    timestamp: Date.now(),
+  });
+
+  const buildAssistantErrorMessage = (model: { api: string; provider: string; id: string }) => ({
+    role: "assistant" as const,
+    content: [],
+    stopReason: "error" as const,
+    errorMessage: "boom",
+    api: model.api,
+    provider: model.provider,
+    model: model.id,
+    usage: createMockUsage(0, 0),
+    timestamp: Date.now(),
+  });
+
+  return {
+    ...actual,
+    complete: async (model: { api: string; provider: string; id: string }) => {
+      if (model.id === "mock-error") {
+        return buildAssistantErrorMessage(model);
+      }
+      return buildAssistantMessage(model);
+    },
+    completeSimple: async (model: { api: string; provider: string; id: string }) => {
+      if (model.id === "mock-error") {
+        return buildAssistantErrorMessage(model);
+      }
+      return buildAssistantMessage(model);
+    },
+    streamSimple: (model: { api: string; provider: string; id: string }) => {
+      const stream = actual.createAssistantMessageEventStream();
+      queueMicrotask(() => {
+        stream.push({
+          type: "done",
+          reason: "stop",
+          message:
+            model.id === "mock-error"
+              ? buildAssistantErrorMessage(model)
+              : buildAssistantMessage(model),
+        });
+        stream.end();
+      });
+      return stream;
+    },
+  };
+});
+
+const installRunEmbeddedMocks = () => {
+  vi.doMock("../plugins/hook-runner-global.js", () => ({
+    getGlobalHookRunner: vi.fn(() => undefined),
+    getGlobalPluginRegistry: vi.fn(() => null),
+    hasGlobalHooks: vi.fn(() => false),
+    initializeGlobalHookRunner: vi.fn(),
+    resetGlobalHookRunner: vi.fn(),
+  }));
+  vi.doMock("../context-engine/index.js", () => ({
+    ensureContextEnginesInitialized: vi.fn(),
+    resolveContextEngine: vi.fn(async () => ({
+      dispose: async () => undefined,
+    })),
+  }));
+  vi.doMock("./runtime-plugins.js", () => ({
+    ensureRuntimePluginsLoaded: vi.fn(),
+  }));
+  vi.doMock("./pi-embedded-runner/run/attempt.js", () => ({
+    runEmbeddedAttempt: (params: unknown) => runEmbeddedAttemptMock(params),
+  }));
+  vi.doMock("./pi-embedded-runner/model.js", async (importOriginal) => {
+    const actual = await importOriginal<typeof import("./pi-embedded-runner/model.js")>();
+    return {
+      ...actual,
+      resolveModelAsync: async (provider: string, modelId: string) =>
+        createResolvedEmbeddedRunnerModel(provider, modelId),
+    };
+  });
+  vi.doMock("../plugins/provider-runtime.js", async (importOriginal) => {
+    const actual = await importOriginal<typeof import("../plugins/provider-runtime.js")>();
+    return {
+      ...actual,
+      prepareProviderRuntimeAuth: vi.fn(async () => undefined),
+    };
+  });
+  vi.doMock("./models-config.js", async (importOriginal) => {
+    const mod = await importOriginal<typeof import("./models-config.js")>();
+    return {
+      ...mod,
+      ensureOpenClawModelsJson: vi.fn(async () => ({ wrote: false })),
+    };
+  });
+};
+
+let runEmbeddedPiAgent: typeof import("./pi-embedded-runner/run.js").runEmbeddedPiAgent;
+let SessionManager: typeof import("@mariozechner/pi-coding-agent").SessionManager;
+let e2eWorkspace: EmbeddedPiRunnerTestWorkspace | undefined;
+let agentDir: string;
+let workspaceDir: string;
+let sessionCounter = 0;
+let runCounter = 0;
+
+beforeAll(async () => {
+  vi.useRealTimers();
+  vi.resetModules();
+  installRunEmbeddedMocks();
+  ({ runEmbeddedPiAgent } = await import("./pi-embedded-runner/run.js"));
+  ({ SessionManager } = await import("@mariozechner/pi-coding-agent"));
+  e2eWorkspace = await createEmbeddedPiRunnerTestWorkspace("openclaw-embedded-agent-");
+  ({ agentDir, workspaceDir } = e2eWorkspace);
+}, 180_000);
+
+afterAll(async () => {
+  await cleanupEmbeddedPiRunnerTestWorkspace(e2eWorkspace);
+  e2eWorkspace = undefined;
+});
+
+beforeEach(() => {
+  vi.useRealTimers();
+  runEmbeddedAttemptMock.mockReset();
+  runEmbeddedAttemptMock.mockImplementation(async () => {
+    throw new Error("unexpected extra runEmbeddedAttempt call");
+  });
+});
+
+const nextSessionFile = () => {
+  sessionCounter += 1;
+  return path.join(workspaceDir, `session-${sessionCounter}.jsonl`);
+};
+const nextRunId = (prefix = "run-embedded-test") => `${prefix}-${++runCounter}`;
+const nextSessionKey = () => `agent:test:embedded:${nextRunId("session-key")}`;
+
+const runWithOrphanedSingleUserMessage = async (text: string, sessionKey: string) => {
+  const sessionFile = nextSessionFile();
+  const sessionManager = SessionManager.open(sessionFile);
+  sessionManager.appendMessage({
+    role: "user",
+    content: [{ type: "text", text }],
+    timestamp: Date.now(),
+  });
+
+  runEmbeddedAttemptMock.mockResolvedValueOnce(
+    makeEmbeddedRunnerAttempt({
+      assistantTexts: ["ok"],
+      lastAssistant: buildEmbeddedRunnerAssistant({
+        content: [{ type: "text", text: "ok" }],
+      }),
+    }),
+  );
+
+  const cfg = createEmbeddedPiRunnerOpenAiConfig(["mock-1"]);
+  return await runEmbeddedPiAgent({
+    sessionId: "session:test",
+    sessionKey,
+    sessionFile,
+    workspaceDir,
+    config: cfg,
+    prompt: "hello",
+    provider: "openai",
+    model: "mock-1",
+    timeoutMs: 5_000,
+    agentDir,
+    runId: nextRunId("orphaned-user"),
+    enqueue: immediateEnqueue,
+  });
+};
+
+const textFromContent = (content: unknown) => {
+  if (typeof content === "string") {
+    return content;
+  }
+  if (Array.isArray(content) && content[0]?.type === "text") {
+    return (content[0] as { text?: string }).text;
+  }
+  return undefined;
+};
+
+const readSessionEntries = async (sessionFile: string) => {
+  const raw = await fs.readFile(sessionFile, "utf-8");
+  return raw
+    .split(/\r?\n/)
+    .filter(Boolean)
+    .map((line) => JSON.parse(line) as { type?: string; customType?: string; data?: unknown });
+};
+
+const readSessionMessages = async (sessionFile: string) => {
+  const entries = await readSessionEntries(sessionFile);
+  return entries
+    .filter((entry) => entry.type === "message")
+    .map(
+      (entry) => (entry as { message?: { role?: string; content?: unknown } }).message,
+    ) as Array<{ role?: string; content?: unknown }>;
+};
+
+const runDefaultEmbeddedTurn = async (sessionFile: string, prompt: string, sessionKey: string) => {
+  const cfg = createEmbeddedPiRunnerOpenAiConfig(["mock-error"]);
+  runEmbeddedAttemptMock.mockResolvedValueOnce(
+    makeEmbeddedRunnerAttempt({
+      assistantTexts: ["ok"],
+      lastAssistant: buildEmbeddedRunnerAssistant({
+        content: [{ type: "text", text: "ok" }],
+      }),
+    }),
+  );
+  await runEmbeddedPiAgent({
+    sessionId: "session:test",
+    sessionKey,
+    sessionFile,
+    workspaceDir,
+    config: cfg,
+    prompt,
+    provider: "openai",
+    model: "mock-error",
+    timeoutMs: 5_000,
+    agentDir,
+    runId: nextRunId("default-turn"),
+    enqueue: immediateEnqueue,
+  });
+};
+
+describe("runEmbeddedPiAgent", () => {
+
+
+  __testAugmentVitest_e462d11d819b.it("extractObservedOverflowTokenCount_match_and_nomatch_round_007", async () => {
+    const { extractObservedOverflowTokenCount } = __testAugmentTarget_769617f51760;
+
+    // Comma-delimited number should be parsed and floored
+    const raw1 = "prompt is too long: 1,234 tokens > 2,048 maximum";
+    __testAugmentVitest_e462d11d819b.expect(extractObservedOverflowTokenCount(raw1)).toBe(1234);
+
+    // Another observed pattern should parse as well
+    const raw2 = "requested 9876 tokens for this request";
+    __testAugmentVitest_e462d11d819b.expect(extractObservedOverflowTokenCount(raw2)).toBe(9876);
+
+    // Non-matching string yields undefined
+    __testAugmentVitest_e462d11d819b.expect(extractObservedOverflowTokenCount("no token info here")).toBeUndefined();
+  });
+});
+
+import * as __testAugmentVitest_e462d11d819b from "vitest";
+
+import * as __testAugmentTarget_769617f51760 from "./pi-embedded-helpers/errors.js";
+
+const __testAugmentLoadTarget_769617f51760 = async () => {
+  __testAugmentVitest_e462d11d819b.vi.doUnmock("./pi-embedded-helpers/errors.js");
+  __testAugmentVitest_e462d11d819b.vi.resetModules();
+  return import("./pi-embedded-helpers/errors.js");
+};

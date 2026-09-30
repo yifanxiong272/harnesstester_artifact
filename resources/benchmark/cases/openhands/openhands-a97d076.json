@@ -1,0 +1,40 @@
+{
+  "case_id": "openhands-a97d076",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "1bdf8752e6459987d0ed3554a8b1b4007303c760",
+    "fixed": "a97d0767e90934d0dcc82e281e8da76af220a937"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "opendevin/runtime/server/runtime.py",
+        "qualname": "ServerRuntime",
+        "kind": "class",
+        "start_line": 28,
+        "end_line": 152
+      },
+      {
+        "filepath": "opendevin/runtime/server/runtime.py",
+        "qualname": "ServerRuntime.run_ipython",
+        "kind": "function",
+        "start_line": 50,
+        "end_line": 103
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_028.zip",
+    "fixed": "../../dependencies/openhands/snapshot_028.zip"
+  }
+}

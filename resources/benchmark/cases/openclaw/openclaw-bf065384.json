@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-bf065384",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "3de7768b115d892a27ab83893f24152f909099ff",
+    "fixed": "bf0653846e66fe13b6fc2c3caf39d54d9db2b5d6"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/gateway/server-chat.ts",
+        "qualname": "emitChatDelta",
+        "kind": "function",
+        "start_line": 280,
+        "end_line": 317
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_060.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_060.zip"
+  }
+}

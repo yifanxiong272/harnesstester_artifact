@@ -1,0 +1,33 @@
+{
+  "case_id": "gpt-researcher-f175fa6e",
+  "project": "gpt-researcher",
+  "repository": "https://github.com/assafelovic/gpt-researcher",
+  "revisions": {
+    "buggy": "068fa6138945046a1775c491db60f3370caec78c",
+    "fixed": "f175fa6ee26bf01aa111ecb8740ec91580835de2"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "multi_agents/agents/publisher.py",
+        "qualname": "PublisherAgent.generate_layout",
+        "kind": "function",
+        "start_line": 22,
+        "end_line": 45
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/gpt-researcher/snapshot_004.zip",
+    "fixed": "../../dependencies/gpt-researcher/snapshot_004.zip"
+  }
+}

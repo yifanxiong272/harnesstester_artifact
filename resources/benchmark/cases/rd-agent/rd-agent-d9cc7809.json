@@ -1,0 +1,40 @@
+{
+  "case_id": "rd-agent-d9cc7809",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "113889fefe9b09aaea1b564704c81664b8f77ec5",
+    "fixed": "d9cc78098beb27f3a1bf2f2d461302db177b7d41"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/components/coder/data_science/pipeline/eval.py",
+        "qualname": "PipelineCoSTEEREvaluator.evaluate",
+        "kind": "function",
+        "start_line": 31,
+        "end_line": 119
+      },
+      {
+        "filepath": "rdagent/components/coder/data_science/workflow/eval.py",
+        "qualname": "WorkflowGeneralCaseSpecEvaluator.evaluate",
+        "kind": "function",
+        "start_line": 34,
+        "end_line": 147
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_013.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_013.zip"
+  }
+}

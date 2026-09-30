@@ -1,0 +1,33 @@
+{
+  "case_id": "openhands-df23168",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "ff8a9a1a569fc671bc8f57c44f084b7c448b5e8a",
+    "fixed": "df23168c103e53a420ca1a8c8afd5fd4ac8745ab"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "openhands/agenthub/codeact_agent/action_parser.py",
+        "qualname": "CodeActActionParserAgentDelegate.parse",
+        "kind": "function",
+        "start_line": 155,
+        "end_line": 162
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_002.zip",
+    "fixed": "../../dependencies/openhands/snapshot_002.zip"
+  }
+}

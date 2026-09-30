@@ -1,0 +1,281 @@
+import fs from "node:fs/promises";
+import { join } from "node:path";
+import { describe, expect, it, vi } from "vitest";
+import { loadSessionStore, resolveSessionKey } from "../config/sessions.js";
+import { registerGroupIntroPromptCases } from "./reply.triggers.group-intro-prompts.cases.js";
+import { registerTriggerHandlingUsageSummaryCases } from "./reply.triggers.trigger-handling.filters-usage-summary-current-model-provider.cases.js";
+import {
+  expectInlineCommandHandledAndStripped,
+  getAbortEmbeddedPiRunMock,
+  getCompactEmbeddedPiSessionMock,
+  getRunEmbeddedPiAgentMock,
+  installTriggerHandlingReplyHarness,
+  MAIN_SESSION_KEY,
+  makeCfg,
+  mockRunEmbeddedPiAgentOk,
+  requireSessionStorePath,
+  runGreetingPromptForBareNewOrReset,
+  withTempHome,
+} from "./reply.triggers.trigger-handling.test-harness.js";
+import { enqueueFollowupRun, getFollowupQueueDepth, type FollowupRun } from "./reply/queue.js";
+import { HEARTBEAT_TOKEN } from "./tokens.js";
+
+type GetReplyFromConfig = typeof import("./reply.js").getReplyFromConfig;
+
+vi.mock("./reply/agent-runner.runtime.js", () => ({
+  runReplyAgent: async (params: {
+    commandBody: string;
+    followupRun: {
+      run: {
+        provider: string;
+        model: string;
+        sessionId: string;
+        sessionKey?: string;
+        sessionFile: string;
+        workspaceDir: string;
+        config: object;
+        extraSystemPrompt?: string;
+      };
+    };
+  }) => {
+    const runEmbeddedPiAgentMock = getRunEmbeddedPiAgentMock();
+    const normalizeErrorText = (message: string) => {
+      if (/context window exceeded/i.test(message)) {
+        return "⚠️ Context overflow — prompt too large for this model. Try a shorter message or a larger-context model.";
+      }
+      const trimmed = message.replace(/\.\s*$/, "");
+      return `⚠️ Agent failed before reply: ${trimmed}.\nLogs: openclaw logs --follow`;
+    };
+    const stripHeartbeat = (text?: string) => {
+      const trimmed = text?.trim();
+      if (!trimmed || trimmed === HEARTBEAT_TOKEN) {
+        return undefined;
+      }
+      return trimmed.startsWith(`${HEARTBEAT_TOKEN} `)
+        ? trimmed.slice(HEARTBEAT_TOKEN.length).trimStart()
+        : trimmed;
+    };
+
+    try {
+      const result = await runEmbeddedPiAgentMock({
+        prompt: params.commandBody,
+        provider: params.followupRun.run.provider,
+        model: params.followupRun.run.model,
+        sessionId: params.followupRun.run.sessionId,
+        sessionKey: params.followupRun.run.sessionKey,
+        sessionFile: params.followupRun.run.sessionFile,
+        workspaceDir: params.followupRun.run.workspaceDir,
+        config: params.followupRun.run.config,
+        extraSystemPrompt: params.followupRun.run.extraSystemPrompt,
+      });
+      return { text: stripHeartbeat(result?.payloads?.[0]?.text) };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      return { text: normalizeErrorText(message) };
+    }
+  },
+}));
+
+let getReplyFromConfig!: GetReplyFromConfig;
+installTriggerHandlingReplyHarness((impl) => {
+  getReplyFromConfig = impl;
+});
+
+const BASE_MESSAGE = {
+  Body: "hello",
+  From: "+1002",
+  To: "+2000",
+} as const;
+
+function maybeReplyText(reply: Awaited<ReturnType<GetReplyFromConfig>>) {
+  return Array.isArray(reply) ? reply[0]?.text : reply?.text;
+}
+
+function mockEmbeddedOkPayload() {
+  return mockRunEmbeddedPiAgentOk("ok");
+}
+
+async function writeStoredModelOverride(cfg: ReturnType<typeof makeCfg>): Promise<void> {
+  await fs.writeFile(
+    requireSessionStorePath(cfg),
+    JSON.stringify({
+      [MAIN_SESSION_KEY]: {
+        sessionId: "main",
+        updatedAt: Date.now(),
+        providerOverride: "openai",
+        modelOverride: "gpt-5.2",
+      },
+    }),
+    "utf-8",
+  );
+}
+
+function mockSuccessfulCompaction() {
+  getCompactEmbeddedPiSessionMock().mockResolvedValue({
+    ok: true,
+    compacted: true,
+    result: {
+      summary: "summary",
+      firstKeptEntryId: "x",
+      tokensBefore: 12000,
+    },
+  });
+}
+
+function makeUnauthorizedWhatsAppCfg(home: string) {
+  const baseCfg = makeCfg(home);
+  return {
+    ...baseCfg,
+    channels: {
+      ...baseCfg.channels,
+      whatsapp: {
+        allowFrom: ["+1000"],
+      },
+    },
+  };
+}
+
+async function expectResetBlockedForNonOwner(params: { home: string }): Promise<void> {
+  const { home } = params;
+  const runEmbeddedPiAgentMock = getRunEmbeddedPiAgentMock();
+  runEmbeddedPiAgentMock.mockClear();
+  const cfg = makeCfg(home);
+  cfg.channels ??= {};
+  cfg.channels.whatsapp = {
+    ...cfg.channels.whatsapp,
+    allowFrom: ["+1999"],
+  };
+  cfg.commands = {
+    ...cfg.commands,
+    ownerAllowFrom: ["whatsapp:+1999"],
+  };
+  cfg.session = {
+    ...cfg.session,
+    store: join(home, "blocked-reset.sessions.json"),
+  };
+  const res = await getReplyFromConfig(
+    {
+      Body: "/reset",
+      From: "+1003",
+      To: "+2000",
+      CommandAuthorized: false,
+    },
+    {},
+    cfg,
+  );
+  expect(res).toBeUndefined();
+  expect(runEmbeddedPiAgentMock).not.toHaveBeenCalled();
+}
+
+function mockEmbeddedOk() {
+  return mockRunEmbeddedPiAgentOk("ok");
+}
+
+async function runInlineUnauthorizedCommand(params: { home: string; command: "/status" }) {
+  const cfg = makeUnauthorizedWhatsAppCfg(params.home);
+  const res = await getReplyFromConfig(
+    {
+      Body: `please ${params.command} now`,
+      From: "+2001",
+      To: "+2000",
+      Provider: "whatsapp",
+      SenderE164: "+2001",
+    },
+    {},
+    cfg,
+  );
+  return res;
+}
+
+describe("trigger handling", () => {
+
+  for (const testCase of [
+    {
+      error: "sandbox is not defined.",
+      expected:
+        "⚠️ Agent failed before reply: sandbox is not defined.\nLogs: openclaw logs --follow",
+    },
+    {
+      error: "Context window exceeded",
+      expected:
+        "⚠️ Context overflow — prompt too large for this model. Try a shorter message or a larger-context model.",
+    },
+  ] as const) {
+  }
+
+
+
+
+
+
+
+
+  __testAugmentVitest_19cba6695c4f.it("buildSubagentList_status_variants_round_005_pass_03", async () => {
+    // Provide registry mocks that list child sessions for controller used by childSessions logic
+    __testAugmentVitest_19cba6695c4f.vi.doMock("../agents/subagent-registry.js", () => ({
+      sortSubagentRuns: (r) => r,
+      listSubagentRunsForController: (k) => [],
+      getLatestSubagentRunByChildSessionKey: (key) => ({ runId: key === 'c-failed' ? 'r-failed' : key === 'c-done' ? 'r-done' : key, controllerSessionKey: 'ctrl', requesterSessionKey: 'req' }),
+      getSubagentSessionRuntimeMs: () => 3,
+      getSubagentSessionStartedAt: () => 1,
+      countPendingDescendantRuns: (k) => (k === 'c-wait' ? 2 : 0),
+      markSubagentRunTerminated: () => 0,
+      markSubagentRunForSteerRestart: () => {},
+      replaceSubagentRunAfterSteer: () => true,
+    }));
+
+    __testAugmentVitest_19cba6695c4f.vi.doMock("../config/sessions.js", () => ({
+      resolveStorePath: () => "s",
+      loadSessionStore: () => ({}),
+      updateSessionStore: async () => {},
+    }));
+
+    __testAugmentVitest_19cba6695c4f.vi.doMock("../shared/subagents-format.js", () => ({
+      resolveTotalTokens: () => 0,
+      formatTokenUsageDisplay: () => "",
+      formatDurationCompact: () => "1s",
+      truncateLine: (s) => s,
+    }));
+
+    __testAugmentVitest_19cba6695c4f.vi.doMock("../agents/tools/sessions-helpers.js", () => ({
+      resolveSubagentLabel: (e) => `LBL:${e.runId}`,
+      stripToolMessages: (m) => m,
+      extractAssistantText: () => undefined,
+      resolveInternalSessionKey: () => ({}),
+      resolveMainSessionAlias: () => ({ mainKey: 'm', alias: 'a' }),
+    }));
+
+    const mod = await __testAugmentLoadTarget_4bd044c4de42();
+    const { buildSubagentList } = mod;
+
+    const cfg = { session: { store: 'x' } };
+    const now = Date.now();
+
+    const runs = [
+      { runId: 'r-wait', childSessionKey: 'c-wait', task: 't', model: '', controllerSessionKey: 'ctrl', requesterSessionKey: 'req', createdAt: now - 1000 },
+      { runId: 'r-running', childSessionKey: 'c-running', task: 't', model: '', controllerSessionKey: 'ctrl', requesterSessionKey: 'req', createdAt: now - 1000 },
+      { runId: 'r-done', childSessionKey: 'c-done', task: 't', model: '', controllerSessionKey: 'ctrl', requesterSessionKey: 'req', createdAt: now - 2000, endedAt: now - 1000, outcome: { status: 'ok' } },
+      { runId: 'r-failed', childSessionKey: 'c-failed', task: 't', model: '', controllerSessionKey: 'ctrl', requesterSessionKey: 'req', createdAt: now - 2000, endedAt: now - 1000, outcome: { status: 'error' } },
+      { runId: 'r-custom', childSessionKey: 'c-custom', task: 't', model: '', controllerSessionKey: 'ctrl', requesterSessionKey: 'req', createdAt: now - 2000, endedAt: now - 1000, outcome: { status: 'weird' } },
+    ];
+
+    const list = buildSubagentList({ cfg, runs, recentMinutes: 60 });
+
+    // Find statuses by sessionKey
+    const idx = (k) => list.active.concat(list.recent).find((i) => i.sessionKey === k)!.status;
+
+    __testAugmentVitest_19cba6695c4f.expect(idx('c-wait')).toContain('waiting on 2');
+    __testAugmentVitest_19cba6695c4f.expect(idx('c-running')).toBe('running');
+    __testAugmentVitest_19cba6695c4f.expect(idx('c-done')).toBe('done');
+    __testAugmentVitest_19cba6695c4f.expect(idx('c-failed')).toBe('failed');
+    __testAugmentVitest_19cba6695c4f.expect(idx('c-custom')).toBe('weird');
+  });
+});
+
+import * as __testAugmentVitest_19cba6695c4f from "vitest";
+
+const __testAugmentLoadTarget_4bd044c4de42 = async () => {
+  __testAugmentVitest_19cba6695c4f.vi.doUnmock("../agents/subagent-control.js");
+  __testAugmentVitest_19cba6695c4f.vi.resetModules();
+  return import("../agents/subagent-control.js");
+};

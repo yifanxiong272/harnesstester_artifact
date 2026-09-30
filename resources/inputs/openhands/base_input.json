@@ -1,0 +1,14 @@
+{
+  "project": "openhands",
+  "project_root": "../../subjects/openhands",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "openhands",
+    "python": "../../../.venvs/openhands/bin/python"
+  }
+}

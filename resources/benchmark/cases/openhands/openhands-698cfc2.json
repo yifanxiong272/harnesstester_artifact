@@ -1,0 +1,47 @@
+{
+  "case_id": "openhands-698cfc2",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "83561701939fe70577e74c4aeb5acd2f7f8f7da3",
+    "fixed": "698cfc2520cdc50eac5fa869c6c1ba5c8fee9e13"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "openhands/runtime/utils/git_diff.py",
+        "qualname": "get_git_diff",
+        "kind": "function",
+        "start_line": 84,
+        "end_line": 107
+      },
+      {
+        "filepath": "openhands/runtime/utils/git_handler.py",
+        "qualname": "<module>",
+        "kind": "module",
+        "start_line": 17,
+        "end_line": 19
+      },
+      {
+        "filepath": "openhands/runtime/utils/git_handler.py",
+        "qualname": "GitHandler.get_git_diff",
+        "kind": "function",
+        "start_line": 128,
+        "end_line": 156
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_018.zip",
+    "fixed": "../../dependencies/openhands/snapshot_018.zip"
+  }
+}

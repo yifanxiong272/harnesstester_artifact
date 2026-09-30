@@ -1,0 +1,47 @@
+{
+  "case_id": "browser-use-cfb1491d",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "70e9b271ad39dbf2412765b8a70360affa6007f3",
+    "fixed": "cfb1491da5f438ce089208f7d468be9d8115fd50"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/browser/session.py",
+        "qualname": "BrowserSession.navigate",
+        "kind": "function",
+        "start_line": 1662,
+        "end_line": 1672
+      },
+      {
+        "filepath": "browser_use/browser/session.py",
+        "qualname": "BrowserSession.navigate_to",
+        "kind": "function",
+        "start_line": 2191,
+        "end_line": 2209
+      },
+      {
+        "filepath": "browser_use/browser/session.py",
+        "qualname": "BrowserSession.create_new_tab",
+        "kind": "function",
+        "start_line": 3044,
+        "end_line": 3124
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_027.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_027.zip"
+  }
+}

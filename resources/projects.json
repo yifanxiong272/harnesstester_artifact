@@ -1,0 +1,328 @@
+{
+  "aider": {
+    "language": "python",
+    "project_root_env": "AIDER_PROJECT_ROOT",
+    "source_roots": [
+      "aider"
+    ],
+    "augment": {
+      "timeout": 90,
+      "constraints": [
+        "Place generated pytest files under tests/basic/."
+      ]
+    }
+  },
+  "browser-use": {
+    "language": "python",
+    "project_root_env": "BROWSER_USE_PROJECT_ROOT",
+    "source_roots": [
+      "browser_use"
+    ],
+    "augment": {
+      "timeout": 120,
+      "constraints": [
+        "Mock browser, provider, network, and subprocess interactions; do not perform external I/O."
+      ]
+    }
+  },
+  "gpt-researcher": {
+    "language": "python",
+    "project_root_env": "GPT_RESEARCHER_PROJECT_ROOT",
+    "source_roots": [
+      "gpt_researcher",
+      "backend",
+      "multi_agents",
+      "multi_agents_ag2"
+    ],
+    "augment": {
+      "timeout": 120
+    }
+  },
+  "kimi-code": {
+    "language": "typescript",
+    "project_root_env": "KIMI_CODE_PROJECT_ROOT",
+    "source_roots": [
+      "apps",
+      "packages"
+    ],
+    "augment": {
+      "test_packages": [
+        {
+          "name": "kimi-code",
+          "cwd": "apps/kimi-code",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "kimi-web",
+          "cwd": "apps/kimi-web",
+          "config": "vite.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "vis-server",
+          "cwd": "apps/vis/server",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "vis-web",
+          "cwd": "apps/vis/web",
+          "config": "vite.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "acp-adapter",
+          "cwd": "packages/acp-adapter",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "agent-core",
+          "cwd": "packages/agent-core",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "kaos",
+          "cwd": "packages/kaos",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "kosong",
+          "cwd": "packages/kosong",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "migration-legacy",
+          "cwd": "packages/migration-legacy",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "node-sdk",
+          "cwd": "packages/node-sdk",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "oauth",
+          "cwd": "packages/oauth",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "protocol",
+          "cwd": "packages/protocol",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "server",
+          "cwd": "packages/server",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "server-e2e",
+          "cwd": "packages/server-e2e",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "telemetry",
+          "cwd": "packages/telemetry",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        }
+      ]
+    },
+    "probe": {
+      "test_command": [
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "--config",
+        "packages/agent-core/vitest.config.ts",
+        "<generated-test-file>"
+      ]
+    }
+  },
+  "openclaw": {
+    "language": "typescript",
+    "project_root_env": "OPENCLAW_PROJECT_ROOT",
+    "source_roots": [
+      "src",
+      "extensions",
+      "packages"
+    ],
+    "augment": {
+      "teardown_timeout_ms": 30000,
+      "coverage_include": [
+        "src/**/*.ts", "src/**/*.tsx", "extensions/**/*.ts", "extensions/**/*.tsx",
+        "packages/**/*.ts", "packages/**/*.tsx"
+      ],
+      "coverage_exclude": [
+        "**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx",
+        "**/*.e2e.test.ts", "**/*.live.test.ts", "**/*.browser.test.ts",
+        "**/*.d.ts", "**/node_modules/**", "**/vendor/**", "**/dist/**", "coverage/**",
+        "**/.*/**", "**/fixtures/**", "**/__fixtures__/**", "**/__tests__/**",
+        "**/test-helpers/**", "**/*test-helper*.ts", "**/*test-utils*.ts", "**/*test-support*.ts"
+      ],
+      "test_packages": [
+        {
+          "name": "root",
+          "cwd": ".",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        },
+        {
+          "name": "ui",
+          "cwd": "ui",
+          "config": "vitest.config.ts",
+          "coverageProvider": "v8"
+        }
+      ]
+    },
+    "probe": {
+      "test_command": [
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "--config",
+        "vitest.config.ts",
+        "<generated-test-file>"
+      ]
+    }
+  },
+  "openhands": {
+    "language": "python",
+    "project_root_env": "OPENHANDS_PROJECT_ROOT",
+    "source_roots": [
+      "openhands",
+      "agenthub",
+      "opendevin"
+    ],
+    "augment": {
+      "timeout": 90,
+      "constraints": [
+        "Prefer deterministic pytest tests under tests/unit/ when possible."
+      ]
+    }
+  },
+  "pr-agent": {
+    "language": "python",
+    "project_root_env": "PR_AGENT_PROJECT_ROOT",
+    "source_roots": [
+      "pr_agent"
+    ],
+    "augment": {
+      "timeout": 90,
+      "constraints": [
+        "Use project imports exactly as existing tests do.",
+        "Place generated pytest files under tests/unittest/; do not use tests/unit/."
+      ]
+    }
+  },
+  "rd-agent": {
+    "language": "python",
+    "project_root_env": "RD_AGENT_PROJECT_ROOT",
+    "source_roots": [
+      "rdagent"
+    ],
+    "augment": {
+      "timeout": 120,
+      "constraints": [
+        "Mock provider, network, browser, Docker, Conda, Kaggle, and subprocess interactions; do not perform external I/O."
+      ]
+    }
+  },
+  "roo-code": {
+    "language": "typescript",
+    "project_root_env": "ROO_CODE_PROJECT_ROOT",
+    "source_roots": [
+      "src",
+      "packages",
+      "apps",
+      "webview-ui"
+    ],
+    "augment": {
+      "test_packages": [
+        {
+          "name": "extension",
+          "cwd": "src",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "cli",
+          "cwd": "apps/cli",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "web-app",
+          "cwd": "apps/web-roo-code",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "build",
+          "cwd": "packages/build",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "core",
+          "cwd": "packages/core",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "types",
+          "cwd": "packages/types",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "vscode-shim",
+          "cwd": "packages/vscode-shim",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        },
+        {
+          "name": "webview",
+          "cwd": "webview-ui",
+          "config": "vitest.config.ts",
+          "coverageProvider": "istanbul"
+        }
+      ]
+    },
+    "probe": {
+      "test_command": [
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "--root",
+        "src",
+        "--configLoader=bundle",
+        "<generated-test-file>"
+      ]
+    }
+  },
+  "swe-agent": {
+    "language": "python",
+    "project_root_env": "SWE_AGENT_PROJECT_ROOT",
+    "source_roots": [
+      "sweagent"
+    ],
+    "augment": {
+      "timeout": 120
+    }
+  }
+}

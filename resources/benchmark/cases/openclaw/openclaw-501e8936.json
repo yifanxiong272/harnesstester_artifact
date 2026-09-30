@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-501e8936",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "82631d225cf61b901d0deaf3580b4868086d03ea",
+    "fixed": "501e89367602b85f536ad740544aebd8147f8ac1"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/memory/hybrid.ts",
+        "qualname": "buildFtsQuery",
+        "kind": "function",
+        "start_line": 23,
+        "end_line": 34
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_032.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_032.zip"
+  }
+}

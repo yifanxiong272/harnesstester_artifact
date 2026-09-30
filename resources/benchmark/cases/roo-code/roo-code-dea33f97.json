@@ -1,0 +1,53 @@
+{
+  "case_id": "roo-code-dea33f97",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "ca1bc18a21af185e21f822cf9400ba07ff5a6cc6",
+    "fixed": "dea33f978c89c17a9e3a7b3cee2bc81f366e6f31"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/tools/WriteToFileTool.ts",
+        "qualname": "WriteToFileTool.handlePartial",
+        "kind": "function",
+        "start_line": 201,
+        "end_line": 261
+      },
+      {
+        "filepath": "src/core/tools/WriteToFileTool.ts",
+        "qualname": "WriteToFileTool",
+        "kind": "class",
+        "start_line": 26,
+        "end_line": 262
+      },
+      {
+        "filepath": "src/core/tools/WriteToFileTool.ts",
+        "qualname": "WriteToFileTool.execute",
+        "kind": "function",
+        "start_line": 36,
+        "end_line": 199
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_013.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_013.zip"
+  }
+}

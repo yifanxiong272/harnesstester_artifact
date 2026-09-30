@@ -1,0 +1,74 @@
+{
+  "case_id": "roo-code-fc2147ab",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "ca6495306102bc2e9f0c571863c547d053103fe5",
+    "fixed": "fc2147ab4fb9ba7de18a26f6c77989d6da350965"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/api/providers/base-openai-compatible-provider.ts",
+        "qualname": "BaseOpenAiCompatibleProvider.createMessage",
+        "kind": "function",
+        "start_line": 102,
+        "end_line": 147
+      },
+      {
+        "filepath": "src/api/providers/base-openai-compatible-provider.ts",
+        "qualname": "BaseOpenAiCompatibleProvider.completePrompt",
+        "kind": "function",
+        "start_line": 149,
+        "end_line": 162
+      },
+      {
+        "filepath": "src/api/providers/openai.ts",
+        "qualname": "OpenAiHandler.completePrompt",
+        "kind": "function",
+        "start_line": 269,
+        "end_line": 301
+      },
+      {
+        "filepath": "src/api/providers/openai.ts",
+        "qualname": "OpenAiHandler.handleO3FamilyMessage",
+        "kind": "function",
+        "start_line": 303,
+        "end_line": 380
+      },
+      {
+        "filepath": "src/api/providers/openai.ts",
+        "qualname": "OpenAiHandler.handleStreamResponse",
+        "kind": "function",
+        "start_line": 382,
+        "end_line": 400
+      },
+      {
+        "filepath": "src/api/providers/openai.ts",
+        "qualname": "OpenAiHandler.createMessage",
+        "kind": "function",
+        "start_line": 83,
+        "end_line": 250
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_016.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_016.zip"
+  }
+}

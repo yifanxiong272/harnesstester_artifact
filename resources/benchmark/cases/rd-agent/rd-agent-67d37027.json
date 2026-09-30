@@ -1,0 +1,33 @@
+{
+  "case_id": "rd-agent-67d37027",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "32e0af5ac2d8ffe5e2a8c38f7819a455143778e0",
+    "fixed": "67d37027bbcd7294a5890a350fe16fe78e0dfa77"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/utils/__init__.py",
+        "qualname": "filter_redundant_text",
+        "kind": "function",
+        "start_line": 77,
+        "end_line": 146
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_006.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_006.zip"
+  }
+}

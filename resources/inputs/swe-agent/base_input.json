@@ -1,0 +1,14 @@
+{
+  "project": "swe-agent",
+  "project_root": "../../subjects/swe-agent",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "sweagent",
+    "python": "../../../.venvs/swe-agent/bin/python"
+  }
+}

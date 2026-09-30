@@ -1,0 +1,154 @@
+[
+  {
+    "key": "file_0001",
+    "filepath": "src/api/transform/zai-format.ts"
+  },
+  {
+    "key": "file_0002",
+    "filepath": "src/services/tree-sitter/languageParser.ts"
+  },
+  {
+    "key": "file_0003",
+    "filepath": "src/services/tree-sitter/index.ts"
+  },
+  {
+    "key": "file_0004",
+    "filepath": "src/core/condense/index.ts"
+  },
+  {
+    "key": "file_0005",
+    "filepath": "src/api/transform/bedrock-converse-format.ts"
+  },
+  {
+    "key": "file_0006",
+    "filepath": "src/api/transform/cache-strategy/multi-point-strategy.ts"
+  },
+  {
+    "key": "file_0007",
+    "filepath": "src/api/transform/r1-format.ts"
+  },
+  {
+    "key": "file_0008",
+    "filepath": "src/api/providers/openai-compatible.ts"
+  },
+  {
+    "key": "file_0009",
+    "filepath": "src/services/code-index/search-service.ts"
+  },
+  {
+    "key": "file_0010",
+    "filepath": "src/api/transform/cache-strategy/base-strategy.ts"
+  },
+  {
+    "key": "file_0011",
+    "filepath": "src/api/providers/utils/image-generation.ts"
+  },
+  {
+    "key": "file_0012",
+    "filepath": "src/core/message-queue/MessageQueueService.ts"
+  },
+  {
+    "key": "file_0013",
+    "filepath": "src/api/transform/openai-format.ts"
+  },
+  {
+    "key": "file_0014",
+    "filepath": "src/utils/tag-matcher.ts"
+  },
+  {
+    "key": "file_0015",
+    "filepath": "src/api/transform/ai-sdk.ts"
+  },
+  {
+    "key": "file_0016",
+    "filepath": "src/api/providers/fake-ai.ts"
+  },
+  {
+    "key": "file_0017",
+    "filepath": "src/api/transform/mistral-format.ts"
+  },
+  {
+    "key": "file_0018",
+    "filepath": "src/api/transform/gemini-format.ts"
+  },
+  {
+    "key": "file_0019",
+    "filepath": "src/api/transform/responses-api-stream.ts"
+  },
+  {
+    "key": "file_0020",
+    "filepath": "src/api/transform/minimax-format.ts"
+  },
+  {
+    "key": "file_0021",
+    "filepath": "src/api/transform/responses-api-input.ts"
+  },
+  {
+    "key": "file_0022",
+    "filepath": "src/utils/tiktoken.ts"
+  },
+  {
+    "key": "file_0023",
+    "filepath": "src/core/task/mergeConsecutiveApiMessages.ts"
+  },
+  {
+    "key": "file_0024",
+    "filepath": "src/utils/safeWriteJson.ts"
+  },
+  {
+    "key": "file_0025",
+    "filepath": "src/services/glob/ignore-utils.ts"
+  },
+  {
+    "key": "file_0026",
+    "filepath": "src/utils/json-schema.ts"
+  },
+  {
+    "key": "file_0027",
+    "filepath": "packages/core/src/message-utils/safeJsonParse.ts"
+  },
+  {
+    "key": "file_0028",
+    "filepath": "src/core/prompts/tools/native-tools/mcp_server.ts"
+  },
+  {
+    "key": "file_0029",
+    "filepath": "src/shared/utils/requesty.ts"
+  },
+  {
+    "key": "file_0030",
+    "filepath": "src/api/providers/base-provider.ts"
+  },
+  {
+    "key": "file_0031",
+    "filepath": "src/core/condense/foldedFileContext.ts"
+  },
+  {
+    "key": "file_0032",
+    "filepath": "src/shared/cost.ts"
+  },
+  {
+    "key": "file_0033",
+    "filepath": "src/core/task/validateToolResultIds.ts"
+  },
+  {
+    "key": "file_0034",
+    "filepath": "src/api/transform/caching/gemini.ts"
+  },
+  {
+    "key": "file_0035",
+    "filepath": "src/core/auto-approval/AutoApprovalHandler.ts"
+  },
+  {
+    "key": "file_0036",
+    "filepath": "src/core/environment/reminder.ts"
+  },
+  {
+    "key": "file_0037",
+    "filepath": "src/api/transform/caching/anthropic.ts"
+  },
+  {
+    "key": "file_0038",
+    "filepath": "src/services/roo-config/index.ts"
+  }
+]

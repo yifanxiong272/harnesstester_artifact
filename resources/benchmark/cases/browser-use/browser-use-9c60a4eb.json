@@ -1,0 +1,47 @@
+{
+  "case_id": "browser-use-9c60a4eb",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "da03000311103d90423a4f279f52ab3cb512a6df",
+    "fixed": "9c60a4eb4f49848b6b7d4390aabbd7f0cc36d9b7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/agent/service.py",
+        "qualname": "Agent._recursive_process_all_strings_inside_pydantic_model",
+        "kind": "function",
+        "start_line": 1070,
+        "end_line": 1085
+      },
+      {
+        "filepath": "browser_use/agent/service.py",
+        "qualname": "Agent._recursive_process_dict",
+        "kind": "function",
+        "start_line": 1087,
+        "end_line": 1098
+      },
+      {
+        "filepath": "browser_use/agent/service.py",
+        "qualname": "Agent._recursive_process_list_or_tuple",
+        "kind": "function",
+        "start_line": 1100,
+        "end_line": 1111
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_024.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_024.zip"
+  }
+}

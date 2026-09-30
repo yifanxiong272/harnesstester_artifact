@@ -1,0 +1,73 @@
+{
+  "case_id": "openclaw-7e1e7ba2",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "aac5b4673fbb863658e59a6c4124b69ffd5b95e9",
+    "fixed": "7e1e7ba2d8d9d4171f53ed8232f9dabfe2bedafd"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.handlers.lifecycle.ts",
+        "qualname": "handleAgentEnd",
+        "kind": "function",
+        "start_line": 51,
+        "end_line": 84
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.handlers.messages.ts",
+        "qualname": "handleMessageEnd",
+        "kind": "function",
+        "start_line": 149,
+        "end_line": 244
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.handlers.messages.ts",
+        "qualname": "handleMessageUpdate",
+        "kind": "function",
+        "start_line": 38,
+        "end_line": 147
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "stripBlockTags",
+        "kind": "function",
+        "start_line": 188,
+        "end_line": 258
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "subscribeEmbeddedPiSession",
+        "kind": "function",
+        "start_line": 26,
+        "end_line": 378
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "resetAssistantMessageState",
+        "kind": "function",
+        "start_line": 69,
+        "end_line": 81
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_047.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_047.zip"
+  }
+}

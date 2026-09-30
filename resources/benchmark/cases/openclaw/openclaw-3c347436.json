@@ -1,0 +1,73 @@
+{
+  "case_id": "openclaw-3c347436",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "0669b0ddc265742009195eb9f1e9b6e93efb8c02",
+    "fixed": "3c3474360be81d53652f9f4f93bfbe5d72a80ddc"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/acp/event-mapper.ts",
+        "qualname": "collectToolLocations",
+        "kind": "function",
+        "start_line": 186,
+        "end_line": 240
+      },
+      {
+        "filepath": "src/acp/event-mapper.ts",
+        "qualname": "extractToolCallLocations",
+        "kind": "function",
+        "start_line": 402,
+        "end_line": 408
+      },
+      {
+        "filepath": "src/acp/translator.ts",
+        "qualname": "AcpGatewayAgent.loadSession",
+        "kind": "function",
+        "start_line": 441,
+        "end_line": 470
+      },
+      {
+        "filepath": "src/acp/translator.ts",
+        "qualname": "AcpGatewayAgent.finishPrompt",
+        "kind": "function",
+        "start_line": 836,
+        "end_line": 848
+      },
+      {
+        "filepath": "src/auto-reply/reply/dispatch-acp.ts",
+        "qualname": "tryDispatchAcpReply",
+        "kind": "function",
+        "start_line": 182,
+        "end_line": 377
+      },
+      {
+        "filepath": "src/auto-reply/reply/dispatch-acp.ts",
+        "qualname": "resolveAcpAttachments",
+        "kind": "function",
+        "start_line": 68,
+        "end_line": 94
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_027.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_027.zip"
+  }
+}

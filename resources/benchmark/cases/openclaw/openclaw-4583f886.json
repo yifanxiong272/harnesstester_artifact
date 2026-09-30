@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-4583f886",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "c9fe062824cabdf919cfbedc1b915375b5e684d1",
+    "fixed": "4583f88626f20efedc454d893afaaf898c23523b"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/shared/text/reasoning-tags.ts",
+        "qualname": "<file>",
+        "kind": "file",
+        "start_line": 1,
+        "end_line": 61
+      },
+      {
+        "filepath": "src/shared/text/reasoning-tags.ts",
+        "qualname": "stripReasoningTagsFromText",
+        "kind": "function",
+        "start_line": 14,
+        "end_line": 61
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_028.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_028.zip"
+  }
+}

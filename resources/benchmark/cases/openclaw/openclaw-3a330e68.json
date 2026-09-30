@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-3a330e68",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "6182d3ef8523cd1f92d46d54fd9b6981428e5efe",
+    "fixed": "3a330e681b1e925fa2ec29551aa9020a5e5c20c3"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "extensions/feishu/src/reply-dispatcher.ts",
+        "qualname": "createFeishuReplyDispatcher",
+        "kind": "function",
+        "start_line": 34,
+        "end_line": 236
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_012.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_012.zip"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "case_id": "browser-use-02dd650a",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "9b4b8d8054a2d23f13a141aa7c871dea1e939450",
+    "fixed": "02dd650a197dadfc18d7a3694b68d3128825d8d2"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/actor/element.py",
+        "qualname": "Element._get_char_modifiers_and_vk",
+        "kind": "function",
+        "start_line": 832,
+        "end_line": 900
+      },
+      {
+        "filepath": "browser_use/browser/watchdogs/default_action_watchdog.py",
+        "qualname": "DefaultActionWatchdog._get_char_modifiers_and_vk",
+        "kind": "function",
+        "start_line": 1214,
+        "end_line": 1282
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_001.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_001.zip"
+  }
+}

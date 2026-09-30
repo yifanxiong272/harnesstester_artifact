@@ -1,0 +1,66 @@
+{
+  "case_id": "openclaw-687f5779",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "4fc7ecf0884a569ad72fb0db157a343b3dd15ac2",
+    "fixed": "687f5779d10a69c1c13108a6a4bd1ce171ee4245"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/sandbox/fs-bridge.ts",
+        "qualname": "SandboxFsBridgeImpl.mkdirp",
+        "kind": "function",
+        "start_line": 132,
+        "end_line": 140
+      },
+      {
+        "filepath": "src/agents/sandbox/fs-bridge.ts",
+        "qualname": "SandboxFsBridgeImpl.assertPathSafety",
+        "kind": "function",
+        "start_line": 248,
+        "end_line": 289
+      },
+      {
+        "filepath": "src/infra/boundary-file-read.ts",
+        "qualname": "<file>",
+        "kind": "file",
+        "start_line": 1,
+        "end_line": 107
+      },
+      {
+        "filepath": "src/infra/boundary-file-read.ts",
+        "qualname": "openBoundaryFileSync",
+        "kind": "function",
+        "start_line": 52,
+        "end_line": 89
+      },
+      {
+        "filepath": "src/infra/safe-open-sync.ts",
+        "qualname": "openVerifiedFileSync",
+        "kind": "function",
+        "start_line": 25,
+        "end_line": 86
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_042.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_042.zip"
+  }
+}

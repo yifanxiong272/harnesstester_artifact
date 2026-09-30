@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-aa56045b",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "cbf712b7be34119027405155cbdec0de6b234c8e",
+    "fixed": "aa56045b492b1e01ad5836cabc43b2a4947b2bb3"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/session-transcript-repair.ts",
+        "qualname": "repairToolCallInputs",
+        "kind": "function",
+        "start_line": 100,
+        "end_line": 148
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_055.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_055.zip"
+  }
+}

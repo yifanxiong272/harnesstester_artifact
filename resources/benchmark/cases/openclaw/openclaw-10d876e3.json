@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-10d876e3",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "e023c84d785be2354af41f01ad308336ac8771ef",
+    "fixed": "10d876e319b8ba45e0712dfa041a448f230d753f"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/tools/slack-actions.ts",
+        "qualname": "readSlackBlocksParam",
+        "kind": "function",
+        "start_line": 88,
+        "end_line": 107
+      },
+      {
+        "filepath": "src/plugin-sdk/slack-message-actions.ts",
+        "qualname": "readSlackBlocksParam",
+        "kind": "function",
+        "start_line": 11,
+        "end_line": 30
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_010.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_010.zip"
+  }
+}
