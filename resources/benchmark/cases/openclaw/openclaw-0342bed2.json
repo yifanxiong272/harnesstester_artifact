@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-0342bed2",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "40680432b48970be33913c9a1284e8ba388792ba",
+    "fixed": "0342bed2899ee37b05d2b67ba9ede7b4473d6e2e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/auto-reply/reply/agent-runner-payloads.ts",
+        "qualname": "buildReplyPayloads",
+        "kind": "function",
+        "start_line": 18,
+        "end_line": 120
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_001.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_001.zip"
+  }
+}

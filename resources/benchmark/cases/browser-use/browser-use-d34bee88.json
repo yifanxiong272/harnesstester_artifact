@@ -1,0 +1,54 @@
+{
+  "case_id": "browser-use-d34bee88",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "b118bcf6fa9dcd832477523d7cd3e2b86579bfcd",
+    "fixed": "d34bee8801f967adf1d044e45ead6d5401915770"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/rust/service.py",
+        "qualname": "_chat_invoke_usage_from_payload",
+        "kind": "function",
+        "start_line": 2300,
+        "end_line": 2318
+      },
+      {
+        "filepath": "browser_use/rust/service.py",
+        "qualname": "_usage_total_tokens",
+        "kind": "function",
+        "start_line": 2333,
+        "end_line": 2339
+      },
+      {
+        "filepath": "browser_use/rust/service.py",
+        "qualname": "_usage_from_events",
+        "kind": "function",
+        "start_line": 2342,
+        "end_line": 2397
+      },
+      {
+        "filepath": "browser_use/rust/service.py",
+        "qualname": "_terminal_laminar_usage_summary",
+        "kind": "function",
+        "start_line": 2474,
+        "end_line": 2493
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_029.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_029.zip"
+  }
+}

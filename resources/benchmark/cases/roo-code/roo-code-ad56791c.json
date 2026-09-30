@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-ad56791c",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "1a9e7ca233813ef7285a763a8b6759bfc28e41fc",
+    "fixed": "ad56791c3ed5fbe67f6a05dfc6ecc5ad50fa157b"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/integrations/misc/extract-text.ts",
+        "qualname": "stripLineNumbers",
+        "kind": "function",
+        "start_line": 153,
+        "end_line": 167
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_008.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_008.zip"
+  }
+}

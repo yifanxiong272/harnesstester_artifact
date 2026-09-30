@@ -1,0 +1,59 @@
+{
+  "case_id": "kimi-code-c240bfab",
+  "project": "kimi-code",
+  "repository": "https://github.com/MoonshotAI/kimi-code",
+  "revisions": {
+    "buggy": "9d197e0f67c879306b9d7659d66e9295e63faa5a",
+    "fixed": "c240bfab7d2b00d41b993f681be612f2db45baa7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "packages/agent-core/src/agent/context/index.ts",
+        "qualname": "ContextMemory.finishResume",
+        "kind": "function",
+        "start_line": 229,
+        "end_line": 245
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/context/index.ts",
+        "qualname": "ContextMemory.appendLoopEvent",
+        "kind": "function",
+        "start_line": 247,
+        "end_line": 330
+      },
+      {
+        "filepath": "packages/agent-core/src/services/message/transcript.ts",
+        "qualname": "applyLoopEvent",
+        "kind": "function",
+        "start_line": 125,
+        "end_line": 175
+      },
+      {
+        "filepath": "packages/agent-core/src/services/message/transcript.ts",
+        "qualname": "reduceWireRecords",
+        "kind": "function",
+        "start_line": 97,
+        "end_line": 244
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "packages/agent-core/vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "packages/agent-core/test/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/kimi-code/snapshot_005.zip",
+    "fixed": "../../dependencies/kimi-code/snapshot_005.zip"
+  }
+}

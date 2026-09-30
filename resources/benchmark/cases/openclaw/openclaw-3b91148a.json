@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-3b91148a",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "22b3bd4415a01c40d3864b46ce832f24eed5c123",
+    "fixed": "3b91148a0a49fcb3e9b7c3710c0b7ee741f0479b"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-block-chunker.ts",
+        "qualname": "EmbeddedBlockChunker.#pickSoftBreakIndex",
+        "kind": "function",
+        "start_line": 120,
+        "end_line": 170
+      },
+      {
+        "filepath": "src/agents/pi-embedded-block-chunker.ts",
+        "qualname": "EmbeddedBlockChunker.#pickBreakIndex",
+        "kind": "function",
+        "start_line": 172,
+        "end_line": 239
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_026.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_026.zip"
+  }
+}

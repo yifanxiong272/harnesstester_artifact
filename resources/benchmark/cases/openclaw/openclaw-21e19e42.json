@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-21e19e42",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "2c192a3795778d50b667a09b77e3932029d5ed74",
+    "fixed": "21e19e42a35abedcb1f64fa951f06f75b8d8e638"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/cron/isolated-agent/helpers.ts",
+        "qualname": "pickSummaryFromPayloads",
+        "kind": "function",
+        "start_line": 23,
+        "end_line": 31
+      },
+      {
+        "filepath": "src/cron/isolated-agent/helpers.ts",
+        "qualname": "pickLastNonEmptyTextFromPayloads",
+        "kind": "function",
+        "start_line": 33,
+        "end_line": 41
+      },
+      {
+        "filepath": "src/cron/isolated-agent/helpers.ts",
+        "qualname": "pickLastDeliverablePayload",
+        "kind": "function",
+        "start_line": 43,
+        "end_line": 54
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_015.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_015.zip"
+  }
+}

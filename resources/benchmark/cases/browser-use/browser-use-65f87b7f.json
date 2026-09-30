@@ -1,0 +1,40 @@
+{
+  "case_id": "browser-use-65f87b7f",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "67c2eddf85469a453c889040a865631364a4d25b",
+    "fixed": "65f87b7fcae6c329cb1ccb3fd7154ec5990703a1"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/agent/message_manager/service.py",
+        "qualname": "MessageManager._filter_sensitive_data.replace_sensitive",
+        "kind": "function",
+        "start_line": 572,
+        "end_line": 599
+      },
+      {
+        "filepath": "browser_use/agent/views.py",
+        "qualname": "AgentHistory._filter_sensitive_data_from_string",
+        "kind": "function",
+        "start_line": 510,
+        "end_line": 537
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_013.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_013.zip"
+  }
+}

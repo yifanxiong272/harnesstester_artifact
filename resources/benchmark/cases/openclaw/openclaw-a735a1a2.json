@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-a735a1a2",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "c0a56ac1a1bc25cb9c98ede4d80aaddb3cb9a6e1",
+    "fixed": "a735a1a2d44f00dd98917f086bc091270185d5a6"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/shared/text/code-regions.ts",
+        "qualname": "findCodeRegions",
+        "kind": "function",
+        "start_line": 6,
+        "end_line": 27
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_053.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_053.zip"
+  }
+}

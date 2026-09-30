@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-2b63592b",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "48c0acc26f177be2b508c104429ff3badb5aaec8",
+    "fixed": "2b63592be57782c8946e521bc81286933f0f99c7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/infra/exec-approvals-analysis.ts",
+        "qualname": "resolveCommandResolutionFromArgv",
+        "kind": "function",
+        "start_line": 99,
+        "end_line": 111
+      },
+      {
+        "filepath": "src/infra/system-run-command.ts",
+        "qualname": "extractShellCommandFromArgv",
+        "kind": "function",
+        "start_line": 52,
+        "end_line": 91
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_019.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_019.zip"
+  }
+}

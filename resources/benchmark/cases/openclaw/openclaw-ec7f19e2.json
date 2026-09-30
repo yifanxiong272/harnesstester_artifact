@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-ec7f19e2",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "a2e4707cfe4cb6b63d50cedb6e78a519893397aa",
+    "fixed": "ec7f19e2ef7abc1868c3d1fe088cb5263814bb81"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-runner/run/attempt.tool-call-argument-repair.ts",
+        "qualname": "tryParseMalformedToolCallArguments",
+        "kind": "function",
+        "start_line": 101,
+        "end_line": 140
+      },
+      {
+        "filepath": "src/agents/pi-embedded-runner/run/attempt.tool-call-argument-repair.ts",
+        "qualname": "next",
+        "kind": "function",
+        "start_line": 223,
+        "end_line": 290
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_052.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_052.zip"
+  }
+}

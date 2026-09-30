@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-f760aa30",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "3a85cb18330ef7b426668191d0acb7ec7b6a86cf",
+    "fixed": "f760aa302c4fe0fede04fc54b1fe10b7696bf711"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/channels/plugins/actions/telegram.ts",
+        "qualname": "telegramMessageActions.handleAction",
+        "kind": "function",
+        "start_line": 74,
+        "end_line": 187
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_057.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_057.zip"
+  }
+}

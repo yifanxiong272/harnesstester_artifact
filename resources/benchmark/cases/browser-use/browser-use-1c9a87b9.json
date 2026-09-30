@@ -1,0 +1,40 @@
+{
+  "case_id": "browser-use-1c9a87b9",
+  "project": "browser-use",
+  "repository": "https://github.com/browser-use/browser-use",
+  "revisions": {
+    "buggy": "ed7cfa4ab2e7d20a394217decbe154e828fef7e3",
+    "fixed": "1c9a87b98f639017d7ee04e77b2f13f261491e9a"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "browser_use/llm/schema.py",
+        "qualname": "SchemaOptimizer.create_optimized_json_schema.optimize_schema",
+        "kind": "function",
+        "start_line": 38,
+        "end_line": 132
+      },
+      {
+        "filepath": "browser_use/tools/service.py",
+        "qualname": "Tools._register_done_action.done",
+        "kind": "function",
+        "start_line": 1279,
+        "end_line": 1297
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/browser-use/snapshot_003.zip",
+    "fixed": "../../dependencies/browser-use/snapshot_003.zip"
+  }
+}

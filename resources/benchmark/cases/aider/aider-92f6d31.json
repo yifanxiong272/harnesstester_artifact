@@ -1,0 +1,33 @@
+{
+  "case_id": "aider-92f6d31",
+  "project": "aider",
+  "repository": "https://github.com/Aider-AI/aider",
+  "revisions": {
+    "buggy": "421bc9376563ef1a6c05949083a555290161b8c7",
+    "fixed": "92f6d31f3322c0ea827bffce019c1cf9cf34afe3"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "aider/sendchat.py",
+        "qualname": "ensure_alternating_roles",
+        "kind": "function",
+        "start_line": 45,
+        "end_line": 75
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/aider/snapshot_008.zip",
+    "fixed": "../../dependencies/aider/snapshot_008.zip"
+  }
+}

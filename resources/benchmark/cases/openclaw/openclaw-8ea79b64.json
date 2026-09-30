@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-8ea79b64",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "f640326e31c3b3b6ed7930e1361a36a16e5ae14d",
+    "fixed": "8ea79b64d0303e6d93a59d7faadff3b535e1a7ed"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/sandbox/fs-bridge-mutation-helper.ts",
+        "qualname": "buildPinnedMutationPlan",
+        "kind": "function",
+        "start_line": 253,
+        "end_line": 263
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_017.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_017.zip"
+  }
+}

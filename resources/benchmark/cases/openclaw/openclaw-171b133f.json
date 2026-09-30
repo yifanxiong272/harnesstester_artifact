@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-171b133f",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "fc0fdebd8bb17e92163f81260bd9af62fd9afe5c",
+    "fixed": "171b133f643bf04990f1463bae7989c65d6ce528"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/memory/embeddings.ts",
+        "qualname": "embedQuery",
+        "kind": "function",
+        "start_line": 106,
+        "end_line": 110
+      },
+      {
+        "filepath": "src/memory/embeddings.ts",
+        "qualname": "<callback@114>",
+        "kind": "function",
+        "start_line": 114,
+        "end_line": 117
+      },
+      {
+        "filepath": "src/memory/embeddings.ts",
+        "qualname": "<callback@14>",
+        "kind": "function",
+        "start_line": 14,
+        "end_line": 14
+      },
+      {
+        "filepath": "src/memory/embeddings.ts",
+        "qualname": "l2Normalize",
+        "kind": "function",
+        "start_line": 9,
+        "end_line": 15
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_013.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_013.zip"
+  }
+}

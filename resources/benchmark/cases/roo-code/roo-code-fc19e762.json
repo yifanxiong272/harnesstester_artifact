@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-fc19e762",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "0e51a1ab9b898b25ee1921c00ca1c19a0c65a46d",
+    "fixed": "fc19e7620b9236658c547890ceeecedd7e7edc40"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/task/Task.ts",
+        "qualname": "Task.resumeTaskFromHistory",
+        "kind": "function",
+        "start_line": 1327,
+        "end_line": 1589
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_015.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_015.zip"
+  }
+}

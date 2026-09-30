@@ -1,0 +1,52 @@
+{
+  "case_id": "kimi-code-7d9216d5",
+  "project": "kimi-code",
+  "repository": "https://github.com/MoonshotAI/kimi-code",
+  "revisions": {
+    "buggy": "fe60c215be8979f6abc8258e5255c66dd73d5a19",
+    "fixed": "7d9216d5aa1e96734c46c8d5d810ec7ed27b2275"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "packages/agent-core/src/loop/tool-call.ts",
+        "qualname": "prepareToolCall",
+        "kind": "function",
+        "start_line": 222,
+        "end_line": 309
+      },
+      {
+        "filepath": "packages/agent-core/src/loop/tool-call.ts",
+        "qualname": "runRunnableToolCall",
+        "kind": "function",
+        "start_line": 398,
+        "end_line": 431
+      },
+      {
+        "filepath": "packages/agent-core/src/loop/tool-call.ts",
+        "qualname": "finalizePendingToolResult",
+        "kind": "function",
+        "start_line": 433,
+        "end_line": 478
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "packages/agent-core/vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "packages/agent-core/test/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/kimi-code/snapshot_003.zip",
+    "fixed": "../../dependencies/kimi-code/snapshot_003.zip"
+  }
+}

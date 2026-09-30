@@ -1,0 +1,66 @@
+{
+  "case_id": "openclaw-f9170c5d",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "415ff7f483fd003bcf5b0cf24cadbaf8a5b40342",
+    "fixed": "f9170c5d029eeeac8557141afcb3979a8027151c"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/tools/browser-tool.ts",
+        "qualname": "createBrowserTool",
+        "kind": "function",
+        "start_line": 107,
+        "end_line": 353
+      },
+      {
+        "filepath": "src/browser/server-context.ts",
+        "qualname": "openTab",
+        "kind": "function",
+        "start_line": 121,
+        "end_line": 168
+      },
+      {
+        "filepath": "src/browser/server-context.ts",
+        "qualname": "ensureTabAvailable",
+        "kind": "function",
+        "start_line": 277,
+        "end_line": 301
+      },
+      {
+        "filepath": "src/browser/server-context.ts",
+        "qualname": "focusTab",
+        "kind": "function",
+        "start_line": 303,
+        "end_line": 314
+      },
+      {
+        "filepath": "src/browser/server-context.ts",
+        "qualname": "getProfileState",
+        "kind": "function",
+        "start_line": 85,
+        "end_line": 93
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_072.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_072.zip"
+  }
+}

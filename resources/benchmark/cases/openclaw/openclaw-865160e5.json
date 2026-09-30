@@ -1,0 +1,73 @@
+{
+  "case_id": "openclaw-865160e5",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "e69ea1acb35d00e6cf063fb7e91703346b4caabf",
+    "fixed": "865160e57292bfc32082fa885efe1a48e64bb06c"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "extensions/telegram/src/bot/delivery.send.ts",
+        "qualname": "buildTelegramSendParams",
+        "kind": "function",
+        "start_line": 78,
+        "end_line": 96
+      },
+      {
+        "filepath": "extensions/telegram/src/bot/helpers.ts",
+        "qualname": "resolveTelegramReplyId",
+        "kind": "function",
+        "start_line": 417,
+        "end_line": 426
+      },
+      {
+        "filepath": "extensions/telegram/src/draft-stream.ts",
+        "qualname": "createTelegramDraftStream",
+        "kind": "function",
+        "start_line": 116,
+        "end_line": 474
+      },
+      {
+        "filepath": "extensions/telegram/src/outbound-params.ts",
+        "qualname": "parseTelegramReplyToMessageId",
+        "kind": "function",
+        "start_line": 1,
+        "end_line": 7
+      },
+      {
+        "filepath": "extensions/telegram/src/outbound-params.ts",
+        "qualname": "parseIntegerId",
+        "kind": "function",
+        "start_line": 9,
+        "end_line": 15
+      },
+      {
+        "filepath": "extensions/telegram/src/send.ts",
+        "qualname": "buildTelegramThreadReplyParams",
+        "kind": "function",
+        "start_line": 401,
+        "end_line": 433
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_048.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_048.zip"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "case_id": "aider-14af218",
+  "project": "aider",
+  "repository": "https://github.com/Aider-AI/aider",
+  "revisions": {
+    "buggy": "5b317e5ec048e348e013d6312c150fbe96494c01",
+    "fixed": "14af218ea281854c0900ebbfcf8ca453aa3c41aa"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "aider/io.py",
+        "qualname": "InputOutput.__init__",
+        "kind": "function",
+        "start_line": 237,
+        "end_line": 366
+      },
+      {
+        "filepath": "aider/io.py",
+        "qualname": "InputOutput.add_to_input_history",
+        "kind": "function",
+        "start_line": 730,
+        "end_line": 740
+      },
+      {
+        "filepath": "aider/io.py",
+        "qualname": "InputOutput.log_llm_history",
+        "kind": "function",
+        "start_line": 749,
+        "end_line": 755
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/aider/snapshot_002.zip",
+    "fixed": "../../dependencies/aider/snapshot_002.zip"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "kimi-code-89ea8959",
+  "project": "kimi-code",
+  "repository": "https://github.com/MoonshotAI/kimi-code",
+  "revisions": {
+    "buggy": "15b018fc84a36a9ebde598970e5b44bebe5d68c6",
+    "fixed": "89ea8959eb9419d04e63645b4d89ca0e33f20d98"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "packages/agent-core/src/agent/compaction/full.ts",
+        "qualname": "FullCompaction.compactionWorker",
+        "kind": "function",
+        "start_line": 338,
+        "end_line": 436
+      },
+      {
+        "filepath": "packages/agent-core/src/agent/compaction/full.ts",
+        "qualname": "FullCompaction.generateCompactionResponse",
+        "kind": "function",
+        "start_line": 438,
+        "end_line": 491
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "packages/agent-core/vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "packages/agent-core/test/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/kimi-code/snapshot_004.zip",
+    "fixed": "../../dependencies/kimi-code/snapshot_004.zip"
+  }
+}

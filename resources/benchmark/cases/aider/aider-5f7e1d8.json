@@ -1,0 +1,33 @@
+{
+  "case_id": "aider-5f7e1d8",
+  "project": "aider",
+  "repository": "https://github.com/Aider-AI/aider",
+  "revisions": {
+    "buggy": "26ebc715eb19e559e0d4aaafa92945fc73700d1f",
+    "fixed": "5f7e1d8675ca9434ec4512a5a7e6915e2644242e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "aider/coders/editblock_coder.py",
+        "qualname": "prep",
+        "kind": "function",
+        "start_line": 48,
+        "end_line": 52
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/aider/snapshot_005.zip",
+    "fixed": "../../dependencies/aider/snapshot_005.zip"
+  }
+}

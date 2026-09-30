@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-e95f41b5",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "9e92fc8fa125122716a8bddaf9ba9711b7aab788",
+    "fixed": "e95f41b5dfd54d27b290b4bdfcbc2e02f5dbdcb8"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/discord/send.messages.ts",
+        "qualname": "createThreadDiscord",
+        "kind": "function",
+        "start_line": 98,
+        "end_line": 135
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_068.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_068.zip"
+  }
+}

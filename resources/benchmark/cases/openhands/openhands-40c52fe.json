@@ -1,0 +1,40 @@
+{
+  "case_id": "openhands-40c52fe",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "f31ccad48bf8d2397839ea7a0cc7f0cb6a505262",
+    "fixed": "40c52feb5b5b4a865e5b8a5f64c01724e951420d"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "openhands/resolver/patching/patch.py",
+        "qualname": "<module>",
+        "kind": "module",
+        "start_line": 27,
+        "end_line": 27
+      },
+      {
+        "filepath": "openhands/resolver/patching/patch.py",
+        "qualname": "parse_unified_diff",
+        "kind": "function",
+        "start_line": 585,
+        "end_line": 645
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_008.zip",
+    "fixed": "../../dependencies/openhands/snapshot_008.zip"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-c45a5c55",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "4550a52007ea1914f7cb48592d6f9b2b671f3252",
+    "fixed": "c45a5c551faaeabe67b365290999c407e7c0e967"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/ollama-stream.ts",
+        "qualname": "parseNdjsonStream",
+        "kind": "function",
+        "start_line": 244,
+        "end_line": 279
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_019.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_019.zip"
+  }
+}

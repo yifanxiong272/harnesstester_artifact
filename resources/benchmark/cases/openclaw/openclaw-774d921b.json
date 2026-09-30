@@ -1,0 +1,73 @@
+{
+  "case_id": "openclaw-774d921b",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "d89e1e40f9d8d33d68bd146802d13827e5989b58",
+    "fixed": "774d921bed2e7e2ed67054250b3647b3ff1d2270"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "extensions/feishu/src/reply-dispatcher.ts",
+        "qualname": "queueStreamingUpdate",
+        "kind": "function",
+        "start_line": 165,
+        "end_line": 189
+      },
+      {
+        "filepath": "extensions/feishu/src/reply-dispatcher.ts",
+        "qualname": "onReplyStart",
+        "kind": "function",
+        "start_line": 243,
+        "end_line": 248
+      },
+      {
+        "filepath": "extensions/feishu/src/reply-dispatcher.ts",
+        "qualname": "deliver",
+        "kind": "function",
+        "start_line": 249,
+        "end_line": 363
+      },
+      {
+        "filepath": "extensions/feishu/src/reply-dispatcher.ts",
+        "qualname": "<callback@386>",
+        "kind": "function",
+        "start_line": 386,
+        "end_line": 391
+      },
+      {
+        "filepath": "extensions/feishu/src/reply-dispatcher.ts",
+        "qualname": "createFeishuReplyDispatcher",
+        "kind": "function",
+        "start_line": 58,
+        "end_line": 396
+      },
+      {
+        "filepath": "extensions/feishu/src/streaming-card.ts",
+        "qualname": "mergeStreamingText",
+        "kind": "function",
+        "start_line": 88,
+        "end_line": 105
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_043.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_043.zip"
+  }
+}

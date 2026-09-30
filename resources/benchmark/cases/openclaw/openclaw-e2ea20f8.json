@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-e2ea20f8",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "1eb924739b184217e1dd7c25321f54c55ffe164b",
+    "fixed": "e2ea20f86255df6b4a8a28469232fa8c05f88b3a"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "stripMinimaxToolCallXml",
+        "kind": "function",
+        "start_line": 11,
+        "end_line": 21
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_016.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_016.zip"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-04f695e5",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "ace5e33ceedfba70a30dd0ba69b909f87a1bd530",
+    "fixed": "04f695e56262ed9e31df84a7f0f046ecb89ffd9e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/cron/service/jobs.ts",
+        "qualname": "recomputeNextRuns",
+        "kind": "function",
+        "start_line": 90,
+        "end_line": 135
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_004.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_004.zip"
+  }
+}

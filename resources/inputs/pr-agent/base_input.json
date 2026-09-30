@@ -1,0 +1,14 @@
+{
+  "project": "pr-agent",
+  "project_root": "../../subjects/pr-agent",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "pr_agent",
+    "python": "../../../.venvs/pr-agent/bin/python"
+  }
+}

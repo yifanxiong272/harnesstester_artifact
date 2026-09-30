@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-652099cd",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "c1b75ab8e2636667d50b03f15295ce43cef54341",
+    "fixed": "652099cd5cefa66e174f6a83646edc4f1d620513"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-helpers/errors.ts",
+        "qualname": "isContextOverflowError",
+        "kind": "function",
+        "start_line": 37,
+        "end_line": 63
+      },
+      {
+        "filepath": "src/agents/pi-embedded-helpers/errors.ts",
+        "qualname": "isLikelyContextOverflowError",
+        "kind": "function",
+        "start_line": 71,
+        "end_line": 91
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_040.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_040.zip"
+  }
+}

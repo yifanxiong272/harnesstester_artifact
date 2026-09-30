@@ -1,0 +1,46 @@
+{
+  "case_id": "roo-code-17d3456e",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "b9cf163b87cd7a39d9c893daebf7ce44235164a8",
+    "fixed": "17d3456e96df20801756623db55d69d47d9d2c30"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/api/providers/openai-codex.ts",
+        "qualname": "OpenAiCodexHandler.processEvent",
+        "kind": "function",
+        "start_line": 828,
+        "end_line": 970
+      },
+      {
+        "filepath": "src/api/providers/openai-native.ts",
+        "qualname": "OpenAiNativeHandler.processEvent",
+        "kind": "function",
+        "start_line": 1135,
+        "end_line": 1288
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_001.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_001.zip"
+  }
+}

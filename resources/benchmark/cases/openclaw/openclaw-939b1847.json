@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-939b1847",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "1aaca517e30d07cb159987e10db69330e135f36a",
+    "fixed": "939b18475d734ed75173f59507e3ebbdfe1992b7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/infra/exec-approvals-analysis.ts",
+        "qualname": "splitCommandChainWithOperators",
+        "kind": "function",
+        "start_line": 438,
+        "end_line": 544
+      },
+      {
+        "filepath": "src/infra/exec-approvals-analysis.ts",
+        "qualname": "splitShellPipeline",
+        "kind": "function",
+        "start_line": 62,
+        "end_line": 332
+      },
+      {
+        "filepath": "src/utils/shell-argv.ts",
+        "qualname": "splitShellArgs",
+        "kind": "function",
+        "start_line": 7,
+        "end_line": 74
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_022.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_022.zip"
+  }
+}

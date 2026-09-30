@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-039713c3",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "a177b10b79bcfeefed1a9970294fadf56f31ad1e",
+    "fixed": "039713c3e7969ced6ccd0b12fee05294297af32f"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/web/auto-reply/deliver-reply.ts",
+        "qualname": "deliverWebReply",
+        "kind": "function",
+        "start_line": 15,
+        "end_line": 195
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_002.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_002.zip"
+  }
+}

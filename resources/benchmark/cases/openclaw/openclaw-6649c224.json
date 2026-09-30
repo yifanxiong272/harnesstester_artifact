@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-6649c224",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "596621919c32fc352825f44452775c2167ca0055",
+    "fixed": "6649c224713978a555fd4a19f18588c2c63a5429"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/openai-ws-stream.ts",
+        "qualname": "convertMessagesToInputItems",
+        "kind": "function",
+        "start_line": 168,
+        "end_line": 263
+      },
+      {
+        "filepath": "src/agents/openai-ws-stream.ts",
+        "qualname": "buildAssistantMessageFromResponse",
+        "kind": "function",
+        "start_line": 269,
+        "end_line": 312
+      },
+      {
+        "filepath": "src/agents/pi-embedded-runner/run/attempt.ts",
+        "qualname": "trimWhitespaceFromToolCallNamesInMessage",
+        "kind": "function",
+        "start_line": 277,
+        "end_line": 301
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_041.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_041.zip"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "case_id": "openclaw-47ef180f",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "ebe54e69035f5df1ca022f517d2426a6933aa952",
+    "fixed": "47ef180fb75e9855c3529f1e11d8af71faee73a7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "extensions/zalo/src/channel.ts",
+        "qualname": "zaloPlugin.sendPayload",
+        "kind": "function",
+        "start_line": 305,
+        "end_line": 327
+      },
+      {
+        "filepath": "extensions/zalouser/src/channel.ts",
+        "qualname": "zalouserPlugin.sendPayload",
+        "kind": "function",
+        "start_line": 521,
+        "end_line": 543
+      },
+      {
+        "filepath": "src/channels/plugins/outbound/direct-text-media.ts",
+        "qualname": "outbound.sendPayload",
+        "kind": "function",
+        "start_line": 94,
+        "end_line": 116
+      },
+      {
+        "filepath": "src/channels/plugins/outbound/discord.ts",
+        "qualname": "discordOutbound.sendPayload",
+        "kind": "function",
+        "start_line": 83,
+        "end_line": 105
+      },
+      {
+        "filepath": "src/channels/plugins/outbound/slack.ts",
+        "qualname": "slackOutbound.sendPayload",
+        "kind": "function",
+        "start_line": 96,
+        "end_line": 118
+      },
+      {
+        "filepath": "src/channels/plugins/outbound/whatsapp.ts",
+        "qualname": "whatsappOutbound.sendPayload",
+        "kind": "function",
+        "start_line": 15,
+        "end_line": 37
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_015.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_015.zip"
+  }
+}

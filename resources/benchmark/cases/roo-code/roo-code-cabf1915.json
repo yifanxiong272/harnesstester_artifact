@@ -1,0 +1,67 @@
+{
+  "case_id": "roo-code-cabf1915",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "3fda1efbd7c249c708b7d4024e829dc89a597884",
+    "fixed": "cabf19153efcfde50248821b9553610c40b13082"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/api/providers/claude-code.ts",
+        "qualname": "ClaudeCodeHandler",
+        "kind": "class",
+        "start_line": 11,
+        "end_line": 171
+      },
+      {
+        "filepath": "src/api/providers/claude-code.ts",
+        "qualname": "ClaudeCodeHandler.attemptParseChunk",
+        "kind": "function",
+        "start_line": 163,
+        "end_line": 170
+      },
+      {
+        "filepath": "src/api/providers/claude-code.ts",
+        "qualname": "ClaudeCodeHandler.createMessage",
+        "kind": "function",
+        "start_line": 19,
+        "end_line": 147
+      },
+      {
+        "filepath": "src/api/providers/claude-code.ts",
+        "qualname": "ClaudeCodeHandler.<callback@32>",
+        "kind": "function",
+        "start_line": 32,
+        "end_line": 39
+      },
+      {
+        "filepath": "src/api/providers/claude-code.ts",
+        "qualname": "ClaudeCodeHandler.<callback@45>",
+        "kind": "function",
+        "start_line": 45,
+        "end_line": 47
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_011.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_011.zip"
+  }
+}

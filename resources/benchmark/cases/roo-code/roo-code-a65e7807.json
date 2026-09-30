@@ -1,0 +1,67 @@
+{
+  "case_id": "roo-code-a65e7807",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "852e293610ad20d6fd6e9382c97c84749c3dcf49",
+    "fixed": "a65e7807b1eaa10b8da3e9adab9186dc934c5c4c"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/api/providers/base-openai-compatible-provider.ts",
+        "qualname": "BaseOpenAiCompatibleProvider.createMessage",
+        "kind": "function",
+        "start_line": 104,
+        "end_line": 191
+      },
+      {
+        "filepath": "src/api/providers/openai.ts",
+        "qualname": "OpenAiHandler.handleStreamResponse",
+        "kind": "function",
+        "start_line": 454,
+        "end_line": 509
+      },
+      {
+        "filepath": "src/api/providers/openai.ts",
+        "qualname": "OpenAiHandler.createMessage",
+        "kind": "function",
+        "start_line": 83,
+        "end_line": 303
+      },
+      {
+        "filepath": "src/api/providers/openrouter.ts",
+        "qualname": "OpenRouterHandler.createMessage",
+        "kind": "function",
+        "start_line": 127,
+        "end_line": 278
+      },
+      {
+        "filepath": "src/api/providers/roo.ts",
+        "qualname": "RooHandler.createMessage",
+        "kind": "function",
+        "start_line": 115,
+        "end_line": 239
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_007.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_007.zip"
+  }
+}

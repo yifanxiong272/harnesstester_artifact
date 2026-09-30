@@ -1,0 +1,522 @@
+[
+  {
+    "key": "file_0001",
+    "filepath": "packages/agent-core/src/services/fs/fsWatcherService.ts"
+  },
+  {
+    "key": "file_0002",
+    "filepath": "packages/agent-core/src/rpc/core-impl.ts"
+  },
+  {
+    "key": "file_0003",
+    "filepath": "packages/kaos/src/local.ts"
+  },
+  {
+    "key": "file_0004",
+    "filepath": "packages/agent-core/src/loop/tool-call.ts"
+  },
+  {
+    "key": "file_0005",
+    "filepath": "packages/node-sdk/src/rpc.ts"
+  },
+  {
+    "key": "file_0006",
+    "filepath": "packages/kosong/src/providers/openai-responses.ts"
+  },
+  {
+    "key": "file_0007",
+    "filepath": "packages/kosong/src/providers/anthropic.ts"
+  },
+  {
+    "key": "file_0008",
+    "filepath": "packages/agent-core/src/tools/providers/local-fetch-url.ts"
+  },
+  {
+    "key": "file_0009",
+    "filepath": "packages/agent-core/src/mcp/oauth/service.ts"
+  },
+  {
+    "key": "file_0010",
+    "filepath": "packages/agent-core/src/tools/builtin/file/grep.ts"
+  },
+  {
+    "key": "file_0011",
+    "filepath": "packages/kosong/src/providers/google-genai.ts"
+  },
+  {
+    "key": "file_0012",
+    "filepath": "packages/agent-core/src/mcp/connection-manager.ts"
+  },
+  {
+    "key": "file_0013",
+    "filepath": "packages/agent-core/src/tools/support/rg-locator.ts"
+  },
+  {
+    "key": "file_0014",
+    "filepath": "packages/server/src/services/gateway/inFlightTurnTracker.ts"
+  },
+  {
+    "key": "file_0015",
+    "filepath": "packages/kaos/src/ssh.ts"
+  },
+  {
+    "key": "file_0016",
+    "filepath": "packages/kosong/src/providers/kimi-schema.ts"
+  },
+  {
+    "key": "file_0017",
+    "filepath": "packages/agent-core/src/session/subagent-batch.ts"
+  },
+  {
+    "key": "file_0018",
+    "filepath": "packages/agent-core/src/agent/tool/index.ts"
+  },
+  {
+    "key": "file_0019",
+    "filepath": "packages/agent-core/src/utils/fs.ts"
+  },
+  {
+    "key": "file_0020",
+    "filepath": "packages/agent-core/src/services/session/sessionService.ts"
+  },
+  {
+    "key": "file_0021",
+    "filepath": "packages/agent-core/src/session/subagent-host.ts"
+  },
+  {
+    "key": "file_0022",
+    "filepath": "packages/agent-core/src/logging/logger.ts"
+  },
+  {
+    "key": "file_0023",
+    "filepath": "packages/agent-core/src/tools/providers/moonshot-web-search.ts"
+  },
+  {
+    "key": "file_0024",
+    "filepath": "packages/agent-core/src/session/index.ts"
+  },
+  {
+    "key": "file_0025",
+    "filepath": "packages/agent-core/src/session/rpc.ts"
+  },
+  {
+    "key": "file_0026",
+    "filepath": "packages/agent-core/src/tools/builtin/file/glob.ts"
+  },
+  {
+    "key": "file_0027",
+    "filepath": "packages/agent-core/src/agent/turn/index.ts"
+  },
+  {
+    "key": "file_0028",
+    "filepath": "packages/server/src/services/gateway/sessionClientsService.ts"
+  },
+  {
+    "key": "file_0029",
+    "filepath": "packages/agent-core/src/session/provider-manager.ts"
+  },
+  {
+    "key": "file_0030",
+    "filepath": "packages/agent-core/src/mcp/client-sse.ts"
+  },
+  {
+    "key": "file_0031",
+    "filepath": "packages/agent-core/src/agent/background/index.ts"
+  },
+  {
+    "key": "file_0032",
+    "filepath": "packages/node-sdk/src/kimi-harness.ts"
+  },
+  {
+    "key": "file_0033",
+    "filepath": "packages/agent-core/src/agent/records/blobref.ts"
+  },
+  {
+    "key": "file_0034",
+    "filepath": "packages/agent-core/src/mcp/oauth/provider.ts"
+  },
+  {
+    "key": "file_0035",
+    "filepath": "packages/agent-core/src/agent/index.ts"
+  },
+  {
+    "key": "file_0036",
+    "filepath": "packages/agent-core/src/tools/cron/scheduler.ts"
+  },
+  {
+    "key": "file_0037",
+    "filepath": "packages/agent-core/src/tools/cron/cron-expr.ts"
+  },
+  {
+    "key": "file_0038",
+    "filepath": "packages/agent-core/src/tools/builtin/file/read.ts"
+  },
+  {
+    "key": "file_0039",
+    "filepath": "packages/kosong/src/providers/openai-legacy.ts"
+  },
+  {
+    "key": "file_0040",
+    "filepath": "packages/agent-core/src/agent/context/index.ts"
+  },
+  {
+    "key": "file_0041",
+    "filepath": "packages/node-sdk/src/kimi-code-model-provider.ts"
+  },
+  {
+    "key": "file_0042",
+    "filepath": "packages/agent-core/src/logging/sinks.ts"
+  },
+  {
+    "key": "file_0043",
+    "filepath": "packages/agent-core/src/tools/builtin/shell/bash.ts"
+  },
+  {
+    "key": "file_0044",
+    "filepath": "packages/server/src/services/question/questionService.ts"
+  },
+  {
+    "key": "file_0045",
+    "filepath": "packages/server/src/services/pinoLoggerService.ts"
+  },
+  {
+    "key": "file_0046",
+    "filepath": "packages/agent-core/src/agent/records/persistence.ts"
+  },
+  {
+    "key": "file_0047",
+    "filepath": "packages/agent-core/src/agent/plan/index.ts"
+  },
+  {
+    "key": "file_0048",
+    "filepath": "packages/agent-core/src/agent/permission/index.ts"
+  },
+  {
+    "key": "file_0049",
+    "filepath": "packages/agent-core/src/skill/parser.ts"
+  },
+  {
+    "key": "file_0050",
+    "filepath": "packages/kosong/src/providers/index.ts"
+  },
+  {
+    "key": "file_0051",
+    "filepath": "packages/agent-core/src/loop/turn-step.ts"
+  },
+  {
+    "key": "file_0052",
+    "filepath": "packages/agent-core/src/skill/scanner.ts"
+  },
+  {
+    "key": "file_0053",
+    "filepath": "packages/server/src/services/approval/approvalService.ts"
+  },
+  {
+    "key": "file_0054",
+    "filepath": "packages/kosong/src/providers/kimi.ts"
+  },
+  {
+    "key": "file_0055",
+    "filepath": "packages/agent-core/src/agent/injection/goal.ts"
+  },
+  {
+    "key": "file_0056",
+    "filepath": "packages/server/src/services/gateway/wsBroadcastService.ts"
+  },
+  {
+    "key": "file_0057",
+    "filepath": "packages/agent-core/src/agent/goal/index.ts"
+  },
+  {
+    "key": "file_0058",
+    "filepath": "packages/agent-core/src/tools/args-validator.ts"
+  },
+  {
+    "key": "file_0059",
+    "filepath": "packages/agent-core/src/mcp/client-http.ts"
+  },
+  {
+    "key": "file_0060",
+    "filepath": "packages/agent-core/src/agent/compaction/full.ts"
+  },
+  {
+    "key": "file_0061",
+    "filepath": "packages/agent-core/src/mcp/client-shared.ts"
+  },
+  {
+    "key": "file_0062",
+    "filepath": "packages/agent-core/src/utils/abort.ts"
+  },
+  {
+    "key": "file_0063",
+    "filepath": "packages/agent-core/src/tools/providers/moonshot-fetch-url.ts"
+  },
+  {
+    "key": "file_0064",
+    "filepath": "packages/agent-core/src/profile/context.ts"
+  },
+  {
+    "key": "file_0065",
+    "filepath": "packages/agent-core/src/logging/formatter.ts"
+  },
+  {
+    "key": "file_0066",
+    "filepath": "packages/agent-core/src/skill/registry.ts"
+  },
+  {
+    "key": "file_0067",
+    "filepath": "packages/agent-core/src/mcp/client-stdio.ts"
+  },
+  {
+    "key": "file_0068",
+    "filepath": "packages/agent-core/src/agent/injection/todo-list.ts"
+  },
+  {
+    "key": "file_0069",
+    "filepath": "packages/agent-core/src/agent/background/process-task.ts"
+  },
+  {
+    "key": "file_0070",
+    "filepath": "packages/agent-core/src/session/git-context.ts"
+  },
+  {
+    "key": "file_0071",
+    "filepath": "packages/agent-core/src/agent/turn/kosong-llm.ts"
+  },
+  {
+    "key": "file_0072",
+    "filepath": "packages/server/src/services/snapshot/snapshotService.ts"
+  },
+  {
+    "key": "file_0073",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/agent.ts"
+  },
+  {
+    "key": "file_0074",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/ask-user.ts"
+  },
+  {
+    "key": "file_0075",
+    "filepath": "packages/agent-core/src/agent/records/index.ts"
+  },
+  {
+    "key": "file_0076",
+    "filepath": "packages/agent-core/src/session/hooks/user-prompt.ts"
+  },
+  {
+    "key": "file_0077",
+    "filepath": "packages/agent-core/src/tools/support/git-worktree.ts"
+  },
+  {
+    "key": "file_0078",
+    "filepath": "packages/kosong/src/providers/chat-completions-stream.ts"
+  },
+  {
+    "key": "file_0079",
+    "filepath": "packages/agent-core/src/agent/injection/plan-mode.ts"
+  },
+  {
+    "key": "file_0080",
+    "filepath": "packages/server/src/ws/protocol.ts"
+  },
+  {
+    "key": "file_0081",
+    "filepath": "packages/agent-core/src/tools/builtin/file/edit.ts"
+  },
+  {
+    "key": "file_0082",
+    "filepath": "packages/agent-core/src/tools/builtin/file/read-media.ts"
+  },
+  {
+    "key": "file_0083",
+    "filepath": "packages/agent-core/src/agent/injection/injector.ts"
+  },
+  {
+    "key": "file_0084",
+    "filepath": "packages/agent-core/src/utils/tokens.ts"
+  },
+  {
+    "key": "file_0085",
+    "filepath": "packages/agent-core/src/tools/background/task-output.ts"
+  },
+  {
+    "key": "file_0086",
+    "filepath": "packages/agent-core/src/tools/builtin/web/web-search.ts"
+  },
+  {
+    "key": "file_0087",
+    "filepath": "packages/agent-core/src/tools/builtin/planning/exit-plan-mode.ts"
+  },
+  {
+    "key": "file_0088",
+    "filepath": "packages/agent-core/src/agent/replay/index.ts"
+  },
+  {
+    "key": "file_0089",
+    "filepath": "packages/kosong/src/providers/tool-call-id.ts"
+  },
+  {
+    "key": "file_0090",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/agent-swarm.ts"
+  },
+  {
+    "key": "file_0091",
+    "filepath": "packages/agent-core/src/services/event/eventService.ts"
+  },
+  {
+    "key": "file_0092",
+    "filepath": "packages/agent-core/src/mcp/oauth/store.ts"
+  },
+  {
+    "key": "file_0093",
+    "filepath": "packages/agent-core/src/tools/builtin/state/todo-list.ts"
+  },
+  {
+    "key": "file_0094",
+    "filepath": "packages/agent-core/src/tools/cron/jitter.ts"
+  },
+  {
+    "key": "file_0095",
+    "filepath": "packages/kosong/src/generate.ts"
+  },
+  {
+    "key": "file_0096",
+    "filepath": "packages/agent-core/src/agent/cron/manager.ts"
+  },
+  {
+    "key": "file_0097",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/outcome-prompts.ts"
+  },
+  {
+    "key": "file_0098",
+    "filepath": "packages/kosong/src/providers/request-auth.ts"
+  },
+  {
+    "key": "file_0099",
+    "filepath": "packages/agent-core/src/agent/swarm/index.ts"
+  },
+  {
+    "key": "file_0100",
+    "filepath": "packages/agent-core/src/tools/background/task-stop.ts"
+  },
+  {
+    "key": "file_0101",
+    "filepath": "packages/agent-core/src/services/question/question.ts"
+  },
+  {
+    "key": "file_0102",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/skill-tool.ts"
+  },
+  {
+    "key": "file_0103",
+    "filepath": "packages/agent-core/src/agent/context/projector.ts"
+  },
+  {
+    "key": "file_0104",
+    "filepath": "packages/acp-adapter/src/kaos-acp.ts"
+  },
+  {
+    "key": "file_0105",
+    "filepath": "packages/agent-core/src/loop/tool-scheduler.ts"
+  },
+  {
+    "key": "file_0106",
+    "filepath": "packages/agent-core/src/tools/policies/sensitive.ts"
+  },
+  {
+    "key": "file_0107",
+    "filepath": "packages/agent-core/src/tools/support/result-builder.ts"
+  },
+  {
+    "key": "file_0108",
+    "filepath": "packages/agent-core/src/tools/background/task-list.ts"
+  },
+  {
+    "key": "file_0109",
+    "filepath": "packages/agent-core/src/tools/cron/session-store.ts"
+  },
+  {
+    "key": "file_0110",
+    "filepath": "packages/agent-core/src/agent/injection/plugin-session-start.ts"
+  },
+  {
+    "key": "file_0111",
+    "filepath": "packages/agent-core/src/mcp/auth-tool.ts"
+  },
+  {
+    "key": "file_0112",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/set-goal-budget.ts"
+  },
+  {
+    "key": "file_0113",
+    "filepath": "packages/agent-core/src/tools/cron/cron-create.ts"
+  },
+  {
+    "key": "file_0114",
+    "filepath": "packages/agent-core/src/agent/permission/policies/exit-plan-mode-review-ask.ts"
+  },
+  {
+    "key": "file_0115",
+    "filepath": "packages/agent-core/src/agent/compaction/strategy.ts"
+  },
+  {
+    "key": "file_0116",
+    "filepath": "packages/kosong/src/providers/openai-common.ts"
+  },
+  {
+    "key": "file_0117",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/update-goal.ts"
+  },
+  {
+    "key": "file_0118",
+    "filepath": "packages/agent-core/src/tools/builtin/web/fetch-url.ts"
+  },
+  {
+    "key": "file_0119",
+    "filepath": "packages/agent-core/src/agent/permission/policies/plan-mode-tool-approve.ts"
+  },
+  {
+    "key": "file_0120",
+    "filepath": "packages/agent-core/src/errors/serialize.ts"
+  },
+  {
+    "key": "file_0121",
+    "filepath": "packages/kosong/src/providers/capability-registry.ts"
+  },
+  {
+    "key": "file_0122",
+    "filepath": "packages/agent-core/src/agent/context/notification-xml.ts"
+  },
+  {
+    "key": "file_0123",
+    "filepath": "packages/agent-core/src/agent/compaction/micro.ts"
+  },
+  {
+    "key": "file_0124",
+    "filepath": "packages/agent-core/src/session/hooks/engine.ts"
+  },
+  {
+    "key": "file_0125",
+    "filepath": "packages/agent-core/src/agent/turn/tool-dedup.ts"
+  },
+  {
+    "key": "file_0126",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/create-goal.ts"
+  },
+  {
+    "key": "file_0127",
+    "filepath": "packages/agent-core/src/tools/cron/cron-fire-xml.ts"
+  },
+  {
+    "key": "file_0128",
+    "filepath": "packages/agent-core/src/agent/turn/canonical-args.ts"
+  },
+  {
+    "key": "file_0129",
+    "filepath": "packages/agent-core/src/tools/cron/cron-list.ts"
+  },
+  {
+    "key": "file_0130",
+    "filepath": "packages/agent-core/src/utils/completion-budget.ts"
+  }
+]

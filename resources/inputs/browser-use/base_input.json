@@ -1,0 +1,14 @@
+{
+  "project": "browser-use",
+  "project_root": "../../subjects/browser-use",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "browser_use,browser_use/actor/playground,browser_use/dom/playground,browser_use/dom/serializer,browser_use/integrations/gmail,browser_use/llm/deepseek,browser_use/llm/groq,browser_use/llm/ollama",
+    "python": "../../../.venvs/browser-use/bin/python"
+  }
+}

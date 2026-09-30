@@ -1,0 +1,47 @@
+{
+  "case_id": "openhands-f8faa28",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "b6c5a7e85400a13441b3093fa1fb158d2e2cc2e7",
+    "fixed": "f8faa28bb1b411bc51bc0a7da2fe22a8d02cc5fd"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "openhands/agenthub/codeact_agent/function_calling.py",
+        "qualname": "response_to_actions",
+        "kind": "function",
+        "start_line": 55,
+        "end_line": 238
+      },
+      {
+        "filepath": "openhands/runtime/action_execution_server.py",
+        "qualname": "_execute_file_editor",
+        "kind": "function",
+        "start_line": 100,
+        "end_line": 149
+      },
+      {
+        "filepath": "openhands/runtime/utils/bash.py",
+        "qualname": "split_bash_commands",
+        "kind": "function",
+        "start_line": 23,
+        "end_line": 71
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_041.zip",
+    "fixed": "../../dependencies/openhands/snapshot_041.zip"
+  }
+}

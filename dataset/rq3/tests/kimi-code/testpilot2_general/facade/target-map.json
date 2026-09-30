@@ -1,0 +1,2182 @@
+[
+  {
+    "key": "file_0001",
+    "filepath": "apps/kimi-web/src/composables/client/useWorkspaceState.ts"
+  },
+  {
+    "key": "file_0002",
+    "filepath": "packages/agent-core/src/services/fs/fsSearchService.ts"
+  },
+  {
+    "key": "file_0003",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-call.ts"
+  },
+  {
+    "key": "file_0004",
+    "filepath": "packages/agent-core/src/services/fs/fsService.ts"
+  },
+  {
+    "key": "file_0005",
+    "filepath": "apps/kimi-web/src/composables/messagesToTurns.ts"
+  },
+  {
+    "key": "file_0006",
+    "filepath": "packages/server/src/ws/connection.ts"
+  },
+  {
+    "key": "file_0007",
+    "filepath": "packages/server/src/routes/fs.ts"
+  },
+  {
+    "key": "file_0008",
+    "filepath": "apps/kimi-web/src/api/daemon/eventReducer.ts"
+  },
+  {
+    "key": "file_0009",
+    "filepath": "packages/agent-core/src/services/fs/fsWatcherService.ts"
+  },
+  {
+    "key": "file_0010",
+    "filepath": "packages/agent-core/src/session/store/session-store.ts"
+  },
+  {
+    "key": "file_0011",
+    "filepath": "apps/kimi-code/src/tui/commands/config.ts"
+  },
+  {
+    "key": "file_0012",
+    "filepath": "packages/server/src/routes/sessions.ts"
+  },
+  {
+    "key": "file_0013",
+    "filepath": "packages/acp-adapter/src/session.ts"
+  },
+  {
+    "key": "file_0014",
+    "filepath": "packages/agent-core/src/services/workspace/workspaceRegistryService.ts"
+  },
+  {
+    "key": "file_0015",
+    "filepath": "apps/kimi-code/src/tui/controllers/session-event-handler.ts"
+  },
+  {
+    "key": "file_0016",
+    "filepath": "apps/kimi-web/src/lib/toolMeta.ts"
+  },
+  {
+    "key": "file_0017",
+    "filepath": "apps/kimi-code/src/tui/controllers/streaming-ui.ts"
+  },
+  {
+    "key": "file_0018",
+    "filepath": "apps/kimi-code/src/tui/controllers/subagent-event-handler.ts"
+  },
+  {
+    "key": "file_0019",
+    "filepath": "apps/kimi-code/src/utils/clipboard/clipboard-image.ts"
+  },
+  {
+    "key": "file_0020",
+    "filepath": "apps/kimi-code/src/tui/components/messages/agent-swarm-progress.ts"
+  },
+  {
+    "key": "file_0021",
+    "filepath": "packages/agent-core/src/rpc/core-impl.ts"
+  },
+  {
+    "key": "file_0022",
+    "filepath": "apps/kimi-code/src/tui/reverse-rpc/approval/adapter.ts"
+  },
+  {
+    "key": "file_0023",
+    "filepath": "packages/server/src/routes/prompts.ts"
+  },
+  {
+    "key": "file_0024",
+    "filepath": "apps/kimi-code/src/tui/commands/plugins.ts"
+  },
+  {
+    "key": "file_0025",
+    "filepath": "apps/kimi-code/src/tui/components/messages/plugins-status-panel.ts"
+  },
+  {
+    "key": "file_0026",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/goal-queue-manager.ts"
+  },
+  {
+    "key": "file_0027",
+    "filepath": "apps/kimi-code/src/tui/controllers/editor-keyboard.ts"
+  },
+  {
+    "key": "file_0028",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/provider-manager.ts"
+  },
+  {
+    "key": "file_0029",
+    "filepath": "packages/agent-core/src/services/fileStore/fileStoreService.ts"
+  },
+  {
+    "key": "file_0030",
+    "filepath": "apps/kimi-code/src/utils/process/fd-detect.ts"
+  },
+  {
+    "key": "file_0031",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/approval-panel.ts"
+  },
+  {
+    "key": "file_0032",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/question-dialog.ts"
+  },
+  {
+    "key": "file_0033",
+    "filepath": "apps/kimi-code/src/tui/commands/undo.ts"
+  },
+  {
+    "key": "file_0034",
+    "filepath": "packages/agent-core/src/services/fs/fsGit.ts"
+  },
+  {
+    "key": "file_0035",
+    "filepath": "packages/server/src/routes/files.ts"
+  },
+  {
+    "key": "file_0036",
+    "filepath": "apps/kimi-code/src/cli/run-prompt.ts"
+  },
+  {
+    "key": "file_0037",
+    "filepath": "packages/agent-core/src/mcp/oauth/callback-server.ts"
+  },
+  {
+    "key": "file_0038",
+    "filepath": "packages/agent-core/src/di/lifecycle.ts"
+  },
+  {
+    "key": "file_0039",
+    "filepath": "packages/agent-core/src/services/fs/fsGitService.ts"
+  },
+  {
+    "key": "file_0040",
+    "filepath": "packages/kaos/src/local.ts"
+  },
+  {
+    "key": "file_0041",
+    "filepath": "packages/agent-core/src/loop/tool-call.ts"
+  },
+  {
+    "key": "file_0042",
+    "filepath": "packages/node-sdk/src/rpc.ts"
+  },
+  {
+    "key": "file_0043",
+    "filepath": "packages/kosong/src/providers/openai-responses.ts"
+  },
+  {
+    "key": "file_0044",
+    "filepath": "apps/kimi-code/src/tui/utils/refresh-providers.ts"
+  },
+  {
+    "key": "file_0045",
+    "filepath": "apps/kimi-code/src/cli/sub/server/ps.ts"
+  },
+  {
+    "key": "file_0046",
+    "filepath": "apps/kimi-code/src/tui/commands/dispatch.ts"
+  },
+  {
+    "key": "file_0047",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/plugins-selector.ts"
+  },
+  {
+    "key": "file_0048",
+    "filepath": "packages/agent-core/src/services/authSummary/authSummaryService.ts"
+  },
+  {
+    "key": "file_0049",
+    "filepath": "apps/kimi-code/src/native/native-assets.ts"
+  },
+  {
+    "key": "file_0050",
+    "filepath": "apps/kimi-code/src/migration/migration-screen.ts"
+  },
+  {
+    "key": "file_0051",
+    "filepath": "apps/kimi-code/src/tui/controllers/session-replay.ts"
+  },
+  {
+    "key": "file_0052",
+    "filepath": "apps/kimi-code/src/tui/components/editor/custom-editor.ts"
+  },
+  {
+    "key": "file_0053",
+    "filepath": "packages/kosong/src/providers/anthropic.ts"
+  },
+  {
+    "key": "file_0054",
+    "filepath": "apps/kimi-code/src/tui/commands/session.ts"
+  },
+  {
+    "key": "file_0055",
+    "filepath": "packages/server/src/start.ts"
+  },
+  {
+    "key": "file_0056",
+    "filepath": "apps/kimi-web/src/composables/useAttachmentUpload.ts"
+  },
+  {
+    "key": "file_0057",
+    "filepath": "packages/agent-core/src/tools/providers/local-fetch-url.ts"
+  },
+  {
+    "key": "file_0058",
+    "filepath": "apps/kimi-code/src/tui/commands/auth.ts"
+  },
+  {
+    "key": "file_0059",
+    "filepath": "apps/kimi-code/src/tui/commands/prompts.ts"
+  },
+  {
+    "key": "file_0060",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/tabbed-model-selector.ts"
+  },
+  {
+    "key": "file_0061",
+    "filepath": "packages/oauth/src/toolkit.ts"
+  },
+  {
+    "key": "file_0062",
+    "filepath": "packages/agent-core/src/mcp/oauth/service.ts"
+  },
+  {
+    "key": "file_0063",
+    "filepath": "packages/agent-core/src/tools/builtin/file/grep.ts"
+  },
+  {
+    "key": "file_0064",
+    "filepath": "apps/kimi-code/src/utils/image/image-mime.ts"
+  },
+  {
+    "key": "file_0065",
+    "filepath": "apps/kimi-code/src/cli/sub/provider.ts"
+  },
+  {
+    "key": "file_0066",
+    "filepath": "apps/vis/server/src/app.ts"
+  },
+  {
+    "key": "file_0067",
+    "filepath": "packages/kosong/src/providers/google-genai.ts"
+  },
+  {
+    "key": "file_0068",
+    "filepath": "packages/oauth/src/custom-registry.ts"
+  },
+  {
+    "key": "file_0069",
+    "filepath": "packages/agent-core/src/services/prompt/promptService.ts"
+  },
+  {
+    "key": "file_0070",
+    "filepath": "packages/node-sdk/src/session.ts"
+  },
+  {
+    "key": "file_0071",
+    "filepath": "packages/agent-core/src/mcp/connection-manager.ts"
+  },
+  {
+    "key": "file_0072",
+    "filepath": "packages/agent-core/src/services/workspace/workspaceFsService.ts"
+  },
+  {
+    "key": "file_0073",
+    "filepath": "apps/kimi-code/src/native/web-assets.ts"
+  },
+  {
+    "key": "file_0074",
+    "filepath": "apps/kimi-code/src/cli/sub/server/daemon.ts"
+  },
+  {
+    "key": "file_0075",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/api-key-input-dialog.ts"
+  },
+  {
+    "key": "file_0076",
+    "filepath": "packages/server/src/routes/questions.ts"
+  },
+  {
+    "key": "file_0077",
+    "filepath": "packages/server/src/middleware/schema.ts"
+  },
+  {
+    "key": "file_0078",
+    "filepath": "apps/kimi-code/src/cli/sub/server/run.ts"
+  },
+  {
+    "key": "file_0079",
+    "filepath": "packages/server/src/routes/tasks.ts"
+  },
+  {
+    "key": "file_0080",
+    "filepath": "packages/acp-adapter/src/server.ts"
+  },
+  {
+    "key": "file_0081",
+    "filepath": "apps/kimi-code/src/cli/sub/server/shared.ts"
+  },
+  {
+    "key": "file_0082",
+    "filepath": "packages/agent-core/src/tools/support/rg-locator.ts"
+  },
+  {
+    "key": "file_0083",
+    "filepath": "packages/server/src/svc/launchd.ts"
+  },
+  {
+    "key": "file_0084",
+    "filepath": "packages/server/src/services/gateway/inFlightTurnTracker.ts"
+  },
+  {
+    "key": "file_0085",
+    "filepath": "packages/kaos/src/ssh.ts"
+  },
+  {
+    "key": "file_0086",
+    "filepath": "packages/kosong/src/providers/kimi-schema.ts"
+  },
+  {
+    "key": "file_0087",
+    "filepath": "packages/server/src/routes/terminals.ts"
+  },
+  {
+    "key": "file_0088",
+    "filepath": "packages/agent-core/src/services/modelCatalog/modelCatalogService.ts"
+  },
+  {
+    "key": "file_0089",
+    "filepath": "packages/agent-core/src/session/subagent-batch.ts"
+  },
+  {
+    "key": "file_0090",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/undo-selector.ts"
+  },
+  {
+    "key": "file_0091",
+    "filepath": "packages/server/src/svc/schtasks.ts"
+  },
+  {
+    "key": "file_0092",
+    "filepath": "packages/oauth/src/managed-usage.ts"
+  },
+  {
+    "key": "file_0093",
+    "filepath": "packages/agent-core/src/plugin/manifest.ts"
+  },
+  {
+    "key": "file_0094",
+    "filepath": "apps/kimi-code/src/cli/sub/vis.ts"
+  },
+  {
+    "key": "file_0095",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-renderers/goal.ts"
+  },
+  {
+    "key": "file_0096",
+    "filepath": "packages/server/src/routes/snapshot.ts"
+  },
+  {
+    "key": "file_0097",
+    "filepath": "packages/agent-core/src/services/config/configService.ts"
+  },
+  {
+    "key": "file_0098",
+    "filepath": "packages/agent-core/src/plugin/archive.ts"
+  },
+  {
+    "key": "file_0099",
+    "filepath": "packages/agent-core/src/agent/tool/index.ts"
+  },
+  {
+    "key": "file_0100",
+    "filepath": "packages/server/src/routes/modelCatalog.ts"
+  },
+  {
+    "key": "file_0101",
+    "filepath": "packages/agent-core/src/utils/fs.ts"
+  },
+  {
+    "key": "file_0102",
+    "filepath": "apps/kimi-code/src/cli/sub/server/lifecycle.ts"
+  },
+  {
+    "key": "file_0103",
+    "filepath": "apps/kimi-code/src/tui/commands/goal.ts"
+  },
+  {
+    "key": "file_0104",
+    "filepath": "packages/agent-core/src/services/session/sessionService.ts"
+  },
+  {
+    "key": "file_0105",
+    "filepath": "packages/agent-core/src/session/export/session-export.ts"
+  },
+  {
+    "key": "file_0106",
+    "filepath": "packages/agent-core/src/session/subagent-host.ts"
+  },
+  {
+    "key": "file_0107",
+    "filepath": "packages/agent-core/src/logging/logger.ts"
+  },
+  {
+    "key": "file_0108",
+    "filepath": "apps/kimi-code/src/tui/components/editor/file-mention-provider.ts"
+  },
+  {
+    "key": "file_0109",
+    "filepath": "packages/agent-core/src/di/instantiationService.ts"
+  },
+  {
+    "key": "file_0110",
+    "filepath": "packages/agent-core/src/tools/providers/moonshot-web-search.ts"
+  },
+  {
+    "key": "file_0111",
+    "filepath": "packages/telemetry/src/transport.ts"
+  },
+  {
+    "key": "file_0112",
+    "filepath": "packages/agent-core/src/session/index.ts"
+  },
+  {
+    "key": "file_0113",
+    "filepath": "packages/server/src/routes/skills.ts"
+  },
+  {
+    "key": "file_0114",
+    "filepath": "packages/agent-core/src/di/util/linkedList.ts"
+  },
+  {
+    "key": "file_0115",
+    "filepath": "packages/server/src/services/gateway/wsGatewayService.ts"
+  },
+  {
+    "key": "file_0116",
+    "filepath": "packages/agent-core/src/session/rpc.ts"
+  },
+  {
+    "key": "file_0117",
+    "filepath": "packages/agent-core/src/di/testInstantiationService.ts"
+  },
+  {
+    "key": "file_0118",
+    "filepath": "packages/agent-core/src/utils/proxy.ts"
+  },
+  {
+    "key": "file_0119",
+    "filepath": "packages/agent-core/src/tools/builtin/file/glob.ts"
+  },
+  {
+    "key": "file_0120",
+    "filepath": "apps/kimi-code/src/tui/utils/message-replay.ts"
+  },
+  {
+    "key": "file_0121",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/footer.ts"
+  },
+  {
+    "key": "file_0122",
+    "filepath": "apps/vis/server/src/lib/context-projector.ts"
+  },
+  {
+    "key": "file_0123",
+    "filepath": "packages/agent-core/src/agent/turn/index.ts"
+  },
+  {
+    "key": "file_0124",
+    "filepath": "packages/agent-core/src/plugin/manager.ts"
+  },
+  {
+    "key": "file_0125",
+    "filepath": "packages/oauth/src/managed-kimi-code.ts"
+  },
+  {
+    "key": "file_0126",
+    "filepath": "packages/server/src/services/gateway/sessionClientsService.ts"
+  },
+  {
+    "key": "file_0127",
+    "filepath": "apps/kimi-code/src/tui/utils/event-payload.ts"
+  },
+  {
+    "key": "file_0128",
+    "filepath": "packages/telemetry/src/client.ts"
+  },
+  {
+    "key": "file_0129",
+    "filepath": "packages/agent-core/src/session/provider-manager.ts"
+  },
+  {
+    "key": "file_0130",
+    "filepath": "apps/kimi-code/src/utils/git/git-status.ts"
+  },
+  {
+    "key": "file_0131",
+    "filepath": "apps/kimi-code/src/cli/update/preflight.ts"
+  },
+  {
+    "key": "file_0132",
+    "filepath": "packages/server/src/routes/webAssets.ts"
+  },
+  {
+    "key": "file_0133",
+    "filepath": "packages/agent-core/src/mcp/client-sse.ts"
+  },
+  {
+    "key": "file_0134",
+    "filepath": "packages/agent-core/src/config/toml.ts"
+  },
+  {
+    "key": "file_0135",
+    "filepath": "packages/agent-core/src/agent/background/index.ts"
+  },
+  {
+    "key": "file_0136",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/custom-registry-import.ts"
+  },
+  {
+    "key": "file_0137",
+    "filepath": "apps/kimi-code/src/tui/components/messages/agent-group.ts"
+  },
+  {
+    "key": "file_0138",
+    "filepath": "packages/server/src/routes/tools.ts"
+  },
+  {
+    "key": "file_0139",
+    "filepath": "packages/node-sdk/src/kimi-harness.ts"
+  },
+  {
+    "key": "file_0140",
+    "filepath": "packages/agent-core/src/agent/records/blobref.ts"
+  },
+  {
+    "key": "file_0141",
+    "filepath": "packages/agent-core/src/services/message/transcript.ts"
+  },
+  {
+    "key": "file_0142",
+    "filepath": "packages/server/src/routes/workspaces.ts"
+  },
+  {
+    "key": "file_0143",
+    "filepath": "packages/agent-core/src/services/fs/fsPathSafety.ts"
+  },
+  {
+    "key": "file_0144",
+    "filepath": "apps/kimi-code/src/utils/plugin-marketplace.ts"
+  },
+  {
+    "key": "file_0145",
+    "filepath": "packages/server/src/routes/messages.ts"
+  },
+  {
+    "key": "file_0146",
+    "filepath": "apps/vis/web/src/api.ts"
+  },
+  {
+    "key": "file_0147",
+    "filepath": "packages/server/src/svc/systemd.ts"
+  },
+  {
+    "key": "file_0148",
+    "filepath": "apps/kimi-code/src/cli/sub/doctor.ts"
+  },
+  {
+    "key": "file_0149",
+    "filepath": "packages/agent-core/src/mcp/output.ts"
+  },
+  {
+    "key": "file_0150",
+    "filepath": "apps/vis/server/src/lib/session-store.ts"
+  },
+  {
+    "key": "file_0151",
+    "filepath": "apps/vis/server/src/routes/wire.ts"
+  },
+  {
+    "key": "file_0152",
+    "filepath": "packages/agent-core/src/mcp/oauth/provider.ts"
+  },
+  {
+    "key": "file_0153",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/choice-picker.ts"
+  },
+  {
+    "key": "file_0154",
+    "filepath": "packages/agent-core/src/agent/index.ts"
+  },
+  {
+    "key": "file_0155",
+    "filepath": "packages/server/src/routes/debug.ts"
+  },
+  {
+    "key": "file_0156",
+    "filepath": "packages/agent-core/src/config/workspace-local.ts"
+  },
+  {
+    "key": "file_0157",
+    "filepath": "packages/agent-core/src/tools/cron/scheduler.ts"
+  },
+  {
+    "key": "file_0158",
+    "filepath": "packages/agent-core/src/tools/cron/cron-expr.ts"
+  },
+  {
+    "key": "file_0159",
+    "filepath": "packages/agent-core/src/tools/builtin/file/read.ts"
+  },
+  {
+    "key": "file_0160",
+    "filepath": "packages/kosong/src/providers/openai-legacy.ts"
+  },
+  {
+    "key": "file_0161",
+    "filepath": "packages/agent-core/src/services/skill/skillService.ts"
+  },
+  {
+    "key": "file_0162",
+    "filepath": "apps/kimi-code/src/cli/sub/server/kill.ts"
+  },
+  {
+    "key": "file_0163",
+    "filepath": "apps/kimi-code/src/tui/utils/export-markdown.ts"
+  },
+  {
+    "key": "file_0164",
+    "filepath": "apps/kimi-code/src/tui/components/messages/agent-swarm-progress-estimator.ts"
+  },
+  {
+    "key": "file_0165",
+    "filepath": "packages/server/src/routes/workspaceFs.ts"
+  },
+  {
+    "key": "file_0166",
+    "filepath": "packages/agent-core/src/di/util/idleValue.ts"
+  },
+  {
+    "key": "file_0167",
+    "filepath": "apps/kimi-code/src/cli/update/prompt.ts"
+  },
+  {
+    "key": "file_0168",
+    "filepath": "packages/server/src/lib/fileLaunch.ts"
+  },
+  {
+    "key": "file_0169",
+    "filepath": "apps/kimi-code/src/tui/components/messages/read-group.ts"
+  },
+  {
+    "key": "file_0170",
+    "filepath": "apps/kimi-code/src/tui/controllers/btw-panel.ts"
+  },
+  {
+    "key": "file_0171",
+    "filepath": "packages/agent-core/src/services/oauth/oauthService.ts"
+  },
+  {
+    "key": "file_0172",
+    "filepath": "apps/kimi-code/src/tui/commands/web.ts"
+  },
+  {
+    "key": "file_0173",
+    "filepath": "apps/kimi-code/src/tui/commands/info.ts"
+  },
+  {
+    "key": "file_0174",
+    "filepath": "apps/kimi-web/src/components/chatTurnRendering.ts"
+  },
+  {
+    "key": "file_0175",
+    "filepath": "packages/oauth/src/oauth-manager.ts"
+  },
+  {
+    "key": "file_0176",
+    "filepath": "packages/agent-core/src/agent/context/index.ts"
+  },
+  {
+    "key": "file_0177",
+    "filepath": "packages/agent-core/src/agent/background/question-task.ts"
+  },
+  {
+    "key": "file_0178",
+    "filepath": "packages/node-sdk/src/kimi-code-model-provider.ts"
+  },
+  {
+    "key": "file_0179",
+    "filepath": "apps/vis/server/src/config.ts"
+  },
+  {
+    "key": "file_0180",
+    "filepath": "packages/agent-core/src/services/terminal/terminalService.ts"
+  },
+  {
+    "key": "file_0181",
+    "filepath": "packages/agent-core/src/logging/sinks.ts"
+  },
+  {
+    "key": "file_0182",
+    "filepath": "packages/agent-core/src/tools/builtin/shell/bash.ts"
+  },
+  {
+    "key": "file_0183",
+    "filepath": "packages/server/src/routes/approvals.ts"
+  },
+  {
+    "key": "file_0184",
+    "filepath": "packages/agent-core/src/services/auth/managedAuth.ts"
+  },
+  {
+    "key": "file_0185",
+    "filepath": "packages/server/src/services/question/questionService.ts"
+  },
+  {
+    "key": "file_0186",
+    "filepath": "apps/kimi-code/src/cli/sub/export.ts"
+  },
+  {
+    "key": "file_0187",
+    "filepath": "packages/server/src/services/gateway/sessionEventJournal.ts"
+  },
+  {
+    "key": "file_0188",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/experiments-selector.ts"
+  },
+  {
+    "key": "file_0189",
+    "filepath": "packages/server/src/middleware/validate.ts"
+  },
+  {
+    "key": "file_0190",
+    "filepath": "packages/server/src/services/pinoLoggerService.ts"
+  },
+  {
+    "key": "file_0191",
+    "filepath": "apps/kimi-code/src/tui/utils/tmux-keyboard.ts"
+  },
+  {
+    "key": "file_0192",
+    "filepath": "packages/agent-core/src/agent/records/persistence.ts"
+  },
+  {
+    "key": "file_0193",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-renderers/media.ts"
+  },
+  {
+    "key": "file_0194",
+    "filepath": "packages/kaos/src/internal.ts"
+  },
+  {
+    "key": "file_0195",
+    "filepath": "apps/kimi-web/src/lib/sessionRoute.ts"
+  },
+  {
+    "key": "file_0196",
+    "filepath": "packages/agent-core/src/agent/plan/index.ts"
+  },
+  {
+    "key": "file_0197",
+    "filepath": "packages/migration-legacy/src/sessions/index.ts"
+  },
+  {
+    "key": "file_0198",
+    "filepath": "packages/agent-core/src/session/hooks/runner.ts"
+  },
+  {
+    "key": "file_0199",
+    "filepath": "packages/agent-core/src/agent/permission/index.ts"
+  },
+  {
+    "key": "file_0200",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/approval-preview.ts"
+  },
+  {
+    "key": "file_0201",
+    "filepath": "packages/agent-core/src/skill/parser.ts"
+  },
+  {
+    "key": "file_0202",
+    "filepath": "packages/agent-core/src/services/fs/fs.ts"
+  },
+  {
+    "key": "file_0203",
+    "filepath": "apps/kimi-code/src/native/smoke.ts"
+  },
+  {
+    "key": "file_0204",
+    "filepath": "packages/kosong/src/providers/index.ts"
+  },
+  {
+    "key": "file_0205",
+    "filepath": "packages/migration-legacy/src/sessions/content-part.ts"
+  },
+  {
+    "key": "file_0206",
+    "filepath": "packages/agent-core/src/loop/turn-step.ts"
+  },
+  {
+    "key": "file_0207",
+    "filepath": "packages/server/src/lock.ts"
+  },
+  {
+    "key": "file_0208",
+    "filepath": "packages/kaos/src/environment.ts"
+  },
+  {
+    "key": "file_0209",
+    "filepath": "packages/agent-core/src/tools/support/file-type.ts"
+  },
+  {
+    "key": "file_0210",
+    "filepath": "packages/agent-core/src/skill/scanner.ts"
+  },
+  {
+    "key": "file_0211",
+    "filepath": "packages/agent-core/src/logging/resolve-config.ts"
+  },
+  {
+    "key": "file_0212",
+    "filepath": "apps/kimi-code/src/tui/utils/plugin-source-label.ts"
+  },
+  {
+    "key": "file_0213",
+    "filepath": "packages/server/src/services/approval/approvalService.ts"
+  },
+  {
+    "key": "file_0214",
+    "filepath": "packages/acp-adapter/src/events-map.ts"
+  },
+  {
+    "key": "file_0215",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/session-picker.ts"
+  },
+  {
+    "key": "file_0216",
+    "filepath": "packages/kosong/src/providers/kimi.ts"
+  },
+  {
+    "key": "file_0217",
+    "filepath": "packages/agent-core/src/agent/injection/goal.ts"
+  },
+  {
+    "key": "file_0218",
+    "filepath": "apps/kimi-code/src/tui/components/messages/usage-panel.ts"
+  },
+  {
+    "key": "file_0219",
+    "filepath": "packages/server/src/services/gateway/wsBroadcastService.ts"
+  },
+  {
+    "key": "file_0220",
+    "filepath": "packages/oauth/src/oauth.ts"
+  },
+  {
+    "key": "file_0221",
+    "filepath": "packages/agent-core/src/agent/goal/index.ts"
+  },
+  {
+    "key": "file_0222",
+    "filepath": "apps/vis/server/src/lib/reveal.ts"
+  },
+  {
+    "key": "file_0223",
+    "filepath": "apps/vis/server/src/routes/sessions.ts"
+  },
+  {
+    "key": "file_0224",
+    "filepath": "apps/kimi-code/src/utils/clipboard/clipboard-common.ts"
+  },
+  {
+    "key": "file_0225",
+    "filepath": "packages/oauth/src/api-error.ts"
+  },
+  {
+    "key": "file_0226",
+    "filepath": "apps/kimi-code/src/cli/update/install-lock.ts"
+  },
+  {
+    "key": "file_0227",
+    "filepath": "packages/agent-core/src/tools/args-validator.ts"
+  },
+  {
+    "key": "file_0228",
+    "filepath": "apps/kimi-code/src/tui/controllers/auth-flow.ts"
+  },
+  {
+    "key": "file_0229",
+    "filepath": "packages/agent-core/src/mcp/client-http.ts"
+  },
+  {
+    "key": "file_0230",
+    "filepath": "packages/agent-core/src/agent/compaction/full.ts"
+  },
+  {
+    "key": "file_0231",
+    "filepath": "packages/agent-core/src/services/skill/skill.ts"
+  },
+  {
+    "key": "file_0232",
+    "filepath": "packages/agent-core/src/mcp/client-shared.ts"
+  },
+  {
+    "key": "file_0233",
+    "filepath": "apps/kimi-web/src/lib/slashCommands.ts"
+  },
+  {
+    "key": "file_0234",
+    "filepath": "packages/agent-core/src/utils/abort.ts"
+  },
+  {
+    "key": "file_0235",
+    "filepath": "packages/agent-core/src/tools/support/path-glob-match.ts"
+  },
+  {
+    "key": "file_0236",
+    "filepath": "apps/kimi-code/src/tui/theme/pi-tui-theme.ts"
+  },
+  {
+    "key": "file_0237",
+    "filepath": "apps/kimi-code/src/cli/sub/upgrade.ts"
+  },
+  {
+    "key": "file_0238",
+    "filepath": "packages/agent-core/src/profile/resolve.ts"
+  },
+  {
+    "key": "file_0239",
+    "filepath": "apps/kimi-code/src/tui/components/panes/btw-panel.ts"
+  },
+  {
+    "key": "file_0240",
+    "filepath": "apps/kimi-code/src/tui/banner/banner-provider.ts"
+  },
+  {
+    "key": "file_0241",
+    "filepath": "packages/agent-core/src/services/authSummary/authSummary.ts"
+  },
+  {
+    "key": "file_0242",
+    "filepath": "packages/server/src/routes/oauth.ts"
+  },
+  {
+    "key": "file_0243",
+    "filepath": "apps/kimi-code/src/tui/components/messages/skill-activation.ts"
+  },
+  {
+    "key": "file_0244",
+    "filepath": "apps/kimi-code/src/tui/utils/mcp-server-status.ts"
+  },
+  {
+    "key": "file_0245",
+    "filepath": "apps/vis/server/src/lib/wire-reader.ts"
+  },
+  {
+    "key": "file_0246",
+    "filepath": "packages/agent-core/src/tools/providers/moonshot-fetch-url.ts"
+  },
+  {
+    "key": "file_0247",
+    "filepath": "packages/agent-core/src/profile/context.ts"
+  },
+  {
+    "key": "file_0248",
+    "filepath": "packages/migration-legacy/src/steps/config.ts"
+  },
+  {
+    "key": "file_0249",
+    "filepath": "packages/kaos/src/current.ts"
+  },
+  {
+    "key": "file_0250",
+    "filepath": "packages/agent-core/src/profile/load.ts"
+  },
+  {
+    "key": "file_0251",
+    "filepath": "packages/node-sdk/src/catalog.ts"
+  },
+  {
+    "key": "file_0252",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/help-panel.ts"
+  },
+  {
+    "key": "file_0253",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-renderers/chip.ts"
+  },
+  {
+    "key": "file_0254",
+    "filepath": "apps/kimi-code/src/tui/components/messages/goal-panel.ts"
+  },
+  {
+    "key": "file_0255",
+    "filepath": "packages/agent-core/src/logging/formatter.ts"
+  },
+  {
+    "key": "file_0256",
+    "filepath": "packages/node-sdk/src/config-rpc.ts"
+  },
+  {
+    "key": "file_0257",
+    "filepath": "packages/agent-core/src/base/common/event.ts"
+  },
+  {
+    "key": "file_0258",
+    "filepath": "apps/kimi-code/src/cli/update/source.ts"
+  },
+  {
+    "key": "file_0259",
+    "filepath": "apps/kimi-web/src/lib/filePathLinks.ts"
+  },
+  {
+    "key": "file_0260",
+    "filepath": "apps/kimi-code/src/tui/components/editor/wrapping-select-list.ts"
+  },
+  {
+    "key": "file_0261",
+    "filepath": "packages/agent-core/src/skill/registry.ts"
+  },
+  {
+    "key": "file_0262",
+    "filepath": "packages/agent-core/src/mcp/client-stdio.ts"
+  },
+  {
+    "key": "file_0263",
+    "filepath": "apps/kimi-code/src/tui/commands/swarm.ts"
+  },
+  {
+    "key": "file_0264",
+    "filepath": "packages/server/src/openapi/transforms.ts"
+  },
+  {
+    "key": "file_0265",
+    "filepath": "packages/migration-legacy/src/sessions/translator.ts"
+  },
+  {
+    "key": "file_0266",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/model-selector.ts"
+  },
+  {
+    "key": "file_0267",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/settings-selector.ts"
+  },
+  {
+    "key": "file_0268",
+    "filepath": "apps/kimi-code/src/tui/components/messages/thinking.ts"
+  },
+  {
+    "key": "file_0269",
+    "filepath": "packages/agent-core/src/agent/injection/todo-list.ts"
+  },
+  {
+    "key": "file_0270",
+    "filepath": "packages/agent-core/src/agent/background/process-task.ts"
+  },
+  {
+    "key": "file_0271",
+    "filepath": "packages/agent-core/src/session/git-context.ts"
+  },
+  {
+    "key": "file_0272",
+    "filepath": "apps/kimi-code/src/tui/components/messages/goal-markers.ts"
+  },
+  {
+    "key": "file_0273",
+    "filepath": "packages/agent-core/src/agent/turn/kosong-llm.ts"
+  },
+  {
+    "key": "file_0274",
+    "filepath": "apps/kimi-code/src/tui/commands/registry.ts"
+  },
+  {
+    "key": "file_0275",
+    "filepath": "packages/acp-adapter/src/convert.ts"
+  },
+  {
+    "key": "file_0276",
+    "filepath": "packages/server/src/services/snapshot/snapshotService.ts"
+  },
+  {
+    "key": "file_0277",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/agent.ts"
+  },
+  {
+    "key": "file_0278",
+    "filepath": "packages/server/src/routes/config.ts"
+  },
+  {
+    "key": "file_0279",
+    "filepath": "apps/kimi-code/src/tui/theme/index.ts"
+  },
+  {
+    "key": "file_0280",
+    "filepath": "apps/kimi-code/src/native/module-hook.ts"
+  },
+  {
+    "key": "file_0281",
+    "filepath": "packages/agent-core/src/session/prompt-metadata.ts"
+  },
+  {
+    "key": "file_0282",
+    "filepath": "apps/kimi-code/src/tui/components/messages/assistant-message.ts"
+  },
+  {
+    "key": "file_0283",
+    "filepath": "apps/kimi-web/src/composables/latestTodos.ts"
+  },
+  {
+    "key": "file_0284",
+    "filepath": "apps/kimi-code/src/tui/commands/add-dir.ts"
+  },
+  {
+    "key": "file_0285",
+    "filepath": "packages/oauth/src/identity.ts"
+  },
+  {
+    "key": "file_0286",
+    "filepath": "apps/kimi-code/src/tui/utils/terminal-theme.ts"
+  },
+  {
+    "key": "file_0287",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/ask-user.ts"
+  },
+  {
+    "key": "file_0288",
+    "filepath": "packages/migration-legacy/src/sessions/migrate-one.ts"
+  },
+  {
+    "key": "file_0289",
+    "filepath": "apps/kimi-code/src/tui/goal-queue-store.ts"
+  },
+  {
+    "key": "file_0290",
+    "filepath": "packages/agent-core/src/agent/records/index.ts"
+  },
+  {
+    "key": "file_0291",
+    "filepath": "packages/agent-core/src/services/workspace/workspaceFs.ts"
+  },
+  {
+    "key": "file_0292",
+    "filepath": "apps/kimi-code/src/tui/utils/mcp-tool-name.ts"
+  },
+  {
+    "key": "file_0293",
+    "filepath": "apps/kimi-code/src/cli/build-info.ts"
+  },
+  {
+    "key": "file_0294",
+    "filepath": "packages/server/src/services/snapshot/snapshotConfig.ts"
+  },
+  {
+    "key": "file_0295",
+    "filepath": "packages/acp-adapter/src/log-guard.ts"
+  },
+  {
+    "key": "file_0296",
+    "filepath": "apps/kimi-code/src/utils/clipboard/clipboard-native.ts"
+  },
+  {
+    "key": "file_0297",
+    "filepath": "packages/server/src/svc/launchd-plist.ts"
+  },
+  {
+    "key": "file_0298",
+    "filepath": "apps/kimi-code/src/cli/sub/acp.ts"
+  },
+  {
+    "key": "file_0299",
+    "filepath": "apps/kimi-code/src/tui/utils/media-url.ts"
+  },
+  {
+    "key": "file_0300",
+    "filepath": "packages/agent-core/src/session/hooks/user-prompt.ts"
+  },
+  {
+    "key": "file_0301",
+    "filepath": "packages/agent-core/src/session/store/session-index.ts"
+  },
+  {
+    "key": "file_0302",
+    "filepath": "packages/agent-core/src/tools/support/git-worktree.ts"
+  },
+  {
+    "key": "file_0303",
+    "filepath": "packages/telemetry/src/sink.ts"
+  },
+  {
+    "key": "file_0304",
+    "filepath": "packages/kosong/src/providers/chat-completions-stream.ts"
+  },
+  {
+    "key": "file_0305",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/start-permission-prompt.ts"
+  },
+  {
+    "key": "file_0306",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/compaction.ts"
+  },
+  {
+    "key": "file_0307",
+    "filepath": "packages/server/src/svc/schtasks-xml.ts"
+  },
+  {
+    "key": "file_0308",
+    "filepath": "packages/agent-core/src/agent/injection/plan-mode.ts"
+  },
+  {
+    "key": "file_0309",
+    "filepath": "packages/server/src/ws/protocol.ts"
+  },
+  {
+    "key": "file_0310",
+    "filepath": "apps/kimi-code/src/tui/utils/background-agent-status.ts"
+  },
+  {
+    "key": "file_0311",
+    "filepath": "apps/kimi-code/src/utils/clipboard/clipboard-text.ts"
+  },
+  {
+    "key": "file_0312",
+    "filepath": "apps/kimi-web/src/composables/useComposerDraft.ts"
+  },
+  {
+    "key": "file_0313",
+    "filepath": "apps/kimi-code/src/cli/commands.ts"
+  },
+  {
+    "key": "file_0314",
+    "filepath": "packages/agent-core/src/tools/builtin/file/edit.ts"
+  },
+  {
+    "key": "file_0315",
+    "filepath": "packages/migration-legacy/src/detect.ts"
+  },
+  {
+    "key": "file_0316",
+    "filepath": "apps/kimi-code/src/tui/components/messages/cron-message.ts"
+  },
+  {
+    "key": "file_0317",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/feedback-input-dialog.ts"
+  },
+  {
+    "key": "file_0318",
+    "filepath": "packages/agent-core/src/tools/builtin/file/read-media.ts"
+  },
+  {
+    "key": "file_0319",
+    "filepath": "packages/agent-core/src/session/export/manifest.ts"
+  },
+  {
+    "key": "file_0320",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/permission-selector.ts"
+  },
+  {
+    "key": "file_0321",
+    "filepath": "packages/agent-core/src/services/fileStore/fileStore.ts"
+  },
+  {
+    "key": "file_0322",
+    "filepath": "apps/vis/server/src/routes/subagents.ts"
+  },
+  {
+    "key": "file_0323",
+    "filepath": "packages/server/src/svc/paths.ts"
+  },
+  {
+    "key": "file_0324",
+    "filepath": "packages/server/src/services/gateway/connectionRegistryService.ts"
+  },
+  {
+    "key": "file_0325",
+    "filepath": "apps/kimi-code/src/utils/process/shell-env.ts"
+  },
+  {
+    "key": "file_0326",
+    "filepath": "packages/agent-core/src/agent/injection/injector.ts"
+  },
+  {
+    "key": "file_0327",
+    "filepath": "packages/agent-core/src/loop/events.ts"
+  },
+  {
+    "key": "file_0328",
+    "filepath": "apps/kimi-code/src/cli/telemetry.ts"
+  },
+  {
+    "key": "file_0329",
+    "filepath": "packages/migration-legacy/src/run-migration.ts"
+  },
+  {
+    "key": "file_0330",
+    "filepath": "packages/agent-core/src/utils/tokens.ts"
+  },
+  {
+    "key": "file_0331",
+    "filepath": "apps/kimi-code/src/tui/reverse-rpc/modal-coordinator.ts"
+  },
+  {
+    "key": "file_0332",
+    "filepath": "packages/agent-core/src/loop/tool-access.ts"
+  },
+  {
+    "key": "file_0333",
+    "filepath": "packages/agent-core/src/mcp/config-loader.ts"
+  },
+  {
+    "key": "file_0334",
+    "filepath": "apps/kimi-code/src/tui/components/messages/plan-box.ts"
+  },
+  {
+    "key": "file_0335",
+    "filepath": "packages/agent-core/src/tools/background/task-output.ts"
+  },
+  {
+    "key": "file_0336",
+    "filepath": "packages/agent-core/src/tools/builtin/web/web-search.ts"
+  },
+  {
+    "key": "file_0337",
+    "filepath": "apps/kimi-code/src/tui/components/messages/status-panel.ts"
+  },
+  {
+    "key": "file_0338",
+    "filepath": "packages/agent-core/src/services/message/message.ts"
+  },
+  {
+    "key": "file_0339",
+    "filepath": "packages/agent-core/src/tools/builtin/planning/exit-plan-mode.ts"
+  },
+  {
+    "key": "file_0340",
+    "filepath": "packages/agent-core/src/agent/replay/index.ts"
+  },
+  {
+    "key": "file_0341",
+    "filepath": "packages/kosong/src/providers/tool-call-id.ts"
+  },
+  {
+    "key": "file_0342",
+    "filepath": "packages/oauth/src/open-platform.ts"
+  },
+  {
+    "key": "file_0343",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/agent-swarm.ts"
+  },
+  {
+    "key": "file_0344",
+    "filepath": "packages/agent-core/src/services/event/eventService.ts"
+  },
+  {
+    "key": "file_0345",
+    "filepath": "packages/agent-core/src/services/fs/fsWatcher.ts"
+  },
+  {
+    "key": "file_0346",
+    "filepath": "packages/agent-core/src/services/workspace/workspaceRegistry.ts"
+  },
+  {
+    "key": "file_0347",
+    "filepath": "apps/kimi-code/src/tui/utils/component-capabilities.ts"
+  },
+  {
+    "key": "file_0348",
+    "filepath": "apps/vis/server/src/routes/session-detail.ts"
+  },
+  {
+    "key": "file_0349",
+    "filepath": "apps/kimi-code/src/cli/sub/login-flow.ts"
+  },
+  {
+    "key": "file_0350",
+    "filepath": "packages/server/src/svc/program.ts"
+  },
+  {
+    "key": "file_0351",
+    "filepath": "packages/agent-core/src/agent/records/migration/index.ts"
+  },
+  {
+    "key": "file_0352",
+    "filepath": "packages/agent-core/src/mcp/oauth/store.ts"
+  },
+  {
+    "key": "file_0353",
+    "filepath": "packages/agent-core/src/tools/builtin/state/todo-list.ts"
+  },
+  {
+    "key": "file_0354",
+    "filepath": "apps/kimi-code/src/utils/persistence.ts"
+  },
+  {
+    "key": "file_0355",
+    "filepath": "packages/agent-core/src/di/graph.ts"
+  },
+  {
+    "key": "file_0356",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/welcome.ts"
+  },
+  {
+    "key": "file_0357",
+    "filepath": "packages/kosong/src/providers/kimi-files.ts"
+  },
+  {
+    "key": "file_0358",
+    "filepath": "packages/agent-core/src/tools/cron/jitter.ts"
+  },
+  {
+    "key": "file_0359",
+    "filepath": "apps/kimi-code/src/tui/utils/background-task-status.ts"
+  },
+  {
+    "key": "file_0360",
+    "filepath": "apps/kimi-code/src/tui/easter-eggs/dance.ts"
+  },
+  {
+    "key": "file_0361",
+    "filepath": "packages/kosong/src/generate.ts"
+  },
+  {
+    "key": "file_0362",
+    "filepath": "packages/agent-core/src/agent/cron/manager.ts"
+  },
+  {
+    "key": "file_0363",
+    "filepath": "packages/agent-core/src/tools/policies/path-access.ts"
+  },
+  {
+    "key": "file_0364",
+    "filepath": "packages/server/src/routes/connections.ts"
+  },
+  {
+    "key": "file_0365",
+    "filepath": "packages/server/src/services/gateway/restGatewayService.ts"
+  },
+  {
+    "key": "file_0366",
+    "filepath": "packages/server/src/svc/types.ts"
+  },
+  {
+    "key": "file_0367",
+    "filepath": "apps/kimi-code/src/cli/update/refresh.ts"
+  },
+  {
+    "key": "file_0368",
+    "filepath": "apps/kimi-code/src/tui/theme/theme.ts"
+  },
+  {
+    "key": "file_0369",
+    "filepath": "apps/kimi-code/src/tui/commands/reload.ts"
+  },
+  {
+    "key": "file_0370",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/outcome-prompts.ts"
+  },
+  {
+    "key": "file_0371",
+    "filepath": "apps/vis/server/src/routes/context.ts"
+  },
+  {
+    "key": "file_0372",
+    "filepath": "packages/kosong/src/providers/request-auth.ts"
+  },
+  {
+    "key": "file_0373",
+    "filepath": "packages/agent-core/src/agent/swarm/index.ts"
+  },
+  {
+    "key": "file_0374",
+    "filepath": "packages/agent-core/src/tools/background/task-stop.ts"
+  },
+  {
+    "key": "file_0375",
+    "filepath": "packages/telemetry/src/remote.ts"
+  },
+  {
+    "key": "file_0376",
+    "filepath": "apps/kimi-code/src/tui/utils/mcp-oauth.ts"
+  },
+  {
+    "key": "file_0377",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-renderers/truncated.ts"
+  },
+  {
+    "key": "file_0378",
+    "filepath": "packages/agent-core/src/services/question/question.ts"
+  },
+  {
+    "key": "file_0379",
+    "filepath": "packages/agent-core/src/tools/builtin/collaboration/skill-tool.ts"
+  },
+  {
+    "key": "file_0380",
+    "filepath": "apps/kimi-web/src/lib/parseDiff.ts"
+  },
+  {
+    "key": "file_0381",
+    "filepath": "packages/agent-core/src/config/schema.ts"
+  },
+  {
+    "key": "file_0382",
+    "filepath": "packages/agent-core/src/agent/context/projector.ts"
+  },
+  {
+    "key": "file_0383",
+    "filepath": "apps/kimi-code/src/utils/clipboard/clipboard-has-image.ts"
+  },
+  {
+    "key": "file_0384",
+    "filepath": "packages/agent-core/src/agent/background/persist.ts"
+  },
+  {
+    "key": "file_0385",
+    "filepath": "packages/acp-adapter/src/kaos-acp.ts"
+  },
+  {
+    "key": "file_0386",
+    "filepath": "packages/agent-core/src/services/message/messageService.ts"
+  },
+  {
+    "key": "file_0387",
+    "filepath": "packages/server/src/services/snapshot/snapshot.ts"
+  },
+  {
+    "key": "file_0388",
+    "filepath": "apps/kimi-web/src/i18n/index.ts"
+  },
+  {
+    "key": "file_0389",
+    "filepath": "packages/agent-core/src/services/prompt/prompt.ts"
+  },
+  {
+    "key": "file_0390",
+    "filepath": "apps/kimi-code/src/cli/version.ts"
+  },
+  {
+    "key": "file_0391",
+    "filepath": "apps/kimi-code/src/tui/theme/gradient-text.ts"
+  },
+  {
+    "key": "file_0392",
+    "filepath": "packages/agent-core/src/plugin/store.ts"
+  },
+  {
+    "key": "file_0393",
+    "filepath": "packages/agent-core/src/services/mcp/mcp.ts"
+  },
+  {
+    "key": "file_0394",
+    "filepath": "packages/node-sdk/src/sdk-rpc-client.ts"
+  },
+  {
+    "key": "file_0395",
+    "filepath": "apps/kimi-web/src/lib/clipboard.ts"
+  },
+  {
+    "key": "file_0396",
+    "filepath": "apps/kimi-code/src/tui/banner/state.ts"
+  },
+  {
+    "key": "file_0397",
+    "filepath": "packages/agent-core/src/loop/tool-scheduler.ts"
+  },
+  {
+    "key": "file_0398",
+    "filepath": "packages/acp-adapter/src/model-catalog.ts"
+  },
+  {
+    "key": "file_0399",
+    "filepath": "apps/kimi-code/src/tui/components/messages/shell-execution.ts"
+  },
+  {
+    "key": "file_0400",
+    "filepath": "packages/agent-core/src/tools/cron/clock.ts"
+  },
+  {
+    "key": "file_0401",
+    "filepath": "packages/oauth/src/storage.ts"
+  },
+  {
+    "key": "file_0402",
+    "filepath": "packages/agent-core/src/plugin/github-resolver.ts"
+  },
+  {
+    "key": "file_0403",
+    "filepath": "packages/agent-core/src/tools/policies/sensitive.ts"
+  },
+  {
+    "key": "file_0404",
+    "filepath": "apps/kimi-code/src/tui/utils/image-placeholder.ts"
+  },
+  {
+    "key": "file_0405",
+    "filepath": "apps/kimi-code/src/cli/options.ts"
+  },
+  {
+    "key": "file_0406",
+    "filepath": "packages/agent-core/src/loop/retry.ts"
+  },
+  {
+    "key": "file_0407",
+    "filepath": "packages/migration-legacy/src/steps/mcp.ts"
+  },
+  {
+    "key": "file_0408",
+    "filepath": "apps/vis/server/src/lib/blob-resolver.ts"
+  },
+  {
+    "key": "file_0409",
+    "filepath": "apps/kimi-code/src/tui/controllers/clipboard-image-hint.ts"
+  },
+  {
+    "key": "file_0410",
+    "filepath": "apps/kimi-code/src/tui/utils/terminal-notification.ts"
+  },
+  {
+    "key": "file_0411",
+    "filepath": "packages/kosong/src/catalog.ts"
+  },
+  {
+    "key": "file_0412",
+    "filepath": "packages/agent-core/src/tools/support/result-builder.ts"
+  },
+  {
+    "key": "file_0413",
+    "filepath": "packages/agent-core/src/services/fs/fsSearch.ts"
+  },
+  {
+    "key": "file_0414",
+    "filepath": "packages/server/src/routes/auth.ts"
+  },
+  {
+    "key": "file_0415",
+    "filepath": "packages/agent-core/src/telemetry.ts"
+  },
+  {
+    "key": "file_0416",
+    "filepath": "apps/kimi-code/src/tui/utils/startup.ts"
+  },
+  {
+    "key": "file_0417",
+    "filepath": "apps/kimi-code/src/tui/utils/session-picker-rows.ts"
+  },
+  {
+    "key": "file_0418",
+    "filepath": "packages/oauth/src/errors.ts"
+  },
+  {
+    "key": "file_0419",
+    "filepath": "apps/kimi-code/src/tui/components/messages/goal-format.ts"
+  },
+  {
+    "key": "file_0420",
+    "filepath": "packages/acp-adapter/src/version.ts"
+  },
+  {
+    "key": "file_0421",
+    "filepath": "packages/acp-adapter/src/modes.ts"
+  },
+  {
+    "key": "file_0422",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/working-tips.ts"
+  },
+  {
+    "key": "file_0423",
+    "filepath": "apps/vis/server/src/start.ts"
+  },
+  {
+    "key": "file_0424",
+    "filepath": "apps/kimi-code/src/tui/theme/terminal-background.ts"
+  },
+  {
+    "key": "file_0425",
+    "filepath": "apps/kimi-code/src/tui/utils/goal-completion.ts"
+  },
+  {
+    "key": "file_0426",
+    "filepath": "packages/agent-core/src/tools/background/task-list.ts"
+  },
+  {
+    "key": "file_0427",
+    "filepath": "packages/agent-core/src/agent/llm-request-logger.ts"
+  },
+  {
+    "key": "file_0428",
+    "filepath": "apps/kimi-code/src/tui/reverse-rpc/question/handler.ts"
+  },
+  {
+    "key": "file_0429",
+    "filepath": "packages/migration-legacy/src/steps/skills.ts"
+  },
+  {
+    "key": "file_0430",
+    "filepath": "packages/agent-core/src/tools/cron/session-store.ts"
+  },
+  {
+    "key": "file_0431",
+    "filepath": "apps/kimi-code/src/tui/theme/custom-theme-loader.ts"
+  },
+  {
+    "key": "file_0432",
+    "filepath": "apps/kimi-code/src/migration/detect-pending.ts"
+  },
+  {
+    "key": "file_0433",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/device-code-box.ts"
+  },
+  {
+    "key": "file_0434",
+    "filepath": "packages/agent-core/src/agent/injection/plugin-session-start.ts"
+  },
+  {
+    "key": "file_0435",
+    "filepath": "apps/vis/server/src/lib/agent-tree.ts"
+  },
+  {
+    "key": "file_0436",
+    "filepath": "packages/migration-legacy/src/migration-errors-log.ts"
+  },
+  {
+    "key": "file_0437",
+    "filepath": "packages/telemetry/src/crash.ts"
+  },
+  {
+    "key": "file_0438",
+    "filepath": "apps/kimi-code/src/tui/utils/image-attachment-store.ts"
+  },
+  {
+    "key": "file_0439",
+    "filepath": "packages/agent-core/src/mcp/auth-tool.ts"
+  },
+  {
+    "key": "file_0440",
+    "filepath": "packages/agent-core/src/services/coreProcess/coreProcessService.ts"
+  },
+  {
+    "key": "file_0441",
+    "filepath": "packages/protocol/src/asyncapi.ts"
+  },
+  {
+    "key": "file_0442",
+    "filepath": "packages/node-sdk/src/auth.ts"
+  },
+  {
+    "key": "file_0443",
+    "filepath": "apps/kimi-web/src/composables/useMentionMenu.ts"
+  },
+  {
+    "key": "file_0444",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/set-goal-budget.ts"
+  },
+  {
+    "key": "file_0445",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/moon-loader.ts"
+  },
+  {
+    "key": "file_0446",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-renderers/summary.ts"
+  },
+  {
+    "key": "file_0447",
+    "filepath": "packages/agent-core/src/tools/cron/cron-create.ts"
+  },
+  {
+    "key": "file_0448",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/banner.ts"
+  },
+  {
+    "key": "file_0449",
+    "filepath": "apps/kimi-web/src/composables/useInputHistory.ts"
+  },
+  {
+    "key": "file_0450",
+    "filepath": "apps/kimi-code/src/tui/components/messages/mcp-status-panel.ts"
+  },
+  {
+    "key": "file_0451",
+    "filepath": "packages/server/src/middleware/defineRoute.ts"
+  },
+  {
+    "key": "file_0452",
+    "filepath": "packages/kosong/src/errors.ts"
+  },
+  {
+    "key": "file_0453",
+    "filepath": "packages/agent-core/src/agent/permission/policies/exit-plan-mode-review-ask.ts"
+  },
+  {
+    "key": "file_0454",
+    "filepath": "packages/agent-core/src/agent/compaction/strategy.ts"
+  },
+  {
+    "key": "file_0455",
+    "filepath": "packages/agent-core/src/config/env-model.ts"
+  },
+  {
+    "key": "file_0456",
+    "filepath": "packages/kosong/src/providers/openai-common.ts"
+  },
+  {
+    "key": "file_0457",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/update-preference-selector.ts"
+  },
+  {
+    "key": "file_0458",
+    "filepath": "apps/kimi-code/src/utils/shell-quote.ts"
+  },
+  {
+    "key": "file_0459",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/theme-selector.ts"
+  },
+  {
+    "key": "file_0460",
+    "filepath": "packages/agent-core/src/rpc/types.ts"
+  },
+  {
+    "key": "file_0461",
+    "filepath": "packages/telemetry/src/index.ts"
+  },
+  {
+    "key": "file_0462",
+    "filepath": "packages/agent-core/src/mcp/types.ts"
+  },
+  {
+    "key": "file_0463",
+    "filepath": "apps/kimi-code/src/tui/utils/hook-result-format.ts"
+  },
+  {
+    "key": "file_0464",
+    "filepath": "packages/agent-core/src/mcp/session-config.ts"
+  },
+  {
+    "key": "file_0465",
+    "filepath": "packages/server/src/version.ts"
+  },
+  {
+    "key": "file_0466",
+    "filepath": "packages/oauth/src/types.ts"
+  },
+  {
+    "key": "file_0467",
+    "filepath": "packages/agent-core/src/loop/errors.ts"
+  },
+  {
+    "key": "file_0468",
+    "filepath": "packages/agent-core/src/di/errors.ts"
+  },
+  {
+    "key": "file_0469",
+    "filepath": "apps/kimi-code/src/cli/startup-error.ts"
+  },
+  {
+    "key": "file_0470",
+    "filepath": "packages/migration-legacy/src/marker.ts"
+  },
+  {
+    "key": "file_0471",
+    "filepath": "packages/server/src/services/serviceCollection.ts"
+  },
+  {
+    "key": "file_0472",
+    "filepath": "packages/migration-legacy/src/sessions/classify.ts"
+  },
+  {
+    "key": "file_0473",
+    "filepath": "apps/kimi-code/src/tui/components/messages/background-agent-status.ts"
+  },
+  {
+    "key": "file_0474",
+    "filepath": "apps/kimi-code/src/tui/components/panes/queue-pane.ts"
+  },
+  {
+    "key": "file_0475",
+    "filepath": "apps/kimi-code/src/tui/components/messages/tool-renderers/registry.ts"
+  },
+  {
+    "key": "file_0476",
+    "filepath": "packages/server/src/routes/registerApiV1Routes.ts"
+  },
+  {
+    "key": "file_0477",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/update-goal.ts"
+  },
+  {
+    "key": "file_0478",
+    "filepath": "packages/migration-legacy/src/steps/user-history.ts"
+  },
+  {
+    "key": "file_0479",
+    "filepath": "packages/agent-core/src/services/modelCatalog/modelCatalog.ts"
+  },
+  {
+    "key": "file_0480",
+    "filepath": "packages/agent-core/src/tools/builtin/web/fetch-url.ts"
+  },
+  {
+    "key": "file_0481",
+    "filepath": "packages/server/src/svc/install-plan.ts"
+  },
+  {
+    "key": "file_0482",
+    "filepath": "packages/agent-core/src/agent/permission/policies/plan-mode-tool-approve.ts"
+  },
+  {
+    "key": "file_0483",
+    "filepath": "packages/agent-core/src/errors/serialize.ts"
+  },
+  {
+    "key": "file_0484",
+    "filepath": "packages/agent-core/src/tools/cron/persist.ts"
+  },
+  {
+    "key": "file_0485",
+    "filepath": "apps/kimi-code/src/tui/components/messages/user-message.ts"
+  },
+  {
+    "key": "file_0486",
+    "filepath": "packages/agent-core/src/tools/builtin/file/line-endings.ts"
+  },
+  {
+    "key": "file_0487",
+    "filepath": "packages/server/src/svc/systemd-unit.ts"
+  },
+  {
+    "key": "file_0488",
+    "filepath": "packages/agent-core/src/agent/permission/matches-rule.ts"
+  },
+  {
+    "key": "file_0489",
+    "filepath": "packages/agent-core/src/rpc/client.ts"
+  },
+  {
+    "key": "file_0490",
+    "filepath": "apps/kimi-code/src/tui/config.ts"
+  },
+  {
+    "key": "file_0491",
+    "filepath": "packages/kosong/src/providers/capability-registry.ts"
+  },
+  {
+    "key": "file_0492",
+    "filepath": "apps/kimi-web/src/lib/storage.ts"
+  },
+  {
+    "key": "file_0493",
+    "filepath": "packages/agent-core/src/agent/context/notification-xml.ts"
+  },
+  {
+    "key": "file_0494",
+    "filepath": "packages/agent-core/src/plugin/source.ts"
+  },
+  {
+    "key": "file_0495",
+    "filepath": "packages/agent-core/src/agent/compaction/micro.ts"
+  },
+  {
+    "key": "file_0496",
+    "filepath": "packages/agent-core/src/tools/support/list-directory.ts"
+  },
+  {
+    "key": "file_0497",
+    "filepath": "packages/acp-adapter/src/approval.ts"
+  },
+  {
+    "key": "file_0498",
+    "filepath": "packages/agent-core/src/session/hooks/engine.ts"
+  },
+  {
+    "key": "file_0499",
+    "filepath": "packages/agent-core/src/agent/turn/tool-dedup.ts"
+  },
+  {
+    "key": "file_0500",
+    "filepath": "apps/kimi-code/src/tui/components/dialogs/platform-selector.ts"
+  },
+  {
+    "key": "file_0501",
+    "filepath": "packages/acp-adapter/src/builtin-commands.ts"
+  },
+  {
+    "key": "file_0502",
+    "filepath": "packages/server/src/routes/meta.ts"
+  },
+  {
+    "key": "file_0503",
+    "filepath": "packages/server/src/request-id.ts"
+  },
+  {
+    "key": "file_0504",
+    "filepath": "packages/agent-core/src/config/path.ts"
+  },
+  {
+    "key": "file_0505",
+    "filepath": "packages/agent-core/src/utils/workdir-slug.ts"
+  },
+  {
+    "key": "file_0506",
+    "filepath": "packages/agent-core/src/version.ts"
+  },
+  {
+    "key": "file_0507",
+    "filepath": "packages/agent-core/src/tools/cron/time-format.ts"
+  },
+  {
+    "key": "file_0508",
+    "filepath": "apps/kimi-code/src/tui/constant/feedback.ts"
+  },
+  {
+    "key": "file_0509",
+    "filepath": "apps/kimi-code/src/tui/reverse-rpc/approval/controller.ts"
+  },
+  {
+    "key": "file_0510",
+    "filepath": "packages/agent-core/src/skill/types.ts"
+  },
+  {
+    "key": "file_0511",
+    "filepath": "apps/kimi-code/src/tui/commands/btw.ts"
+  },
+  {
+    "key": "file_0512",
+    "filepath": "packages/agent-core/src/tools/builtin/goal/create-goal.ts"
+  },
+  {
+    "key": "file_0513",
+    "filepath": "apps/kimi-code/src/native/native-require.ts"
+  },
+  {
+    "key": "file_0514",
+    "filepath": "apps/kimi-code/src/tui/tui-state.ts"
+  },
+  {
+    "key": "file_0515",
+    "filepath": "apps/kimi-code/src/utils/paths.ts"
+  },
+  {
+    "key": "file_0516",
+    "filepath": "packages/agent-core/src/tools/cron/cron-fire-xml.ts"
+  },
+  {
+    "key": "file_0517",
+    "filepath": "packages/agent-core/src/tools/support/rule-match.ts"
+  },
+  {
+    "key": "file_0518",
+    "filepath": "packages/kosong/src/capability.ts"
+  },
+  {
+    "key": "file_0519",
+    "filepath": "apps/kimi-code/src/tui/components/messages/swarm-markers.ts"
+  },
+  {
+    "key": "file_0520",
+    "filepath": "packages/agent-core/src/agent/permission/policies/agent-swarm-exclusive-deny.ts"
+  },
+  {
+    "key": "file_0521",
+    "filepath": "packages/agent-core/src/tools/builtin/planning/enter-plan-mode.ts"
+  },
+  {
+    "key": "file_0522",
+    "filepath": "apps/kimi-code/src/tui/commands/skills.ts"
+  },
+  {
+    "key": "file_0523",
+    "filepath": "apps/kimi-code/src/utils/process/external-editor.ts"
+  },
+  {
+    "key": "file_0524",
+    "filepath": "packages/agent-core/src/agent/turn/canonical-args.ts"
+  },
+  {
+    "key": "file_0525",
+    "filepath": "packages/oauth/src/managed-feedback.ts"
+  },
+  {
+    "key": "file_0526",
+    "filepath": "packages/acp-adapter/src/config-options.ts"
+  },
+  {
+    "key": "file_0527",
+    "filepath": "packages/acp-adapter/src/question.ts"
+  },
+  {
+    "key": "file_0528",
+    "filepath": "packages/agent-core/src/services/tool/tool.ts"
+  },
+  {
+    "key": "file_0529",
+    "filepath": "packages/agent-core/src/di/instantiation.ts"
+  },
+  {
+    "key": "file_0530",
+    "filepath": "apps/kimi-web/src/composables/useSlashMenu.ts"
+  },
+  {
+    "key": "file_0531",
+    "filepath": "apps/kimi-code/src/cli/goal-prompt.ts"
+  },
+  {
+    "key": "file_0532",
+    "filepath": "apps/kimi-code/src/tui/components/messages/status-message.ts"
+  },
+  {
+    "key": "file_0533",
+    "filepath": "apps/vis/server/src/routes/blobs.ts"
+  },
+  {
+    "key": "file_0534",
+    "filepath": "packages/migration-legacy/src/stub-detect.ts"
+  },
+  {
+    "key": "file_0535",
+    "filepath": "packages/agent-core/src/config/merge.ts"
+  },
+  {
+    "key": "file_0536",
+    "filepath": "packages/agent-core/src/tools/cron/cron-list.ts"
+  },
+  {
+    "key": "file_0537",
+    "filepath": "apps/kimi-code/src/tui/reverse-rpc/base-controller.ts"
+  },
+  {
+    "key": "file_0538",
+    "filepath": "packages/agent-core/src/utils/per-id-json-store.ts"
+  },
+  {
+    "key": "file_0539",
+    "filepath": "packages/agent-core/src/tools/builtin/file/write.ts"
+  },
+  {
+    "key": "file_0540",
+    "filepath": "packages/agent-core/src/services/task/taskService.ts"
+  },
+  {
+    "key": "file_0541",
+    "filepath": "packages/agent-core/src/utils/completion-budget.ts"
+  },
+  {
+    "key": "file_0542",
+    "filepath": "apps/kimi-code/src/tui/utils/searchable-list.ts"
+  },
+  {
+    "key": "file_0543",
+    "filepath": "packages/agent-core/src/agent/config/index.ts"
+  },
+  {
+    "key": "file_0544",
+    "filepath": "apps/kimi-code/src/cli/update/rollout.ts"
+  },
+  {
+    "key": "file_0545",
+    "filepath": "apps/kimi-code/src/tui/components/chrome/todo-panel.ts"
+  }
+]

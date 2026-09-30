@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-d9b69a61",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "ce0c13191fd8f47ffde193b892efef99b1eb69d5",
+    "fixed": "d9b69a61459ba24081f97de0f9049b0b52be0841"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "promoteThinkingTagsToBlocks",
+        "kind": "function",
+        "start_line": 332,
+        "end_line": 371
+      },
+      {
+        "filepath": "src/agents/pi-embedded-utils.ts",
+        "qualname": "<callback@336>",
+        "kind": "function",
+        "start_line": 336,
+        "end_line": 336
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_029.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_029.zip"
+  }
+}

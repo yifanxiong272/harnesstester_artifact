@@ -1,0 +1,45 @@
+{
+  "case_id": "openclaw-f23da067",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "92cada2acad80b05e3d2f89913d4a7ed5fd43499",
+    "fixed": "f23da067f67e81af0e6817984ec650f1712a61f8"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/bash-tools.exec-host-gateway.ts",
+        "qualname": "processGatewayAllowlist",
+        "kind": "function",
+        "start_line": 54,
+        "end_line": 322
+      },
+      {
+        "filepath": "src/infra/exec-approvals-analysis.ts",
+        "qualname": "splitShellPipeline",
+        "kind": "function",
+        "start_line": 337,
+        "end_line": 584
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_069.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_069.zip"
+  }
+}

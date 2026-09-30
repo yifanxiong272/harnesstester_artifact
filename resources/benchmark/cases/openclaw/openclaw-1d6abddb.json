@@ -1,0 +1,87 @@
+{
+  "case_id": "openclaw-1d6abddb",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "226bf74634ce47e0cb66be4ef708d38d92e43e15",
+    "fixed": "1d6abddb9f2795c0287bd63942dba2e12cc9a5fb"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/markdown/ir.ts",
+        "qualname": "appendRow",
+        "kind": "function",
+        "start_line": 471,
+        "end_line": 486
+      },
+      {
+        "filepath": "src/markdown/ir.ts",
+        "qualname": "renderTokens",
+        "kind": "function",
+        "start_line": 512,
+        "end_line": 692
+      },
+      {
+        "filepath": "src/markdown/ir.ts",
+        "qualname": "mergeStyleSpans",
+        "kind": "function",
+        "start_line": 733,
+        "end_line": 754
+      },
+      {
+        "filepath": "src/signal/format.ts",
+        "qualname": "renderSignalText",
+        "kind": "function",
+        "start_line": 144,
+        "end_line": 208
+      },
+      {
+        "filepath": "src/signal/format.ts",
+        "qualname": "markdownToSignalText",
+        "kind": "function",
+        "start_line": 210,
+        "end_line": 222
+      },
+      {
+        "filepath": "src/signal/format.ts",
+        "qualname": "markdownToSignalTextChunks",
+        "kind": "function",
+        "start_line": 224,
+        "end_line": 238
+      },
+      {
+        "filepath": "src/signal/format.ts",
+        "qualname": "<callback@237>",
+        "kind": "function",
+        "start_line": 237,
+        "end_line": 237
+      },
+      {
+        "filepath": "src/signal/format.ts",
+        "qualname": "applyInsertionsToStyles",
+        "kind": "function",
+        "start_line": 94,
+        "end_line": 142
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_014.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_014.zip"
+  }
+}

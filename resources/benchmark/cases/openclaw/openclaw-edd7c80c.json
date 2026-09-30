@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-edd7c80c",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "db7c093f07187372fcccd5ef30a976c4d064c01e",
+    "fixed": "edd7c80cdc28318fe9b8fd7369abee993d8a2521"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "emitBlockReplySafely",
+        "kind": "function",
+        "start_line": 108,
+        "end_line": 120
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "pushAssistantText",
+        "kind": "function",
+        "start_line": 177,
+        "end_line": 188
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "finalizeAssistantTexts",
+        "kind": "function",
+        "start_line": 190,
+        "end_line": 219
+      },
+      {
+        "filepath": "src/agents/pi-embedded-subscribe.ts",
+        "qualname": "emitBlockChunk",
+        "kind": "function",
+        "start_line": 492,
+        "end_line": 558
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_017.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_017.zip"
+  }
+}

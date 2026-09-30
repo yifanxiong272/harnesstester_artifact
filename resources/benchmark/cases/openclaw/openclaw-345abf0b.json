@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-345abf0b",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "a3d2021eea8991cfcf1e8108be4db165ee260f72",
+    "fixed": "345abf0b2058464583d5b956ef5878e8db9dc242"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/agents/tools/web-guarded-fetch.ts",
+        "qualname": "fetchWithWebToolsNetworkGuard",
+        "kind": "function",
+        "start_line": 31,
+        "end_line": 40
+      },
+      {
+        "filepath": "src/agents/tools/web-guarded-fetch.ts",
+        "qualname": "withTrustedWebToolsEndpoint",
+        "kind": "function",
+        "start_line": 54,
+        "end_line": 65
+      },
+      {
+        "filepath": "src/infra/net/fetch-guard.ts",
+        "qualname": "fetchWithSsrFGuard",
+        "kind": "function",
+        "start_line": 110,
+        "end_line": 218
+      },
+      {
+        "filepath": "src/slack/send.ts",
+        "qualname": "uploadSlackFile",
+        "kind": "function",
+        "start_line": 188,
+        "end_line": 245
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_024.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_024.zip"
+  }
+}

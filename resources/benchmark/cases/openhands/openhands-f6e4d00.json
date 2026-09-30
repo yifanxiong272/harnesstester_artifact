@@ -1,0 +1,33 @@
+{
+  "case_id": "openhands-f6e4d00",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "7782f2afe978363b7934a5c1c05bbf6ab4e70f22",
+    "fixed": "f6e4d00df19f7aa32008f9fd3b03eb62a3b9727c"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "openhands/llm/fn_call_converter.py",
+        "qualname": "convert_tool_call_to_string",
+        "kind": "function",
+        "start_line": 405,
+        "end_line": 436
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_040.zip",
+    "fixed": "../../dependencies/openhands/snapshot_040.zip"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "rd-agent-bade19a0",
+  "project": "rd-agent",
+  "repository": "https://github.com/microsoft/RD-Agent",
+  "revisions": {
+    "buggy": "4069353338fdc5b9a2a37adc2345f1aadc417709",
+    "fixed": "bade19a087dbafe5434828bc957dfef105c4053d"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "rdagent/components/coder/factor_coder/CoSTEER/evaluators.py",
+        "qualname": "FactorDatetimeDailyEvaluator.evaluate",
+        "kind": "function",
+        "start_line": 185,
+        "end_line": 203
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/rd-agent/snapshot_012.zip",
+    "fixed": "../../dependencies/rd-agent/snapshot_012.zip"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "openclaw-718bc3f9",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "c20035094ddf95d3186429e88c1b753b99edc36b",
+    "fixed": "718bc3f9c818a3521c675a58d8d2942c51d39f4e"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/auto-reply/reply/normalize-reply.ts",
+        "qualname": "normalizeReplyPayload",
+        "kind": "function",
+        "start_line": 20,
+        "end_line": 77
+      },
+      {
+        "filepath": "src/auto-reply/reply/reply-dispatcher.ts",
+        "qualname": "enqueue",
+        "kind": "function",
+        "start_line": 101,
+        "end_line": 130
+      },
+      {
+        "filepath": "src/auto-reply/reply/reply-dispatcher.ts",
+        "qualname": "normalizeReplyPayloadInternal",
+        "kind": "function",
+        "start_line": 68,
+        "end_line": 86
+      },
+      {
+        "filepath": "src/telegram/bot-message-dispatch.ts",
+        "qualname": "deliver",
+        "kind": "function",
+        "start_line": 207,
+        "end_line": 233
+      },
+      {
+        "filepath": "src/telegram/bot-message-dispatch.ts",
+        "qualname": "dispatchTelegramMessage",
+        "kind": "function",
+        "start_line": 36,
+        "end_line": 288
+      },
+      {
+        "filepath": "src/telegram/bot-native-commands.ts",
+        "qualname": "<callback@335>",
+        "kind": "function",
+        "start_line": 335,
+        "end_line": 516
+      },
+      {
+        "filepath": "src/telegram/bot-native-commands.ts",
+        "qualname": "deliver",
+        "kind": "function",
+        "start_line": 491,
+        "end_line": 506
+      },
+      {
+        "filepath": "src/telegram/bot/delivery.ts",
+        "qualname": "deliverReplies",
+        "kind": "function",
+        "start_line": 30,
+        "end_line": 287
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_005.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_005.zip"
+  }
+}

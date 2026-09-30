@@ -1,0 +1,52 @@
+{
+  "case_id": "openclaw-dded5696",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "104d32bb64cdf19d5e77f70553a511a2ae90ad1c",
+    "fixed": "dded569626b0d8e7bdab10b5e7528b6caf73a0f1"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/node-host/invoke-system-run-plan.ts",
+        "qualname": "buildSystemRunApprovalPlan",
+        "kind": "function",
+        "start_line": 132,
+        "end_line": 168
+      },
+      {
+        "filepath": "src/node-host/invoke-system-run-plan.ts",
+        "qualname": "hardenApprovedExecutionPaths",
+        "kind": "function",
+        "start_line": 56,
+        "end_line": 130
+      },
+      {
+        "filepath": "src/node-host/invoke-system-run.ts",
+        "qualname": "evaluateSystemRunPolicyPhase",
+        "kind": "function",
+        "start_line": 228,
+        "end_line": 340
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_065.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_065.zip"
+  }
+}

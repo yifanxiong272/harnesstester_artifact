@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-bd39fe6f",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "b1300e555075b15f421a099967b204b3181349bd",
+    "fixed": "bd39fe6fd4e537515c993f3b0bf487a720b97523"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/core/tools/ToolRepetitionDetector.ts",
+        "qualname": "ToolRepetitionDetector.check",
+        "kind": "function",
+        "start_line": 28,
+        "end_line": 67
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_009.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_009.zip"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "project": "openclaw",
+  "project_root": "../../subjects/openclaw",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  }
+}

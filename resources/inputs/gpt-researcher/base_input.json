@@ -1,0 +1,17 @@
+{
+  "project": "gpt-researcher",
+  "project_root": "../../subjects/gpt-researcher",
+  "ldh": {
+    "regions_json": "regions.json"
+  },
+  "general_cov": {
+    "coverage_json": "coverage.json"
+  },
+  "runtime": {
+    "coverage_source": "gpt_researcher,backend,multi_agents,multi_agents_ag2",
+    "python": "../../../.venvs/gpt-researcher/bin/python",
+    "test_pythonpath": [
+      "backend"
+    ]
+  }
+}

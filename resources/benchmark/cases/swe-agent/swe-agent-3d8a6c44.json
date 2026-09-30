@@ -1,0 +1,33 @@
+{
+  "case_id": "swe-agent-3d8a6c44",
+  "project": "swe-agent",
+  "repository": "https://github.com/SWE-agent/SWE-agent",
+  "revisions": {
+    "buggy": "55c21923edcf42e7a62557a625bf4ebb0613be9f",
+    "fixed": "3d8a6c44f16f190735c774676fea80315cd84da5"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "sweagent/agent/models.py",
+        "qualname": "OllamaModel.query",
+        "kind": "function",
+        "start_line": 442,
+        "end_line": 464
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/swe-agent/snapshot_003.zip",
+    "fixed": "../../dependencies/swe-agent/snapshot_003.zip"
+  }
+}

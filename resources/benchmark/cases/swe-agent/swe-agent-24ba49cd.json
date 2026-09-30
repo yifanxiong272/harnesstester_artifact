@@ -1,0 +1,33 @@
+{
+  "case_id": "swe-agent-24ba49cd",
+  "project": "swe-agent",
+  "repository": "https://github.com/SWE-agent/SWE-agent",
+  "revisions": {
+    "buggy": "c00004721e87ad28a22e402cfe30e125255e7c2f",
+    "fixed": "24ba49cd53efd45d4e530837606739415dabbaa7"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "sweagent/agent/models.py",
+        "qualname": "LiteLLMModel._history_to_messages",
+        "kind": "function",
+        "start_line": 733,
+        "end_line": 763
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/swe-agent/snapshot_001.zip",
+    "fixed": "../../dependencies/swe-agent/snapshot_001.zip"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-dd245cc4",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "27708f303876118e13e0587a0311b26702892f07",
+    "fixed": "dd245cc40cd9fd49b2955ed9bcad28ad7df62755"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/api/providers/vscode-lm.ts",
+        "qualname": "VsCodeLmHandler.internalCountTokens",
+        "kind": "function",
+        "start_line": 225,
+        "end_line": 291
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_012.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_012.zip"
+  }
+}

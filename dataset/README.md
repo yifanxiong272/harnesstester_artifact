@@ -1,0 +1,36 @@
+# Study Results
+
+- `subjects.csv`: Project names, languages, releases, and measured commits.
+- `rq1/`: Original-suite coverage, mutation outcomes, and measured LLM-dependent harness locations.
+  - `coverage.csv`: Covered and total line/branch counts for the harness and whole project.
+  - `mutation.csv`: Mutant counts and score denominator.
+  - `<project>/`: Per-project measurement data.
+    - `coverage.json`: Python executed/missing lines and edges, or TypeScript line ranges and per-line branch counts.
+    - `regions.json`: Source, data-dependent, and control-dependent code locations.
+- `rq2/`: Annotation and coverage records for 700 branches, joined by `branch_id`.
+  - `original.csv`: Initial three-dimensional annotations before reviewer discussion, including disagreements.
+  - `branches.csv`: Final three-dimensional labels agreed after reviewer discussion, with pinned source links. `value_or_pattern_matching` combines value dispatch and content-pattern matching.
+  - `coverage.csv`: Original-suite and augmented branch coverage, derived from coverage data and branch analysis. States record confirmed outcomes as `full_branch_covered`, `partial_branch_covered`, or `uncovered_branch`.
+  - `taxonomy_summary.csv`: Category counts and shares within each dimension.
+  - `figures/`: PNG and PDF figures.
+    - `heatmap_intention_judgment`: Component intention and judgment pattern associations.
+    - `heatmap_judgment_form`: Judgment pattern and LLM value form associations.
+    - `heatmap_form_intention`: LLM value form and component intention associations.
+    - `branch_coverage_by_taxonomy`: Original-suite coverage states by semantic category.
+    - `branch_coverage_gain_by_taxonomy`: Coverage transitions after augmentation by semantic category.
+- `rq3/`: Augment results for six methods per project under the 120-minute budget: `ours`, `strict_agnostic`, and general/scoped variants of CoverUp and TestTailor (Python) or Qodo Cover and TestPilot 2 (TypeScript). Scoped methods target LLM-dependent harness files; general methods use project-wide selection.
+  - OpenHands additionally includes `guidance_only` and `retriever_only`, each adding the named component to `strict_agnostic`.
+  - `coverage.csv`: Coverage counts at 15-minute checkpoints; `ldh` and `project` identify harness and whole-project metrics. Percentage-point gain is `100 * delta / denominator`.
+  - `mutation.csv`: Original and augmented mutant outcomes. Mutation-score gain is `100 * additional_killed / denominator`.
+  - `tests.csv`: Generated-test index with coverage replay status, mutation test selectors, and instrumentation-specific replay conditions.
+  - `tests/<project>/<method>/`: Generated test files, retaining checkout-relative paths, and required tool facades.
+  - `figures/`: PNG and PDF figures.
+    - `ldh_coverage_gain`: Harness line- and branch-coverage gains for all six methods.
+    - `project_coverage_gain`: Whole-project line- and branch-coverage gains for all six methods.
+    - `mutation_score_gain`: Mutation-score gains for all six methods.
+    - `semantic_coverage_gain`: Ours' coverage transitions by RQ2 category, derived from `rq2/branches.csv` and `rq2/coverage.csv`.
+    - `fine_grained_ablation`: OpenHands harness line- and branch-coverage gains for Ours, Contract-Agnostic, Guidance Only, and Retriever Only.
+- `rq4/`: Historical Probe results. In the test index, `test` is relative to the directory containing that index, `test_file` is checkout-relative, and `failed_nodeids` lists recorded failure selectors.
+  - `historical/`: Paired buggy/fixed-revision results; repositories and commits are specified in the [benchmark cases](../resources/benchmark/cases/).
+    - `records.csv`: Retained buggy-fail/fixed-pass tests with manual test-level outcomes. `AC` identifies the benchmark defect through a valid oracle; `FP` does not satisfy that criterion. For each method, case-level R counts cases with an AC; FP counts cases with an FP and no AC.
+    - `<project>/<method>/<case_id>/`: Generated tests associated with each historical case.

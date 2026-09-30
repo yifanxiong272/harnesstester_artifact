@@ -1,0 +1,59 @@
+{
+  "case_id": "openclaw-c2d185aa",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "bfadc8f4ee5008b0f40ac382fe40bf17dfee3113",
+    "fixed": "c2d185aab7d41699a8bfeb448c7db9da34ec0f8d"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/auto-reply/reply/reply-dispatcher.ts",
+        "qualname": "<file>",
+        "kind": "file",
+        "start_line": 1,
+        "end_line": 152
+      },
+      {
+        "filepath": "src/auto-reply/reply/reply-dispatcher.ts",
+        "qualname": "normalizeReplyPayload",
+        "kind": "function",
+        "start_line": 48,
+        "end_line": 83
+      },
+      {
+        "filepath": "src/auto-reply/reply/reply-dispatcher.ts",
+        "qualname": "enqueue",
+        "kind": "function",
+        "start_line": 98,
+        "end_line": 115
+      },
+      {
+        "filepath": "src/auto-reply/reply/route-reply.ts",
+        "qualname": "routeReply",
+        "kind": "function",
+        "start_line": 55,
+        "end_line": 194
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_061.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_061.zip"
+  }
+}

@@ -1,0 +1,2346 @@
+[
+  {
+    "key": "file_0001",
+    "filepath": "src/agents/pi-embedded-helpers/errors.ts"
+  },
+  {
+    "key": "file_0002",
+    "filepath": "src/auto-reply/reply/acp-projector.ts"
+  },
+  {
+    "key": "file_0003",
+    "filepath": "src/agents/session-transcript-repair.ts"
+  },
+  {
+    "key": "file_0004",
+    "filepath": "src/agents/schema/clean-for-gemini.ts"
+  },
+  {
+    "key": "file_0005",
+    "filepath": "src/agents/bash-tools.process.ts"
+  },
+  {
+    "key": "file_0006",
+    "filepath": "src/agents/tools/web-fetch.ts"
+  },
+  {
+    "key": "file_0007",
+    "filepath": "src/agents/apply-patch.ts"
+  },
+  {
+    "key": "file_0008",
+    "filepath": "src/agents/bash-tools.exec-runtime.ts"
+  },
+  {
+    "key": "file_0009",
+    "filepath": "src/agents/tool-call-id.ts"
+  },
+  {
+    "key": "file_0010",
+    "filepath": "src/agents/tool-display-exec.ts"
+  },
+  {
+    "key": "file_0011",
+    "filepath": "src/logging/subsystem.ts"
+  },
+  {
+    "key": "file_0012",
+    "filepath": "src/agents/tool-images.ts"
+  },
+  {
+    "key": "file_0013",
+    "filepath": "src/agents/sandbox/docker.ts"
+  },
+  {
+    "key": "file_0014",
+    "filepath": "src/plugins/marketplace.ts"
+  },
+  {
+    "key": "file_0015",
+    "filepath": "src/cli/completion-cli.ts"
+  },
+  {
+    "key": "file_0016",
+    "filepath": "src/acp/client.ts"
+  },
+  {
+    "key": "file_0017",
+    "filepath": "src/agents/bootstrap-budget.ts"
+  },
+  {
+    "key": "file_0018",
+    "filepath": "src/infra/fs-safe.ts"
+  },
+  {
+    "key": "file_0019",
+    "filepath": "src/node-host/invoke-system-run-plan.ts"
+  },
+  {
+    "key": "file_0020",
+    "filepath": "src/agents/tool-display-exec-shell.ts"
+  },
+  {
+    "key": "file_0021",
+    "filepath": "src/agents/pi-embedded-block-chunker.ts"
+  },
+  {
+    "key": "file_0022",
+    "filepath": "src/media/image-ops.ts"
+  },
+  {
+    "key": "file_0023",
+    "filepath": "src/agents/tool-display-common.ts"
+  },
+  {
+    "key": "file_0024",
+    "filepath": "src/security/audit-extra.async.ts"
+  },
+  {
+    "key": "file_0025",
+    "filepath": "src/agents/skills-clawhub.ts"
+  },
+  {
+    "key": "file_0026",
+    "filepath": "src/gateway/ws-log.ts"
+  },
+  {
+    "key": "file_0027",
+    "filepath": "src/agents/pi-embedded-helpers/bootstrap.ts"
+  },
+  {
+    "key": "file_0028",
+    "filepath": "src/infra/ports-inspect.ts"
+  },
+  {
+    "key": "file_0029",
+    "filepath": "src/agents/bash-tools.shared.ts"
+  },
+  {
+    "key": "file_0030",
+    "filepath": "src/auto-reply/reply/slack-directives.ts"
+  },
+  {
+    "key": "file_0031",
+    "filepath": "src/auto-reply/reply/block-reply-pipeline.ts"
+  },
+  {
+    "key": "file_0032",
+    "filepath": "extensions/memory-lancedb/index.ts"
+  },
+  {
+    "key": "file_0033",
+    "filepath": "src/auto-reply/chunk.ts"
+  },
+  {
+    "key": "file_0034",
+    "filepath": "src/agents/pi-embedded-runner/openrouter-model-capabilities.ts"
+  },
+  {
+    "key": "file_0035",
+    "filepath": "src/auto-reply/reply/typing.ts"
+  },
+  {
+    "key": "file_0036",
+    "filepath": "src/agents/tools/web-fetch-utils.ts"
+  },
+  {
+    "key": "file_0037",
+    "filepath": "src/agents/session-write-lock.ts"
+  },
+  {
+    "key": "file_0038",
+    "filepath": "src/agents/auth-profiles/store.ts"
+  },
+  {
+    "key": "file_0039",
+    "filepath": "src/commands/doctor/shared/mutable-allowlist.ts"
+  },
+  {
+    "key": "file_0040",
+    "filepath": "src/infra/tailscale.ts"
+  },
+  {
+    "key": "file_0041",
+    "filepath": "src/agents/bash-process-registry.ts"
+  },
+  {
+    "key": "file_0042",
+    "filepath": "src/agents/cache-trace.ts"
+  },
+  {
+    "key": "file_0043",
+    "filepath": "src/agents/pi-embedded-runner/run/images.ts"
+  },
+  {
+    "key": "file_0044",
+    "filepath": "src/agents/pi-tools.params.ts"
+  },
+  {
+    "key": "file_0045",
+    "filepath": "src/plugins/provider-auth-ref.ts"
+  },
+  {
+    "key": "file_0046",
+    "filepath": "src/auto-reply/reply/post-compaction-context.ts"
+  },
+  {
+    "key": "file_0047",
+    "filepath": "src/auto-reply/command-auth.ts"
+  },
+  {
+    "key": "file_0048",
+    "filepath": "src/gateway/client.ts"
+  },
+  {
+    "key": "file_0049",
+    "filepath": "src/commands/doctor/shared/exec-safe-bins.ts"
+  },
+  {
+    "key": "file_0050",
+    "filepath": "src/secrets/resolve.ts"
+  },
+  {
+    "key": "file_0051",
+    "filepath": "src/plugins/update.ts"
+  },
+  {
+    "key": "file_0052",
+    "filepath": "extensions/voice-call/src/providers/stt-openai-realtime.ts"
+  },
+  {
+    "key": "file_0053",
+    "filepath": "src/agents/workspace.ts"
+  },
+  {
+    "key": "file_0054",
+    "filepath": "src/agents/sandbox/fs-paths.ts"
+  },
+  {
+    "key": "file_0055",
+    "filepath": "src/auto-reply/reply/block-streaming.ts"
+  },
+  {
+    "key": "file_0056",
+    "filepath": "src/commands/agents.config.ts"
+  },
+  {
+    "key": "file_0057",
+    "filepath": "src/auto-reply/reply/exec/directive.ts"
+  },
+  {
+    "key": "file_0058",
+    "filepath": "src/cron/normalize.ts"
+  },
+  {
+    "key": "file_0059",
+    "filepath": "src/infra/outbound/target-resolver.ts"
+  },
+  {
+    "key": "file_0060",
+    "filepath": "src/infra/exec-approvals-analysis.ts"
+  },
+  {
+    "key": "file_0061",
+    "filepath": "src/auto-reply/reply/subagents-utils.ts"
+  },
+  {
+    "key": "file_0062",
+    "filepath": "src/agents/sandbox/validate-sandbox-security.ts"
+  },
+  {
+    "key": "file_0063",
+    "filepath": "src/auto-reply/reply/session-delivery.ts"
+  },
+  {
+    "key": "file_0064",
+    "filepath": "src/plugins/hooks.ts"
+  },
+  {
+    "key": "file_0065",
+    "filepath": "src/agents/tools/web-fetch-visibility.ts"
+  },
+  {
+    "key": "file_0066",
+    "filepath": "src/commands/doctor/shared/open-policy-allowfrom.ts"
+  },
+  {
+    "key": "file_0067",
+    "filepath": "src/commands/doctor/providers/discord.ts"
+  },
+  {
+    "key": "file_0068",
+    "filepath": "extensions/line/src/flex-templates/media-control-cards.ts"
+  },
+  {
+    "key": "file_0069",
+    "filepath": "src/infra/push-apns.ts"
+  },
+  {
+    "key": "file_0070",
+    "filepath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+  },
+  {
+    "key": "file_0071",
+    "filepath": "src/agents/skills/refresh.ts"
+  },
+  {
+    "key": "file_0072",
+    "filepath": "src/canvas-host/server.ts"
+  },
+  {
+    "key": "file_0073",
+    "filepath": "src/daemon/service-audit.ts"
+  },
+  {
+    "key": "file_0074",
+    "filepath": "src/infra/clawhub.ts"
+  },
+  {
+    "key": "file_0075",
+    "filepath": "src/agents/subagent-registry-read.ts"
+  },
+  {
+    "key": "file_0076",
+    "filepath": "src/auto-reply/reply/queue/directive.ts"
+  },
+  {
+    "key": "file_0077",
+    "filepath": "src/commands/doctor/shared/default-account-warnings.ts"
+  },
+  {
+    "key": "file_0078",
+    "filepath": "src/agents/subagent-depth.ts"
+  },
+  {
+    "key": "file_0079",
+    "filepath": "packages/memory-host-sdk/src/host/batch-gemini.ts"
+  },
+  {
+    "key": "file_0080",
+    "filepath": "src/agents/pi-tools.host-edit.ts"
+  },
+  {
+    "key": "file_0081",
+    "filepath": "src/gateway/control-ui.ts"
+  },
+  {
+    "key": "file_0082",
+    "filepath": "src/commands/doctor/shared/stale-plugin-config.ts"
+  },
+  {
+    "key": "file_0083",
+    "filepath": "src/plugins/provider-auth-helpers.ts"
+  },
+  {
+    "key": "file_0084",
+    "filepath": "src/auto-reply/media-note.ts"
+  },
+  {
+    "key": "file_0085",
+    "filepath": "src/agents/sandbox/fs-bridge.ts"
+  },
+  {
+    "key": "file_0086",
+    "filepath": "src/agents/tools/web-shared.ts"
+  },
+  {
+    "key": "file_0087",
+    "filepath": "src/agents/auth-profiles/repair.ts"
+  },
+  {
+    "key": "file_0088",
+    "filepath": "src/commands/doctor/shared/bundled-plugin-load-paths.ts"
+  },
+  {
+    "key": "file_0089",
+    "filepath": "src/agents/tools/common.ts"
+  },
+  {
+    "key": "file_0090",
+    "filepath": "src/infra/control-ui-assets.ts"
+  },
+  {
+    "key": "file_0091",
+    "filepath": "src/agents/pi-embedded-runner/run/attempt.sessions-yield.ts"
+  },
+  {
+    "key": "file_0092",
+    "filepath": "src/auto-reply/reply/typing-mode.ts"
+  },
+  {
+    "key": "file_0093",
+    "filepath": "src/agents/anthropic-payload-log.ts"
+  },
+  {
+    "key": "file_0094",
+    "filepath": "src/agents/sandbox/runtime-status.ts"
+  },
+  {
+    "key": "file_0095",
+    "filepath": "src/process/exec.ts"
+  },
+  {
+    "key": "file_0096",
+    "filepath": "src/agents/pi-embedded-runner/history.ts"
+  },
+  {
+    "key": "file_0097",
+    "filepath": "src/agents/tools/sessions-send-helpers.ts"
+  },
+  {
+    "key": "file_0098",
+    "filepath": "src/cli/ports.ts"
+  },
+  {
+    "key": "file_0099",
+    "filepath": "src/cli/daemon-cli/restart-health.ts"
+  },
+  {
+    "key": "file_0100",
+    "filepath": "src/routing/resolve-route.ts"
+  },
+  {
+    "key": "file_0101",
+    "filepath": "src/auto-reply/reply/elevated-allowlist-matcher.ts"
+  },
+  {
+    "key": "file_0102",
+    "filepath": "src/security/mutable-allowlist-detectors.ts"
+  },
+  {
+    "key": "file_0103",
+    "filepath": "src/auto-reply/reply/streaming-directives.ts"
+  },
+  {
+    "key": "file_0104",
+    "filepath": "src/media/web-media.ts"
+  },
+  {
+    "key": "file_0105",
+    "filepath": "src/agents/pi-extensions/context-pruning/settings.ts"
+  },
+  {
+    "key": "file_0106",
+    "filepath": "src/agents/tool-description-summary.ts"
+  },
+  {
+    "key": "file_0107",
+    "filepath": "src/auto-reply/fallback-state.ts"
+  },
+  {
+    "key": "file_0108",
+    "filepath": "src/commands/doctor-session-locks.ts"
+  },
+  {
+    "key": "file_0109",
+    "filepath": "src/auto-reply/reply/reply-elevated.ts"
+  },
+  {
+    "key": "file_0110",
+    "filepath": "src/agents/subagent-registry-queries.ts"
+  },
+  {
+    "key": "file_0111",
+    "filepath": "src/gateway/net.ts"
+  },
+  {
+    "key": "file_0112",
+    "filepath": "src/commands/doctor-completion.ts"
+  },
+  {
+    "key": "file_0113",
+    "filepath": "src/agents/tool-mutation.ts"
+  },
+  {
+    "key": "file_0114",
+    "filepath": "src/secrets/path-utils.ts"
+  },
+  {
+    "key": "file_0115",
+    "filepath": "src/hooks/install.ts"
+  },
+  {
+    "key": "file_0116",
+    "filepath": "src/agents/pi-settings.ts"
+  },
+  {
+    "key": "file_0117",
+    "filepath": "src/commands/cleanup-utils.ts"
+  },
+  {
+    "key": "file_0118",
+    "filepath": "src/cron/run-log.ts"
+  },
+  {
+    "key": "file_0119",
+    "filepath": "src/agents/subagent-registry.store.ts"
+  },
+  {
+    "key": "file_0120",
+    "filepath": "src/plugin-sdk/file-lock.ts"
+  },
+  {
+    "key": "file_0121",
+    "filepath": "src/agents/payload-redaction.ts"
+  },
+  {
+    "key": "file_0122",
+    "filepath": "src/infra/outbound/message-action-params.ts"
+  },
+  {
+    "key": "file_0123",
+    "filepath": "src/daemon/program-args.ts"
+  },
+  {
+    "key": "file_0124",
+    "filepath": "src/agents/identity-file.ts"
+  },
+  {
+    "key": "file_0125",
+    "filepath": "src/agents/pi-embedded-runner/compaction-safety-timeout.ts"
+  },
+  {
+    "key": "file_0126",
+    "filepath": "src/channels/plugins/setup-wizard.ts"
+  },
+  {
+    "key": "file_0127",
+    "filepath": "extensions/anthropic-vertex/region.ts"
+  },
+  {
+    "key": "file_0128",
+    "filepath": "src/infra/update-startup.ts"
+  },
+  {
+    "key": "file_0129",
+    "filepath": "src/plugins/install.ts"
+  },
+  {
+    "key": "file_0130",
+    "filepath": "src/markdown/code-spans.ts"
+  },
+  {
+    "key": "file_0131",
+    "filepath": "src/media-understanding/attachments.cache.ts"
+  },
+  {
+    "key": "file_0132",
+    "filepath": "src/auto-reply/reply/agent-runner-utils.ts"
+  },
+  {
+    "key": "file_0133",
+    "filepath": "src/infra/exec-approvals-allowlist.ts"
+  },
+  {
+    "key": "file_0134",
+    "filepath": "src/gateway/server-discovery.ts"
+  },
+  {
+    "key": "file_0135",
+    "filepath": "src/cli/tagline.ts"
+  },
+  {
+    "key": "file_0136",
+    "filepath": "src/infra/dispatch-wrapper-resolution.ts"
+  },
+  {
+    "key": "file_0137",
+    "filepath": "src/config/redact-snapshot.ts"
+  },
+  {
+    "key": "file_0138",
+    "filepath": "src/media/pdf-extract.ts"
+  },
+  {
+    "key": "file_0139",
+    "filepath": "extensions/line/src/flex-templates/schedule-cards.ts"
+  },
+  {
+    "key": "file_0140",
+    "filepath": "src/agents/date-time.ts"
+  },
+  {
+    "key": "file_0141",
+    "filepath": "src/agents/auth-profiles/profiles.ts"
+  },
+  {
+    "key": "file_0142",
+    "filepath": "src/auto-reply/reply/directive-handling.shared.ts"
+  },
+  {
+    "key": "file_0143",
+    "filepath": "src/plugins/discovery.ts"
+  },
+  {
+    "key": "file_0144",
+    "filepath": "src/auto-reply/reply/reply-threading.ts"
+  },
+  {
+    "key": "file_0145",
+    "filepath": "src/channels/plugins/setup-wizard-helpers.ts"
+  },
+  {
+    "key": "file_0146",
+    "filepath": "src/config/sessions/disk-budget.ts"
+  },
+  {
+    "key": "file_0147",
+    "filepath": "src/channels/thread-bindings-policy.ts"
+  },
+  {
+    "key": "file_0148",
+    "filepath": "src/utils/queue-helpers.ts"
+  },
+  {
+    "key": "file_0149",
+    "filepath": "src/infra/bonjour.ts"
+  },
+  {
+    "key": "file_0150",
+    "filepath": "src/agents/sandbox/novnc-auth.ts"
+  },
+  {
+    "key": "file_0151",
+    "filepath": "src/auto-reply/reply/abort-cutoff.ts"
+  },
+  {
+    "key": "file_0152",
+    "filepath": "src/auto-reply/tokens.ts"
+  },
+  {
+    "key": "file_0153",
+    "filepath": "src/cli/daemon-cli/shared.ts"
+  },
+  {
+    "key": "file_0154",
+    "filepath": "src/shared/assistant-error-format.ts"
+  },
+  {
+    "key": "file_0155",
+    "filepath": "src/agents/pi-embedded-runner/usage-accumulator.ts"
+  },
+  {
+    "key": "file_0156",
+    "filepath": "src/media/input-files.ts"
+  },
+  {
+    "key": "file_0157",
+    "filepath": "src/context-engine/registry.ts"
+  },
+  {
+    "key": "file_0158",
+    "filepath": "src/plugin-sdk/provider-tools.ts"
+  },
+  {
+    "key": "file_0159",
+    "filepath": "src/infra/fs-pinned-write-helper.ts"
+  },
+  {
+    "key": "file_0160",
+    "filepath": "src/agents/identity-avatar.ts"
+  },
+  {
+    "key": "file_0161",
+    "filepath": "src/shared/net/ip.ts"
+  },
+  {
+    "key": "file_0162",
+    "filepath": "src/agents/auth-profiles/external-cli-sync.ts"
+  },
+  {
+    "key": "file_0163",
+    "filepath": "src/agents/sandbox/tool-policy.ts"
+  },
+  {
+    "key": "file_0164",
+    "filepath": "src/agents/agent-scope.ts"
+  },
+  {
+    "key": "file_0165",
+    "filepath": "src/media/store.ts"
+  },
+  {
+    "key": "file_0166",
+    "filepath": "src/infra/boundary-path.ts"
+  },
+  {
+    "key": "file_0167",
+    "filepath": "src/cli/gateway-cli/shared.ts"
+  },
+  {
+    "key": "file_0168",
+    "filepath": "src/channels/conversation-binding-context.ts"
+  },
+  {
+    "key": "file_0169",
+    "filepath": "src/interactive/payload.ts"
+  },
+  {
+    "key": "file_0170",
+    "filepath": "src/secrets/configure-plan.ts"
+  },
+  {
+    "key": "file_0171",
+    "filepath": "src/plugins/clawhub.ts"
+  },
+  {
+    "key": "file_0172",
+    "filepath": "src/gateway/config-reload.ts"
+  },
+  {
+    "key": "file_0173",
+    "filepath": "src/commands/health-format.ts"
+  },
+  {
+    "key": "file_0174",
+    "filepath": "src/commands/doctor/shared/empty-allowlist-scan.ts"
+  },
+  {
+    "key": "file_0175",
+    "filepath": "src/agents/channel-tools.ts"
+  },
+  {
+    "key": "file_0176",
+    "filepath": "src/infra/gateway-processes.ts"
+  },
+  {
+    "key": "file_0177",
+    "filepath": "src/cli/run-main.ts"
+  },
+  {
+    "key": "file_0178",
+    "filepath": "src/plugins/manifest.ts"
+  },
+  {
+    "key": "file_0179",
+    "filepath": "src/auto-reply/reply/reply-payloads-base.ts"
+  },
+  {
+    "key": "file_0180",
+    "filepath": "src/agents/skills/plugin-skills.ts"
+  },
+  {
+    "key": "file_0181",
+    "filepath": "src/agents/minimax-vlm.ts"
+  },
+  {
+    "key": "file_0182",
+    "filepath": "src/infra/matrix-plugin-helper.ts"
+  },
+  {
+    "key": "file_0183",
+    "filepath": "src/secrets/plan.ts"
+  },
+  {
+    "key": "file_0184",
+    "filepath": "src/plugins/bundle-commands.ts"
+  },
+  {
+    "key": "file_0185",
+    "filepath": "src/auto-reply/templating.ts"
+  },
+  {
+    "key": "file_0186",
+    "filepath": "src/gateway/gateway-config-prompts.shared.ts"
+  },
+  {
+    "key": "file_0187",
+    "filepath": "src/agents/subagent-announce-queue.ts"
+  },
+  {
+    "key": "file_0188",
+    "filepath": "src/acp/runtime/session-identity.ts"
+  },
+  {
+    "key": "file_0189",
+    "filepath": "src/terminal/note.ts"
+  },
+  {
+    "key": "file_0190",
+    "filepath": "src/gateway/auth.ts"
+  },
+  {
+    "key": "file_0191",
+    "filepath": "extensions/voice-call/src/providers/tts-openai.ts"
+  },
+  {
+    "key": "file_0192",
+    "filepath": "src/auto-reply/envelope.ts"
+  },
+  {
+    "key": "file_0193",
+    "filepath": "src/auto-reply/reply/queue/state.ts"
+  },
+  {
+    "key": "file_0194",
+    "filepath": "src/process/spawn-utils.ts"
+  },
+  {
+    "key": "file_0195",
+    "filepath": "src/infra/system-presence.ts"
+  },
+  {
+    "key": "file_0196",
+    "filepath": "src/utils.ts"
+  },
+  {
+    "key": "file_0197",
+    "filepath": "src/infra/net/ssrf.ts"
+  },
+  {
+    "key": "file_0198",
+    "filepath": "src/config/talk.ts"
+  },
+  {
+    "key": "file_0199",
+    "filepath": "src/gateway/server-discovery-runtime.ts"
+  },
+  {
+    "key": "file_0200",
+    "filepath": "src/auto-reply/model-runtime.ts"
+  },
+  {
+    "key": "file_0201",
+    "filepath": "packages/memory-host-sdk/src/host/batch-voyage.ts"
+  },
+  {
+    "key": "file_0202",
+    "filepath": "src/channels/plugins/catalog.ts"
+  },
+  {
+    "key": "file_0203",
+    "filepath": "src/gateway/cli-session-history.merge.ts"
+  },
+  {
+    "key": "file_0204",
+    "filepath": "src/config/group-policy.ts"
+  },
+  {
+    "key": "file_0205",
+    "filepath": "src/plugins/manifest-registry.ts"
+  },
+  {
+    "key": "file_0206",
+    "filepath": "src/auto-reply/reply/response-prefix-template.ts"
+  },
+  {
+    "key": "file_0207",
+    "filepath": "src/agents/skills/config.ts"
+  },
+  {
+    "key": "file_0208",
+    "filepath": "src/secrets/shared.ts"
+  },
+  {
+    "key": "file_0209",
+    "filepath": "src/agents/github-copilot-token.ts"
+  },
+  {
+    "key": "file_0210",
+    "filepath": "src/auto-reply/reply/mentions.ts"
+  },
+  {
+    "key": "file_0211",
+    "filepath": "src/plugins/config-state.ts"
+  },
+  {
+    "key": "file_0212",
+    "filepath": "src/agents/pi-embedded-runner/run/attempt.thread-helpers.ts"
+  },
+  {
+    "key": "file_0213",
+    "filepath": "src/config/dangerous-name-matching.ts"
+  },
+  {
+    "key": "file_0214",
+    "filepath": "src/markdown/fences.ts"
+  },
+  {
+    "key": "file_0215",
+    "filepath": "src/infra/gateway-lock.ts"
+  },
+  {
+    "key": "file_0216",
+    "filepath": "src/secrets/target-registry-query.ts"
+  },
+  {
+    "key": "file_0217",
+    "filepath": "src/channels/plugins/pairing.ts"
+  },
+  {
+    "key": "file_0218",
+    "filepath": "src/auto-reply/reply/queue/normalize.ts"
+  },
+  {
+    "key": "file_0219",
+    "filepath": "src/infra/exec-command-resolution.ts"
+  },
+  {
+    "key": "file_0220",
+    "filepath": "src/config/sessions/targets.ts"
+  },
+  {
+    "key": "file_0221",
+    "filepath": "src/logging/logger.ts"
+  },
+  {
+    "key": "file_0222",
+    "filepath": "src/gateway/server-tailscale.ts"
+  },
+  {
+    "key": "file_0223",
+    "filepath": "src/config/sessions/reset.ts"
+  },
+  {
+    "key": "file_0224",
+    "filepath": "src/channels/plugins/setup-helpers.ts"
+  },
+  {
+    "key": "file_0225",
+    "filepath": "src/agents/pi-embedded-helpers/messaging-dedupe.ts"
+  },
+  {
+    "key": "file_0226",
+    "filepath": "src/wizard/setup.completion.ts"
+  },
+  {
+    "key": "file_0227",
+    "filepath": "src/gateway/assistant-identity.ts"
+  },
+  {
+    "key": "file_0228",
+    "filepath": "src/gateway/node-registry.ts"
+  },
+  {
+    "key": "file_0229",
+    "filepath": "src/infra/outbound/outbound-policy.ts"
+  },
+  {
+    "key": "file_0230",
+    "filepath": "src/agents/tool-policy.ts"
+  },
+  {
+    "key": "file_0231",
+    "filepath": "src/routing/session-key.ts"
+  },
+  {
+    "key": "file_0232",
+    "filepath": "src/plugins/provider-model-compat.ts"
+  },
+  {
+    "key": "file_0233",
+    "filepath": "src/auto-reply/heartbeat.ts"
+  },
+  {
+    "key": "file_0234",
+    "filepath": "src/hooks/message-hook-mappers.ts"
+  },
+  {
+    "key": "file_0235",
+    "filepath": "src/channels/account-snapshot-fields.ts"
+  },
+  {
+    "key": "file_0236",
+    "filepath": "src/gateway/server-methods/agent-wait-dedupe.ts"
+  },
+  {
+    "key": "file_0237",
+    "filepath": "src/agents/pi-embedded-runner/session-manager-cache.ts"
+  },
+  {
+    "key": "file_0238",
+    "filepath": "src/runtime.ts"
+  },
+  {
+    "key": "file_0239",
+    "filepath": "src/media-understanding/attachments.normalize.ts"
+  },
+  {
+    "key": "file_0240",
+    "filepath": "src/auto-reply/reply/inbound-meta.ts"
+  },
+  {
+    "key": "file_0241",
+    "filepath": "src/media/parse.ts"
+  },
+  {
+    "key": "file_0242",
+    "filepath": "src/agents/xai-auth-trace.ts"
+  },
+  {
+    "key": "file_0243",
+    "filepath": "src/agents/sandbox/docker-backend.ts"
+  },
+  {
+    "key": "file_0244",
+    "filepath": "src/agents/workspace-run.ts"
+  },
+  {
+    "key": "file_0245",
+    "filepath": "src/gateway/protocol/connect-error-details.ts"
+  },
+  {
+    "key": "file_0246",
+    "filepath": "src/hooks/workspace.ts"
+  },
+  {
+    "key": "file_0247",
+    "filepath": "src/infra/exec-safe-bin-policy-validator.ts"
+  },
+  {
+    "key": "file_0248",
+    "filepath": "src/config/sessions/paths.ts"
+  },
+  {
+    "key": "file_0249",
+    "filepath": "src/daemon/diagnostics.ts"
+  },
+  {
+    "key": "file_0250",
+    "filepath": "src/infra/executable-path.ts"
+  },
+  {
+    "key": "file_0251",
+    "filepath": "src/channels/model-overrides.ts"
+  },
+  {
+    "key": "file_0252",
+    "filepath": "src/config/sessions/group.ts"
+  },
+  {
+    "key": "file_0253",
+    "filepath": "src/infra/install-package-dir.ts"
+  },
+  {
+    "key": "file_0254",
+    "filepath": "src/tui/components/searchable-select-list.ts"
+  },
+  {
+    "key": "file_0255",
+    "filepath": "extensions/openai/tts.ts"
+  },
+  {
+    "key": "file_0256",
+    "filepath": "src/channels/config-presence.ts"
+  },
+  {
+    "key": "file_0257",
+    "filepath": "src/auto-reply/reply/groups.ts"
+  },
+  {
+    "key": "file_0258",
+    "filepath": "src/plugins/bundle-mcp.ts"
+  },
+  {
+    "key": "file_0259",
+    "filepath": "src/agents/auth-profiles/credential-state.ts"
+  },
+  {
+    "key": "file_0260",
+    "filepath": "src/infra/tls/gateway.ts"
+  },
+  {
+    "key": "file_0261",
+    "filepath": "src/routing/bindings.ts"
+  },
+  {
+    "key": "file_0262",
+    "filepath": "src/secrets/target-registry-pattern.ts"
+  },
+  {
+    "key": "file_0263",
+    "filepath": "src/auto-reply/reply/strip-inbound-meta.ts"
+  },
+  {
+    "key": "file_0264",
+    "filepath": "src/security/safe-regex.ts"
+  },
+  {
+    "key": "file_0265",
+    "filepath": "src/node-host/config.ts"
+  },
+  {
+    "key": "file_0266",
+    "filepath": "src/channels/account-summary.ts"
+  },
+  {
+    "key": "file_0267",
+    "filepath": "src/sessions/session-key-utils.ts"
+  },
+  {
+    "key": "file_0268",
+    "filepath": "src/secrets/runtime-config-collectors-core.ts"
+  },
+  {
+    "key": "file_0269",
+    "filepath": "src/agents/sandbox/sanitize-env-vars.ts"
+  },
+  {
+    "key": "file_0270",
+    "filepath": "src/agents/usage.ts"
+  },
+  {
+    "key": "file_0271",
+    "filepath": "src/sessions/send-policy.ts"
+  },
+  {
+    "key": "file_0272",
+    "filepath": "src/plugins/sdk-alias.ts"
+  },
+  {
+    "key": "file_0273",
+    "filepath": "src/infra/exec-approvals.ts"
+  },
+  {
+    "key": "file_0274",
+    "filepath": "src/agents/sandbox/host-paths.ts"
+  },
+  {
+    "key": "file_0275",
+    "filepath": "src/agents/subagent-registry-state.ts"
+  },
+  {
+    "key": "file_0276",
+    "filepath": "src/acp/conversation-id.ts"
+  },
+  {
+    "key": "file_0277",
+    "filepath": "src/infra/session-maintenance-warning.ts"
+  },
+  {
+    "key": "file_0278",
+    "filepath": "src/infra/semver-compare.ts"
+  },
+  {
+    "key": "file_0279",
+    "filepath": "src/media/fetch.ts"
+  },
+  {
+    "key": "file_0280",
+    "filepath": "src/infra/shell-wrapper-resolution.ts"
+  },
+  {
+    "key": "file_0281",
+    "filepath": "src/agents/model-ref-profile.ts"
+  },
+  {
+    "key": "file_0282",
+    "filepath": "packages/memory-host-sdk/src/host/batch-openai.ts"
+  },
+  {
+    "key": "file_0283",
+    "filepath": "src/cron/service/normalize.ts"
+  },
+  {
+    "key": "file_0284",
+    "filepath": "src/config/sessions/types.ts"
+  },
+  {
+    "key": "file_0285",
+    "filepath": "src/gateway/chat-sanitize.ts"
+  },
+  {
+    "key": "file_0286",
+    "filepath": "src/security/audit-fs.ts"
+  },
+  {
+    "key": "file_0287",
+    "filepath": "src/config/legacy-web-search.ts"
+  },
+  {
+    "key": "file_0288",
+    "filepath": "src/config/paths.ts"
+  },
+  {
+    "key": "file_0289",
+    "filepath": "src/security/windows-acl.ts"
+  },
+  {
+    "key": "file_0290",
+    "filepath": "src/agents/pi-embedded-runner/utils.ts"
+  },
+  {
+    "key": "file_0291",
+    "filepath": "src/agents/sandbox/shared.ts"
+  },
+  {
+    "key": "file_0292",
+    "filepath": "src/gateway/control-ui-shared.ts"
+  },
+  {
+    "key": "file_0293",
+    "filepath": "src/hooks/plugin-hooks.ts"
+  },
+  {
+    "key": "file_0294",
+    "filepath": "src/acp/control-plane/manager.utils.ts"
+  },
+  {
+    "key": "file_0295",
+    "filepath": "src/channels/plugins/configured-binding-match.ts"
+  },
+  {
+    "key": "file_0296",
+    "filepath": "src/agents/sandbox-paths.ts"
+  },
+  {
+    "key": "file_0297",
+    "filepath": "src/agents/pi-embedded-runner/run/helpers.ts"
+  },
+  {
+    "key": "file_0298",
+    "filepath": "src/sessions/input-provenance.ts"
+  },
+  {
+    "key": "file_0299",
+    "filepath": "src/infra/dotenv.ts"
+  },
+  {
+    "key": "file_0300",
+    "filepath": "src/acp/runtime/session-identifiers.ts"
+  },
+  {
+    "key": "file_0301",
+    "filepath": "src/cron/isolated-agent/helpers.ts"
+  },
+  {
+    "key": "file_0302",
+    "filepath": "src/infra/widearea-dns.ts"
+  },
+  {
+    "key": "file_0303",
+    "filepath": "src/agents/sandbox/config.ts"
+  },
+  {
+    "key": "file_0304",
+    "filepath": "src/terminal/progress-line.ts"
+  },
+  {
+    "key": "file_0305",
+    "filepath": "src/agents/model-auth-runtime-shared.ts"
+  },
+  {
+    "key": "file_0306",
+    "filepath": "src/auto-reply/commands-text-routing.ts"
+  },
+  {
+    "key": "file_0307",
+    "filepath": "src/agents/auth-profiles/identity.ts"
+  },
+  {
+    "key": "file_0308",
+    "filepath": "src/auto-reply/reply/group-id.ts"
+  },
+  {
+    "key": "file_0309",
+    "filepath": "src/plugins/bundle-lsp.ts"
+  },
+  {
+    "key": "file_0310",
+    "filepath": "packages/memory-host-sdk/src/host/multimodal.ts"
+  },
+  {
+    "key": "file_0311",
+    "filepath": "src/infra/exec-inline-eval.ts"
+  },
+  {
+    "key": "file_0312",
+    "filepath": "src/acp/persistent-bindings.types.ts"
+  },
+  {
+    "key": "file_0313",
+    "filepath": "src/tui/components/fuzzy-filter.ts"
+  },
+  {
+    "key": "file_0314",
+    "filepath": "src/sessions/model-overrides.ts"
+  },
+  {
+    "key": "file_0315",
+    "filepath": "src/config/version.ts"
+  },
+  {
+    "key": "file_0316",
+    "filepath": "src/channels/channel-config.ts"
+  },
+  {
+    "key": "file_0317",
+    "filepath": "src/infra/shell-env.ts"
+  },
+  {
+    "key": "file_0318",
+    "filepath": "src/agents/pi-embedded-subscribe.raw-stream.ts"
+  },
+  {
+    "key": "file_0319",
+    "filepath": "src/media-understanding/scope.ts"
+  },
+  {
+    "key": "file_0320",
+    "filepath": "src/config/includes-scan.ts"
+  },
+  {
+    "key": "file_0321",
+    "filepath": "src/auto-reply/reply/inbound-dedupe.ts"
+  },
+  {
+    "key": "file_0322",
+    "filepath": "src/infra/exec-allowlist-pattern.ts"
+  },
+  {
+    "key": "file_0323",
+    "filepath": "src/gateway/resolve-configured-secret-input-string.ts"
+  },
+  {
+    "key": "file_0324",
+    "filepath": "src/media/inbound-path-policy.ts"
+  },
+  {
+    "key": "file_0325",
+    "filepath": "src/node-host/invoke-system-run-allowlist.ts"
+  },
+  {
+    "key": "file_0326",
+    "filepath": "src/cli/parse-duration.ts"
+  },
+  {
+    "key": "file_0327",
+    "filepath": "src/cli/daemon-cli/response.ts"
+  },
+  {
+    "key": "file_0328",
+    "filepath": "src/gateway/chat-attachments.ts"
+  },
+  {
+    "key": "file_0329",
+    "filepath": "src/plugins/provider-thinking.ts"
+  },
+  {
+    "key": "file_0330",
+    "filepath": "src/agents/spawned-context.ts"
+  },
+  {
+    "key": "file_0331",
+    "filepath": "src/agents/sandbox/backend.ts"
+  },
+  {
+    "key": "file_0332",
+    "filepath": "src/mcp/channel-shared.ts"
+  },
+  {
+    "key": "file_0333",
+    "filepath": "src/secrets/storage-scan.ts"
+  },
+  {
+    "key": "file_0334",
+    "filepath": "src/gateway/security-path.ts"
+  },
+  {
+    "key": "file_0335",
+    "filepath": "src/infra/heartbeat-active-hours.ts"
+  },
+  {
+    "key": "file_0336",
+    "filepath": "src/media/read-response-with-limit.ts"
+  },
+  {
+    "key": "file_0337",
+    "filepath": "src/channels/plugins/message-action-discovery.ts"
+  },
+  {
+    "key": "file_0338",
+    "filepath": "src/utils/delivery-context.ts"
+  },
+  {
+    "key": "file_0339",
+    "filepath": "src/config/sessions/metadata.ts"
+  },
+  {
+    "key": "file_0340",
+    "filepath": "src/agents/memory-search.ts"
+  },
+  {
+    "key": "file_0341",
+    "filepath": "src/agents/tools/sessions-yield-tool.ts"
+  },
+  {
+    "key": "file_0342",
+    "filepath": "src/commands/doctor/finalize-config-flow.ts"
+  },
+  {
+    "key": "file_0343",
+    "filepath": "src/config/config-env-vars.ts"
+  },
+  {
+    "key": "file_0344",
+    "filepath": "src/security/external-content.ts"
+  },
+  {
+    "key": "file_0345",
+    "filepath": "src/daemon/service-env.ts"
+  },
+  {
+    "key": "file_0346",
+    "filepath": "src/infra/host-env-security.ts"
+  },
+  {
+    "key": "file_0347",
+    "filepath": "src/config/includes.ts"
+  },
+  {
+    "key": "file_0348",
+    "filepath": "src/infra/package-update-utils.ts"
+  },
+  {
+    "key": "file_0349",
+    "filepath": "src/plugins/hook-runner-global.ts"
+  },
+  {
+    "key": "file_0350",
+    "filepath": "src/infra/network-discovery-display.ts"
+  },
+  {
+    "key": "file_0351",
+    "filepath": "src/config/channel-config-metadata.ts"
+  },
+  {
+    "key": "file_0352",
+    "filepath": "src/polls.ts"
+  },
+  {
+    "key": "file_0353",
+    "filepath": "src/infra/heartbeat-summary.ts"
+  },
+  {
+    "key": "file_0354",
+    "filepath": "src/daemon/runtime-paths.ts"
+  },
+  {
+    "key": "file_0355",
+    "filepath": "src/plugins/schema-validator.ts"
+  },
+  {
+    "key": "file_0356",
+    "filepath": "src/plugins/uninstall.ts"
+  },
+  {
+    "key": "file_0357",
+    "filepath": "src/infra/heartbeat-wake.ts"
+  },
+  {
+    "key": "file_0358",
+    "filepath": "src/plugins/bundle-manifest.ts"
+  },
+  {
+    "key": "file_0359",
+    "filepath": "src/flows/types.ts"
+  },
+  {
+    "key": "file_0360",
+    "filepath": "src/auto-reply/reply/untrusted-context.ts"
+  },
+  {
+    "key": "file_0361",
+    "filepath": "src/secrets/auth-profiles-scan.ts"
+  },
+  {
+    "key": "file_0362",
+    "filepath": "src/infra/local-file-access.ts"
+  },
+  {
+    "key": "file_0363",
+    "filepath": "src/auto-reply/reply/queue/settings.ts"
+  },
+  {
+    "key": "file_0364",
+    "filepath": "src/gateway/node-command-policy.ts"
+  },
+  {
+    "key": "file_0365",
+    "filepath": "src/infra/exec-safe-bin-policy-profiles.ts"
+  },
+  {
+    "key": "file_0366",
+    "filepath": "src/agents/sandbox/fs-bridge-mutation-helper.ts"
+  },
+  {
+    "key": "file_0367",
+    "filepath": "src/agents/skills/serialize.ts"
+  },
+  {
+    "key": "file_0368",
+    "filepath": "src/channels/plugins/status.ts"
+  },
+  {
+    "key": "file_0369",
+    "filepath": "src/secrets/ref-contract.ts"
+  },
+  {
+    "key": "file_0370",
+    "filepath": "src/channels/conversation-label.ts"
+  },
+  {
+    "key": "file_0371",
+    "filepath": "src/infra/exec-wrapper-trust-plan.ts"
+  },
+  {
+    "key": "file_0372",
+    "filepath": "src/gateway/channel-health-monitor.ts"
+  },
+  {
+    "key": "file_0373",
+    "filepath": "src/plugins/provider-runtime.runtime.ts"
+  },
+  {
+    "key": "file_0374",
+    "filepath": "src/auto-reply/reply/message-preprocess-hooks.ts"
+  },
+  {
+    "key": "file_0375",
+    "filepath": "src/agents/agent-paths.ts"
+  },
+  {
+    "key": "file_0376",
+    "filepath": "src/channels/read-only-account-inspect.ts"
+  },
+  {
+    "key": "file_0377",
+    "filepath": "src/utils/fetch-timeout.ts"
+  },
+  {
+    "key": "file_0378",
+    "filepath": "src/agents/pi-embedded-helpers/failover-matches.ts"
+  },
+  {
+    "key": "file_0379",
+    "filepath": "src/agents/context-window-guard.ts"
+  },
+  {
+    "key": "file_0380",
+    "filepath": "src/agents/timeout.ts"
+  },
+  {
+    "key": "file_0381",
+    "filepath": "src/config/normalize-paths.ts"
+  },
+  {
+    "key": "file_0382",
+    "filepath": "src/utils/message-channel.ts"
+  },
+  {
+    "key": "file_0383",
+    "filepath": "src/agents/workspace-dirs.ts"
+  },
+  {
+    "key": "file_0384",
+    "filepath": "src/agents/internal-events.ts"
+  },
+  {
+    "key": "file_0385",
+    "filepath": "src/media-understanding/echo-transcript.ts"
+  },
+  {
+    "key": "file_0386",
+    "filepath": "src/link-understanding/detect.ts"
+  },
+  {
+    "key": "file_0387",
+    "filepath": "src/infra/agent-events.ts"
+  },
+  {
+    "key": "file_0388",
+    "filepath": "src/tts/status-config.ts"
+  },
+  {
+    "key": "file_0389",
+    "filepath": "src/cli/message-secret-scope.ts"
+  },
+  {
+    "key": "file_0390",
+    "filepath": "src/config/merge-patch.ts"
+  },
+  {
+    "key": "file_0391",
+    "filepath": "src/media/local-roots.ts"
+  },
+  {
+    "key": "file_0392",
+    "filepath": "src/logging/redact.ts"
+  },
+  {
+    "key": "file_0393",
+    "filepath": "src/infra/home-dir.ts"
+  },
+  {
+    "key": "file_0394",
+    "filepath": "src/infra/net/fetch-guard.ts"
+  },
+  {
+    "key": "file_0395",
+    "filepath": "src/gateway/startup-control-ui-origins.ts"
+  },
+  {
+    "key": "file_0396",
+    "filepath": "src/agents/bootstrap-cache.ts"
+  },
+  {
+    "key": "file_0397",
+    "filepath": "src/secrets/secret-value.ts"
+  },
+  {
+    "key": "file_0398",
+    "filepath": "src/cli/cli-name.ts"
+  },
+  {
+    "key": "file_0399",
+    "filepath": "src/chat/tool-content.ts"
+  },
+  {
+    "key": "file_0400",
+    "filepath": "src/secrets/exec-resolution-policy.ts"
+  },
+  {
+    "key": "file_0401",
+    "filepath": "src/canvas-host/file-resolver.ts"
+  },
+  {
+    "key": "file_0402",
+    "filepath": "src/infra/shell-inline-command.ts"
+  },
+  {
+    "key": "file_0403",
+    "filepath": "src/agents/model-auth-markers.ts"
+  },
+  {
+    "key": "file_0404",
+    "filepath": "src/secrets/command-config.ts"
+  },
+  {
+    "key": "file_0405",
+    "filepath": "src/gateway/canvas-capability.ts"
+  },
+  {
+    "key": "file_0406",
+    "filepath": "src/plugins/cache-controls.ts"
+  },
+  {
+    "key": "file_0407",
+    "filepath": "src/plugins/http-registry.ts"
+  },
+  {
+    "key": "file_0408",
+    "filepath": "src/infra/safe-open-sync.ts"
+  },
+  {
+    "key": "file_0409",
+    "filepath": "src/infra/npm-registry-spec.ts"
+  },
+  {
+    "key": "file_0410",
+    "filepath": "src/infra/errors.ts"
+  },
+  {
+    "key": "file_0411",
+    "filepath": "src/utils/directive-tags.ts"
+  },
+  {
+    "key": "file_0412",
+    "filepath": "src/config/types.secrets.ts"
+  },
+  {
+    "key": "file_0413",
+    "filepath": "src/auto-reply/reply/inbound-context.ts"
+  },
+  {
+    "key": "file_0414",
+    "filepath": "src/config/discord-preview-streaming.ts"
+  },
+  {
+    "key": "file_0415",
+    "filepath": "src/agents/sandbox/workspace-mounts.ts"
+  },
+  {
+    "key": "file_0416",
+    "filepath": "src/secrets/auth-store-paths.ts"
+  },
+  {
+    "key": "file_0417",
+    "filepath": "src/agents/tools/web-guarded-fetch.ts"
+  },
+  {
+    "key": "file_0418",
+    "filepath": "src/plugins/http-route-overlap.ts"
+  },
+  {
+    "key": "file_0419",
+    "filepath": "src/config/sessions/store-migrations.ts"
+  },
+  {
+    "key": "file_0420",
+    "filepath": "src/daemon/runtime-hints.ts"
+  },
+  {
+    "key": "file_0421",
+    "filepath": "src/channels/plugins/stateful-target-drivers.ts"
+  },
+  {
+    "key": "file_0422",
+    "filepath": "src/agents/tool-display.ts"
+  },
+  {
+    "key": "file_0423",
+    "filepath": "src/secrets/runtime-shared.ts"
+  },
+  {
+    "key": "file_0424",
+    "filepath": "src/config/backup-rotation.ts"
+  },
+  {
+    "key": "file_0425",
+    "filepath": "src/cli/command-secret-targets.ts"
+  },
+  {
+    "key": "file_0426",
+    "filepath": "src/plugins/bundle-config-shared.ts"
+  },
+  {
+    "key": "file_0427",
+    "filepath": "src/config/agent-dirs.ts"
+  },
+  {
+    "key": "file_0428",
+    "filepath": "src/infra/exec-obfuscation-detect.ts"
+  },
+  {
+    "key": "file_0429",
+    "filepath": "src/media-understanding/format.ts"
+  },
+  {
+    "key": "file_0430",
+    "filepath": "src/channels/thread-bindings-messages.ts"
+  },
+  {
+    "key": "file_0431",
+    "filepath": "src/utils/shell-argv.ts"
+  },
+  {
+    "key": "file_0432",
+    "filepath": "src/shared/config-eval.ts"
+  },
+  {
+    "key": "file_0433",
+    "filepath": "src/auto-reply/reply/session-fork.ts"
+  },
+  {
+    "key": "file_0434",
+    "filepath": "src/auto-reply/reply/origin-routing.ts"
+  },
+  {
+    "key": "file_0435",
+    "filepath": "src/sessions/session-label.ts"
+  },
+  {
+    "key": "file_0436",
+    "filepath": "src/agents/workspace-dir.ts"
+  },
+  {
+    "key": "file_0437",
+    "filepath": "src/channels/reply-prefix.ts"
+  },
+  {
+    "key": "file_0438",
+    "filepath": "src/agents/sandbox/workspace.ts"
+  },
+  {
+    "key": "file_0439",
+    "filepath": "src/security/config-regex.ts"
+  },
+  {
+    "key": "file_0440",
+    "filepath": "src/gateway/auth-install-policy.ts"
+  },
+  {
+    "key": "file_0441",
+    "filepath": "extensions/browser/src/browser/bridge-auth-registry.ts"
+  },
+  {
+    "key": "file_0442",
+    "filepath": "src/sessions/session-id-resolution.ts"
+  },
+  {
+    "key": "file_0443",
+    "filepath": "src/daemon/paths.ts"
+  },
+  {
+    "key": "file_0444",
+    "filepath": "src/gateway/server-utils.ts"
+  },
+  {
+    "key": "file_0445",
+    "filepath": "src/infra/exec-safe-bin-semantics.ts"
+  },
+  {
+    "key": "file_0446",
+    "filepath": "src/media/constants.ts"
+  },
+  {
+    "key": "file_0447",
+    "filepath": "src/cli/plugin-install-plan.ts"
+  },
+  {
+    "key": "file_0448",
+    "filepath": "src/plugins/min-host-version.ts"
+  },
+  {
+    "key": "file_0449",
+    "filepath": "src/config/legacy.ts"
+  },
+  {
+    "key": "file_0450",
+    "filepath": "src/daemon/constants.ts"
+  },
+  {
+    "key": "file_0451",
+    "filepath": "src/infra/install-safe-path.ts"
+  },
+  {
+    "key": "file_0452",
+    "filepath": "src/infra/system-run-command.ts"
+  },
+  {
+    "key": "file_0453",
+    "filepath": "src/gateway/server/ws-connection/auth-context.ts"
+  },
+  {
+    "key": "file_0454",
+    "filepath": "src/gateway/credentials.ts"
+  },
+  {
+    "key": "file_0455",
+    "filepath": "src/agents/pi-embedded-runner/lanes.ts"
+  },
+  {
+    "key": "file_0456",
+    "filepath": "packages/memory-host-sdk/src/host/batch-upload.ts"
+  },
+  {
+    "key": "file_0457",
+    "filepath": "src/secrets/resolve-secret-input-string.ts"
+  },
+  {
+    "key": "file_0458",
+    "filepath": "src/hooks/config.ts"
+  },
+  {
+    "key": "file_0459",
+    "filepath": "src/context-engine/delegate.ts"
+  },
+  {
+    "key": "file_0460",
+    "filepath": "src/plugins/provider-auth-mode.ts"
+  },
+  {
+    "key": "file_0461",
+    "filepath": "src/config/port-defaults.ts"
+  },
+  {
+    "key": "file_0462",
+    "filepath": "packages/memory-host-sdk/src/host/batch-error-utils.ts"
+  },
+  {
+    "key": "file_0463",
+    "filepath": "extensions/telegram/src/api-fetch.ts"
+  },
+  {
+    "key": "file_0464",
+    "filepath": "src/acp/control-plane/runtime-cache.ts"
+  },
+  {
+    "key": "file_0465",
+    "filepath": "src/config/channel-capabilities.ts"
+  },
+  {
+    "key": "file_0466",
+    "filepath": "src/config/sessions/main-session.ts"
+  },
+  {
+    "key": "file_0467",
+    "filepath": "src/infra/exec-safe-bin-runtime-policy.ts"
+  },
+  {
+    "key": "file_0468",
+    "filepath": "src/media/local-media-access.ts"
+  },
+  {
+    "key": "file_0469",
+    "filepath": "extensions/matrix/src/account-selection.ts"
+  },
+  {
+    "key": "file_0470",
+    "filepath": "src/plugins/slots.ts"
+  },
+  {
+    "key": "file_0471",
+    "filepath": "src/logging/diagnostic-session-state.ts"
+  },
+  {
+    "key": "file_0472",
+    "filepath": "src/infra/system-events.ts"
+  },
+  {
+    "key": "file_0473",
+    "filepath": "src/infra/device-identity.ts"
+  },
+  {
+    "key": "file_0474",
+    "filepath": "src/config/env-substitution.ts"
+  },
+  {
+    "key": "file_0475",
+    "filepath": "extensions/telegram/src/model-buttons.ts"
+  },
+  {
+    "key": "file_0476",
+    "filepath": "src/commands/daemon-install-runtime-warning.ts"
+  },
+  {
+    "key": "file_0477",
+    "filepath": "src/terminal/theme.ts"
+  },
+  {
+    "key": "file_0478",
+    "filepath": "src/agents/auth-profiles/paths.ts"
+  },
+  {
+    "key": "file_0479",
+    "filepath": "src/auto-reply/heartbeat-reply-payload.ts"
+  },
+  {
+    "key": "file_0480",
+    "filepath": "src/agents/sandbox/bind-spec.ts"
+  },
+  {
+    "key": "file_0481",
+    "filepath": "src/agents/configured-provider-fallback.ts"
+  },
+  {
+    "key": "file_0482",
+    "filepath": "src/auto-reply/reply/commands-acp/context.ts"
+  },
+  {
+    "key": "file_0483",
+    "filepath": "src/channels/typing-lifecycle.ts"
+  },
+  {
+    "key": "file_0484",
+    "filepath": "src/channels/plugins/configured-binding-registry.ts"
+  },
+  {
+    "key": "file_0485",
+    "filepath": "src/plugins/bundled-sources.ts"
+  },
+  {
+    "key": "file_0486",
+    "filepath": "src/utils/run-with-concurrency.ts"
+  },
+  {
+    "key": "file_0487",
+    "filepath": "src/config/gateway-control-ui-origins.ts"
+  },
+  {
+    "key": "file_0488",
+    "filepath": "src/agents/tool-fs-policy.ts"
+  },
+  {
+    "key": "file_0489",
+    "filepath": "extensions/browser/src/browser/request-policy.ts"
+  },
+  {
+    "key": "file_0490",
+    "filepath": "src/agents/subagent-announce-dispatch.ts"
+  },
+  {
+    "key": "file_0491",
+    "filepath": "src/channels/plugins/registry.ts"
+  },
+  {
+    "key": "file_0492",
+    "filepath": "src/hooks/policy.ts"
+  },
+  {
+    "key": "file_0493",
+    "filepath": "src/config/allowed-values.ts"
+  },
+  {
+    "key": "file_0494",
+    "filepath": "src/version.ts"
+  },
+  {
+    "key": "file_0495",
+    "filepath": "src/gateway/connection-details.ts"
+  },
+  {
+    "key": "file_0496",
+    "filepath": "src/plugins/runtime.ts"
+  },
+  {
+    "key": "file_0497",
+    "filepath": "src/infra/restart-stale-pids.ts"
+  },
+  {
+    "key": "file_0498",
+    "filepath": "extensions/telegram/src/allow-from.ts"
+  },
+  {
+    "key": "file_0499",
+    "filepath": "src/commands/doctor/emit-notes.ts"
+  },
+  {
+    "key": "file_0500",
+    "filepath": "src/agents/image-sanitization.ts"
+  },
+  {
+    "key": "file_0501",
+    "filepath": "src/infra/path-alias-guards.ts"
+  },
+  {
+    "key": "file_0502",
+    "filepath": "src/agents/sandbox/path-utils.ts"
+  },
+  {
+    "key": "file_0503",
+    "filepath": "src/logging/redact-identifier.ts"
+  },
+  {
+    "key": "file_0504",
+    "filepath": "src/secrets/runtime-config-collectors-tts.ts"
+  },
+  {
+    "key": "file_0505",
+    "filepath": "src/infra/backoff.ts"
+  },
+  {
+    "key": "file_0506",
+    "filepath": "src/plugins/path-safety.ts"
+  },
+  {
+    "key": "file_0507",
+    "filepath": "src/agents/current-time.ts"
+  },
+  {
+    "key": "file_0508",
+    "filepath": "src/agents/console-sanitize.ts"
+  },
+  {
+    "key": "file_0509",
+    "filepath": "src/wizard/setup.secret-input.ts"
+  },
+  {
+    "key": "file_0510",
+    "filepath": "src/commands/daemon-install-plan.shared.ts"
+  },
+  {
+    "key": "file_0511",
+    "filepath": "extensions/matrix/src/storage-paths.ts"
+  },
+  {
+    "key": "file_0512",
+    "filepath": "src/security/scan-paths.ts"
+  },
+  {
+    "key": "file_0513",
+    "filepath": "src/agents/sandbox-tool-policy.ts"
+  },
+  {
+    "key": "file_0514",
+    "filepath": "src/daemon/systemd-unavailable.ts"
+  },
+  {
+    "key": "file_0515",
+    "filepath": "src/config/model-input.ts"
+  },
+  {
+    "key": "file_0516",
+    "filepath": "src/channels/plugins/setup-group-access.ts"
+  },
+  {
+    "key": "file_0517",
+    "filepath": "src/secrets/runtime-auth-collectors.ts"
+  },
+  {
+    "key": "file_0518",
+    "filepath": "src/infra/parse-finite-number.ts"
+  },
+  {
+    "key": "file_0519",
+    "filepath": "src/infra/boundary-file-read.ts"
+  },
+  {
+    "key": "file_0520",
+    "filepath": "src/infra/format-time/format-relative.ts"
+  },
+  {
+    "key": "file_0521",
+    "filepath": "src/infra/canvas-host-url.ts"
+  },
+  {
+    "key": "file_0522",
+    "filepath": "src/gateway/channel-health-policy.ts"
+  },
+  {
+    "key": "file_0523",
+    "filepath": "src/agents/context-cache.ts"
+  },
+  {
+    "key": "file_0524",
+    "filepath": "src/gateway/server/close-reason.ts"
+  },
+  {
+    "key": "file_0525",
+    "filepath": "src/image-generation/model-ref.ts"
+  },
+  {
+    "key": "file_0526",
+    "filepath": "src/config/types.tools.ts"
+  },
+  {
+    "key": "file_0527",
+    "filepath": "src/terminal/prompt-style.ts"
+  },
+  {
+    "key": "file_0528",
+    "filepath": "src/process/windows-command.ts"
+  },
+  {
+    "key": "file_0529",
+    "filepath": "src/gateway/session-subagent-reactivation.ts"
+  },
+  {
+    "key": "file_0530",
+    "filepath": "src/channels/plugins/message-action-dispatch.ts"
+  },
+  {
+    "key": "file_0531",
+    "filepath": "src/cli/profile-utils.ts"
+  },
+  {
+    "key": "file_0532",
+    "filepath": "src/cron/webhook-url.ts"
+  },
+  {
+    "key": "file_0533",
+    "filepath": "src/agents/tool-policy-shared.ts"
+  },
+  {
+    "key": "file_0534",
+    "filepath": "src/config/normalize-exec-safe-bin.ts"
+  },
+  {
+    "key": "file_0535",
+    "filepath": "src/gateway/hooks-policy.ts"
+  },
+  {
+    "key": "file_0536",
+    "filepath": "src/plugins/roots.ts"
+  },
+  {
+    "key": "file_0537",
+    "filepath": "src/bootstrap/node-startup-env.ts"
+  },
+  {
+    "key": "file_0538",
+    "filepath": "src/shared/text/code-regions.ts"
+  },
+  {
+    "key": "file_0539",
+    "filepath": "src/sessions/transcript-events.ts"
+  },
+  {
+    "key": "file_0540",
+    "filepath": "src/config/state-dir-dotenv.ts"
+  },
+  {
+    "key": "file_0541",
+    "filepath": "src/gateway/server-methods/agent-timestamp.ts"
+  },
+  {
+    "key": "file_0542",
+    "filepath": "src/media/file-context.ts"
+  },
+  {
+    "key": "file_0543",
+    "filepath": "src/infra/outbound/identity.ts"
+  },
+  {
+    "key": "file_0544",
+    "filepath": "src/infra/plugin-install-path-warnings.ts"
+  },
+  {
+    "key": "file_0545",
+    "filepath": "src/shared/text-chunking.ts"
+  },
+  {
+    "key": "file_0546",
+    "filepath": "src/cli/command-format.ts"
+  },
+  {
+    "key": "file_0547",
+    "filepath": "src/bootstrap/node-extra-ca-certs.ts"
+  },
+  {
+    "key": "file_0548",
+    "filepath": "src/shared/chat-content.ts"
+  },
+  {
+    "key": "file_0549",
+    "filepath": "src/infra/format-time/format-datetime.ts"
+  },
+  {
+    "key": "file_0550",
+    "filepath": "src/channels/typing.ts"
+  },
+  {
+    "key": "file_0551",
+    "filepath": "src/shared/text/reasoning-tags.ts"
+  },
+  {
+    "key": "file_0552",
+    "filepath": "src/gateway/auth-rate-limit.ts"
+  },
+  {
+    "key": "file_0553",
+    "filepath": "src/infra/system-run-approval-binding.ts"
+  },
+  {
+    "key": "file_0554",
+    "filepath": "src/agents/runtime-auth-refresh.ts"
+  },
+  {
+    "key": "file_0555",
+    "filepath": "src/auto-reply/reply/get-reply-directives-utils.ts"
+  },
+  {
+    "key": "file_0556",
+    "filepath": "src/routing/default-account-warnings.ts"
+  },
+  {
+    "key": "file_0557",
+    "filepath": "src/commands/daemon-runtime.ts"
+  },
+  {
+    "key": "file_0558",
+    "filepath": "src/auto-reply/reply/session-reset-prompt.ts"
+  },
+  {
+    "key": "file_0559",
+    "filepath": "packages/memory-host-sdk/src/host/embeddings-remote-fetch.ts"
+  },
+  {
+    "key": "file_0560",
+    "filepath": "src/config/bindings.ts"
+  },
+  {
+    "key": "file_0561",
+    "filepath": "src/config/redact-snapshot.secret-ref.ts"
+  },
+  {
+    "key": "file_0562",
+    "filepath": "packages/memory-host-sdk/src/host/post-json.ts"
+  },
+  {
+    "key": "file_0563",
+    "filepath": "src/shared/net/url-userinfo.ts"
+  },
+  {
+    "key": "file_0564",
+    "filepath": "src/auto-reply/reply/typing-policy.ts"
+  },
+  {
+    "key": "file_0565",
+    "filepath": "src/infra/bonjour-errors.ts"
+  },
+  {
+    "key": "file_0566",
+    "filepath": "src/auto-reply/reply/reply-directives.ts"
+  },
+  {
+    "key": "file_0567",
+    "filepath": "src/cli/outbound-send-mapping.ts"
+  },
+  {
+    "key": "file_0568",
+    "filepath": "src/gateway/device-metadata-normalization.ts"
+  },
+  {
+    "key": "file_0569",
+    "filepath": "src/infra/stable-node-path.ts"
+  },
+  {
+    "key": "file_0570",
+    "filepath": "src/shared/node-resolve.ts"
+  },
+  {
+    "key": "file_0571",
+    "filepath": "src/auto-reply/reply/conversation-binding-input.ts"
+  },
+  {
+    "key": "file_0572",
+    "filepath": "src/infra/outbound/session-context.ts"
+  },
+  {
+    "key": "file_0573",
+    "filepath": "src/agents/sandbox/config-hash.ts"
+  },
+  {
+    "key": "file_0574",
+    "filepath": "src/auto-reply/model.ts"
+  },
+  {
+    "key": "file_0575",
+    "filepath": "src/gateway/server/plugins-http/route-match.ts"
+  },
+  {
+    "key": "file_0576",
+    "filepath": "src/shared/chat-envelope.ts"
+  },
+  {
+    "key": "file_0577",
+    "filepath": "src/secrets/provider-env-vars.ts"
+  },
+  {
+    "key": "file_0578",
+    "filepath": "src/config/issue-format.ts"
+  },
+  {
+    "key": "file_0579",
+    "filepath": "src/gateway/origin-check.ts"
+  },
+  {
+    "key": "file_0580",
+    "filepath": "src/media/base64.ts"
+  },
+  {
+    "key": "file_0581",
+    "filepath": "src/routing/account-id.ts"
+  },
+  {
+    "key": "file_0582",
+    "filepath": "src/infra/path-prepend.ts"
+  },
+  {
+    "key": "file_0583",
+    "filepath": "src/plugins/api-builder.ts"
+  },
+  {
+    "key": "file_0584",
+    "filepath": "src/infra/outbound/message-action-normalization.ts"
+  },
+  {
+    "key": "file_0585",
+    "filepath": "src/infra/fetch.ts"
+  },
+  {
+    "key": "file_0586",
+    "filepath": "src/gateway/credential-planner.ts"
+  }
+]

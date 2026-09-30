@@ -1,0 +1,38 @@
+{
+  "case_id": "openclaw-a0407c72",
+  "project": "openclaw",
+  "repository": "https://github.com/openclaw/openclaw",
+  "revisions": {
+    "buggy": "e61ffa68f145f21152034d1826ae141e69bd4471",
+    "fixed": "a0407c72549ef2e77c283968e443d07ae16b7d27"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/shared/text/strip-markdown.ts",
+        "qualname": "stripMarkdown",
+        "kind": "function",
+        "start_line": 5,
+        "end_line": 22
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--config",
+      "vitest.config.ts",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openclaw/snapshot_052.zip",
+    "fixed": "../../dependencies/openclaw/snapshot_052.zip"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "roo-code-4693b9eb",
+  "project": "roo-code",
+  "repository": "https://github.com/RooCodeInc/Roo-Code",
+  "revisions": {
+    "buggy": "752a95087e9eb8d2bd17643ec67fcb7652c34b45",
+    "fixed": "4693b9eb062e32fe1183d01ce8fcfbb1d14079eb"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "src/api/transform/bedrock-converse-format.ts",
+        "qualname": "<callback@52>",
+        "kind": "function",
+        "start_line": 52,
+        "end_line": 214
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "pnpm",
+      "exec",
+      "vitest",
+      "run",
+      "--root",
+      "src",
+      "--configLoader=bundle",
+      "<generated-test-file>"
+    ],
+    "generated_test_roots": [
+      "src/generated/benchmarkbr"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/roo-code/snapshot_004.zip",
+    "fixed": "../../dependencies/roo-code/snapshot_004.zip"
+  }
+}

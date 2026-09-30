@@ -1,0 +1,33 @@
+{
+  "case_id": "openhands-6e4089f",
+  "project": "openhands",
+  "repository": "https://github.com/All-Hands-AI/OpenHands",
+  "revisions": {
+    "buggy": "907da30320547253854e8c02b4c36c8a8ed5f79b",
+    "fixed": "6e4089fb75789103b8f212dcad82dd51629f9f9a"
+  },
+  "patch_targets": {
+    "target_units": [
+      {
+        "filepath": "agenthub/langchains_agent/utils/monologue.py",
+        "qualname": "Monologue.condense",
+        "kind": "function",
+        "start_line": 26,
+        "end_line": 35
+      }
+    ]
+  },
+  "validation": {
+    "test_command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "<generated-test-file>"
+    ]
+  },
+  "dependencies": {
+    "buggy": "../../dependencies/openhands/snapshot_021.zip",
+    "fixed": "../../dependencies/openhands/snapshot_021.zip"
+  }
+}
