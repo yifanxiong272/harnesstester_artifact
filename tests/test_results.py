@@ -1,6 +1,7 @@
 """Check released annotation joins and result indexes."""
 
 from collections import Counter
+import ast
 import csv
 import json
 from pathlib import Path
@@ -19,7 +20,61 @@ def test_study_results_directory_layout():
     assert {path.name for path in RESULTS.iterdir() if path.is_dir()} == {
         "rq1", "rq2", "rq3", "rq4",
     }
-    assert {path.name for path in (RESULTS / "rq4").iterdir()} == {"historical"}
+    assert {path.name for path in (RESULTS / "rq4").iterdir()} == {
+        "historical", "submitted_issues.csv", "roots.csv", "tests",
+    }
+
+
+def test_public_discovery_records_and_issue_links():
+    roots = rows("rq4/roots.csv")
+    assert set(roots[0]) == {"root_id", "project", "classification", "title", "references"}
+    by_id = {row["root_id"]: row for row in roots}
+    assert len(by_id) == len(roots) == 119
+    assert Counter(row["classification"] for row in roots) == {
+        "NEW": 85, "PREVIOUSLY_KNOWN": 34,
+    }
+    for row in roots:
+        assert row["title"] and row["root_id"].startswith(row["project"] + "_")
+        references = json.loads(row["references"])
+        assert len(references) == len(set(references))
+        assert all(url.startswith("https://github.com/") and "/security/advisories/" not in url for url in references)
+
+    issues = rows("rq4/submitted_issues.csv")
+    assert set(issues[0]) == {"root_id", "project", "issue_number", "issue_url", "state", "state_reason"}
+    assert len(issues) == len({row["issue_url"] for row in issues}) == 74
+    for row in issues:
+        root = by_id[row["root_id"]]
+        assert root["project"] == row["project"] and root["classification"] == "NEW"
+        assert row["issue_url"] in json.loads(root["references"])
+        assert re.fullmatch(r"https://github\.com/[^/]+/[^/]+/issues/\d+", row["issue_url"])
+        assert row["issue_url"].rsplit("/", 1)[-1] == row["issue_number"]
+        assert row["state"] in {"open", "closed"}
+
+
+def test_submitted_issue_tests_and_replay_paths():
+    directory = RESULTS / "rq4/tests"
+    tests = rows("rq4/tests/index.csv")
+    assert set(tests[0]) == {"root_id", "revision", "test", "test_file", "failed_nodeids"}
+    indexed = {Path(row["test"]) for row in tests}
+    assert len(indexed) == len(tests) == 189
+    assert {row["root_id"] for row in tests} == {
+        row["root_id"] for row in rows("rq4/submitted_issues.csv")
+    }
+    assert {path.relative_to(directory) for path in directory.rglob("*") if path.is_file()} == indexed | {Path("index.csv")}
+    for row in tests:
+        assert re.fullmatch(r"[0-9a-f]{40}", row["revision"])
+        for field in ("test", "test_file"):
+            path = Path(row[field])
+            assert row[field] and not path.is_absolute() and ".." not in path.parts
+        assert Path(row["test"]).parts[0] == row["root_id"]
+        nodeids = json.loads(row["failed_nodeids"])
+        assert nodeids and all(isinstance(nodeid, str) and nodeid for nodeid in nodeids)
+        for nodeid in nodeids:
+            recorded_file = re.split(r"::| > ", nodeid, maxsplit=1)[0]
+            assert Path(recorded_file).name == Path(row["test_file"]).name
+        path = directory / row["test"]
+        if path.suffix == ".py":
+            ast.parse(path.read_text(), filename=str(path))
 
 
 def test_original_and_final_labels():

@@ -30,7 +30,10 @@
     - `mutation_score_gain`: Mutation-score gains for all six methods.
     - `semantic_coverage_gain`: Ours' coverage transitions by RQ2 category, derived from `rq2/branches.csv` and `rq2/coverage.csv`.
     - `fine_grained_ablation`: OpenHands harness line- and branch-coverage gains for Ours, Contract-Agnostic, Guidance Only, and Retriever Only.
-- `rq4/`: Historical Probe results. In the test index, `test` is relative to the directory containing that index, `test_file` is checkout-relative, and `failed_nodeids` lists recorded failure selectors.
+- `rq4/`: Probe results and reported bugs. In the test indexes, `test` is relative to the directory containing that index, `test_file` is checkout-relative, and `failed_nodeids` lists recorded failure selectors.
+  - `submitted_issues.csv`: Public issue links and recorded states, joined to `roots.csv` by `root_id`.
+  - `roots.csv`: Deduplicated public bug records, classified as `NEW` or `PREVIOUSLY_KNOWN`, with issue and repair references. Of the 122 discovered bugs, three privately reported vulnerabilities are omitted, leaving 119 public records.
+  - `tests/`: Generated tests associated with submitted public issues, grouped by `root_id`; `index.csv` records their revisions, paths, and failure selectors.
   - `historical/`: Paired buggy/fixed-revision results; repositories and commits are specified in the [benchmark cases](../resources/benchmark/cases/).
     - `records.csv`: Retained buggy-fail/fixed-pass tests with manual test-level outcomes. `AC` identifies the benchmark defect through a valid oracle; `FP` does not satisfy that criterion. For each method, case-level R counts cases with an AC; FP counts cases with an FP and no AC.
     - `<project>/<method>/<case_id>/`: Generated tests associated with each historical case.
