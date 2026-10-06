@@ -53,7 +53,6 @@ def run_augment(args: argparse.Namespace, config: dict[str, Any]) -> Path:
             test_pythonpath=runtime["test_pythonpath"],
             constraints=list(settings.get("constraints", [])),
             strategy=args.strategy,
-            acceptance_policy=args.acceptance_policy,
             repair_context_requests=args.repair_context_requests,
         ),
     )

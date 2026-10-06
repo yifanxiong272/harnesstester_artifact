@@ -16,8 +16,10 @@ const artifact = fileURLToPath(new URL("../../../", import.meta.url));
 const python = process.env.ARTIFACT_TEST_PYTHON;
 const nodeModules = process.env.ARTIFACT_TEST_NODE_MODULES;
 
-for (const language of ["python", "typescript"]) {
-  test(`standalone ${language} command`, {
+for (const { language, strategy } of ["python", "typescript"].flatMap(language =>
+  ["contract_directed", "contract_agnostic"].map(strategy => ({ language, strategy })),
+)) {
+  test(`standalone ${language} ${strategy} command shares default acceptance`, {
     skip: language === "python" ? !python : !nodeModules,
   }, async t => {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "artifact-augment-cli-"));
@@ -51,7 +53,7 @@ for (const language of ["python", "typescript"]) {
         'assert.equal(process.env.NODE_OPTIONS || "", "");',
         '',
       ].join("\n"));
-      const generate = scriptedModel("direct", []);
+      const generate = scriptedModel("partial", []);
       model = payload => generate({ messages: payload.messages.filter(m => m.role !== "system") });
     } else {
       project = path.join(root, "project");
@@ -75,7 +77,7 @@ for (const language of ["python", "typescript"]) {
         const suffix = messages.find(m => m.role === "user").content.match(/"test_name_suffix": "([^"]+)"/u)[1];
         return { choices: [{ message: { content: JSON.stringify({
           action: "propose_test", test_file: `tests/unittest/test_generated${suffix}.py`,
-          append_code: `from pkg.mod import choose\n\ndef test_paths${suffix}():\n    assert choose(True) == 'yes'\n    assert choose(False) == 'no'\n`,
+          append_code: `from pkg.mod import choose\n\ndef test_paths${suffix}():\n    assert choose(True) == 'yes'\n    assert choose(False) == 'no'\n\ndef test_bad${suffix}():\n    assert False\n`,
           expected_nodeids: [], targeted_objective_ids: [], targeted_lines: [],
           oracle: "return value", mocking_strategy: "none",
         }) } }] };
@@ -104,11 +106,25 @@ for (const language of ["python", "typescript"]) {
       "augment", "--project", language === "python" ? "pr-agent" : "openclaw",
       "--base-input", input, "--out-root", output, "--run-id", "cli", "--rounds", "1",
     ];
+    if (strategy !== "contract_directed") args.push("--strategy", strategy);
     if (language === "python") args.push("--python-bin", python);
     await run(python || "python3", args, { cwd: root, env, timeout: 60000 });
     const runDir = path.join(output, "runs/cli");
     const rows = JSON.parse(fs.readFileSync(path.join(runDir, "results.json")));
     assert.equal(rows[0].status, "accepted", JSON.stringify(rows));
+    const progress = JSON.parse(fs.readFileSync(path.join(runDir, "progress.json")));
+    assert.equal(progress.strategy, strategy);
+    assert.equal(progress.acceptance_policy, "passing_subset");
+    if (language === "python") {
+      assert.equal(rows[0].accepted_nodeids.length, 1);
+      assert.equal(rows[0].rejected_nodeids.length, 1);
+    } else {
+      assert.ok(rows[0].accepted_units.length > 0);
+      assert.ok(rows[0].rejected_units.length > 0);
+      for (const unit of rows[0].accepted_units) {
+        assert.match(unit.test_name, /^paths/u);
+      }
+    }
     assert.ok(calls > 0);
     assert.ok(fs.existsSync(path.join(runDir, "accepted/files")));
     assert.equal(fs.existsSync(path.join(runDir, "workspaces")), false);

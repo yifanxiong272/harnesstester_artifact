@@ -123,11 +123,6 @@ def build_parser() -> argparse.ArgumentParser:
         choices=["contract_directed", "contract_agnostic"],
         default="contract_directed",
     )
-    aug.add_argument(
-        "--acceptance-policy",
-        choices=["passing_subset", "candidate_atomic"],
-        default="passing_subset",
-    )
     aug.add_argument("--repair-context-requests", type=int, default=0)
 
     probe = sub.add_parser(
