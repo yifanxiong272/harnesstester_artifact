@@ -122,6 +122,8 @@ def test_unchanged_python_transfer_rules_match_formal():
                 "analyze_project",
                 "eval_value_expr",
                 "should_drop_constructor_target",
+                # Unpacked argument binding has independent flow regressions.
+                "callee_actual_infos",
             }:
                 return None
             return self.generic_visit(node)

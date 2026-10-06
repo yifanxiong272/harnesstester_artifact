@@ -33,7 +33,7 @@ Python may finish its active round after the time budget; TypeScript also bounds
 
 ## Contract-Agnostic
 
-Add `--strategy contract_agnostic --acceptance-policy candidate_atomic` to the Augment command.
+Add `--strategy contract_agnostic` to the Augment command.
 
 ## Outputs
 

@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import runpy
 import sys
+from types import MethodType
 from unittest.mock import patch
 
 
@@ -64,6 +65,8 @@ def compare_analysis(actual, run):
     # Supply the same file universe to the formal directory-based input boundary.
     with patch.object(formal, "scan_source_files", return_value=actual.files):
         expected = formal.FlowAnalyzer(actual.project_root, [], actual.project_label)
+    # Compare the remaining engine under the corrected unpacking semantics.
+    expected.callee_actual_infos = MethodType(type(actual).callee_actual_infos, expected)
     assert canonical(actual.index) == canonical(expected.index)
     actual_stats, actual_events = observed_run(actual, run)
     expected_stats, expected_events = observed_run(

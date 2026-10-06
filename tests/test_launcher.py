@@ -68,6 +68,24 @@ def test_budget_leaves_core_defaults_and_explicit_round_limit_intact():
 
 
 @pytest.mark.parametrize("project", ["aider", "openclaw"])
+def test_augment_cli_uses_one_strategy_option_without_acceptance_override(project):
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "run.py"), "augment", "--project", project, "--help"],
+        text=True, capture_output=True, timeout=15,
+    )
+    assert result.returncode == 0, result.stderr
+    assert "--strategy" in result.stdout
+    assert "--acceptance-policy" not in result.stdout
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "run.py"), "augment", "--project", project,
+         "--strategy", "contract_agnostic", "--acceptance-policy", "candidate_atomic"],
+        text=True, capture_output=True, timeout=15,
+    )
+    assert result.returncode != 0
+    assert "acceptance-policy" in result.stderr
+
+
+@pytest.mark.parametrize("project", ["aider", "openclaw"])
 @pytest.mark.parametrize("options,rounds,budget", [
     ([], 1, 0),
     (["--time-budget-seconds", "0"], 1, 0),

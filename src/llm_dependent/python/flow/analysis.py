@@ -1226,12 +1226,32 @@ class FlowAnalyzer:
         if target.positional_offset and self.has_value_facts(receiver_info):
             actuals.setdefault(params[0], []).append(receiver_info)
 
+        args = callee.node.args
+        positional = [arg.arg for arg in (*args.posonlyargs, *args.args)]
+        explicit_keywords = {keyword.arg for keyword in call.keywords if keyword.arg}
+        positional_count = target.positional_offset + sum(
+            not isinstance(arg, ast.Starred) for arg in call.args
+        )
+        # Keyword expansion cannot bind positional-only or already-bound parameters.
+        keyword_params = {arg.arg for arg in (*args.args, *args.kwonlyargs)}
+        keyword_params.difference_update(positional[:positional_count])
+        keyword_params.difference_update(explicit_keywords)
+        if args.kwarg:
+            keyword_params.add(args.kwarg.arg)
+
         for idx, arg_info in enumerate(arg_infos):
             if not self.has_value_facts(arg_info):
                 continue
             if idx < len(call.args) and isinstance(call.args[idx], ast.Starred):
-                for param in params[target.positional_offset :]:
-                    actuals.setdefault(param, []).append(arg_info)
+                start = target.positional_offset + sum(
+                    not isinstance(arg, ast.Starred) for arg in call.args[:idx]
+                )
+                candidates = positional[start:]
+                if args.vararg:
+                    candidates.append(args.vararg.arg)
+                for param in candidates:
+                    if param not in explicit_keywords:
+                        actuals.setdefault(param, []).append(arg_info)
                 continue
             param_idx = idx + target.positional_offset
             if param_idx < len(params):
@@ -1241,7 +1261,7 @@ class FlowAnalyzer:
             if not self.has_value_facts(kw_info):
                 continue
             if keyword.arg is None:
-                for param in params[target.positional_offset :]:
+                for param in sorted(keyword_params):
                     actuals.setdefault(param, []).append(kw_info)
             elif keyword.arg in params:
                 actuals.setdefault(keyword.arg, []).append(kw_info)
