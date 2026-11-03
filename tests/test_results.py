@@ -27,14 +27,21 @@ def test_study_results_directory_layout():
 
 def test_public_discovery_records_and_issue_links():
     roots = rows("rq4/roots.csv")
-    assert set(roots[0]) == {"root_id", "project", "classification", "title", "references"}
+    assert set(roots[0]) == {
+        "root_id", "project", "classification", "confirmed", "fix_progress", "title", "references",
+    }
     by_id = {row["root_id"]: row for row in roots}
     assert len(by_id) == len(roots) == 119
     assert Counter(row["classification"] for row in roots) == {
         "NEW": 85, "PREVIOUSLY_KNOWN": 34,
     }
+    assert sum(row["confirmed"] == "true" for row in roots) == 68
+    assert sum(row["fix_progress"] == "true" for row in roots) == 64
     for row in roots:
         assert row["title"] and row["root_id"].startswith(row["project"] + "_")
+        reported = row["classification"] == "NEW" and row["project"] != "roo-code"
+        expected = {"true", "false"} if reported else {""}
+        assert row["confirmed"] in expected and row["fix_progress"] in expected
         references = json.loads(row["references"])
         assert len(references) == len(set(references))
         assert all(url.startswith("https://github.com/") and "/security/advisories/" not in url for url in references)
